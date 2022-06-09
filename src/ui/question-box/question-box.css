@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;700&display=swap');
+
+.headerRoot {
+  margin-bottom: -100px;
+  height: 60vh;
+  width: 100%;
+  color: rgb(18, 18, 18);
+
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.headerRoot img {
+  object-fit: cover;
+  width: 50%;
+  height: 50vh;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.headerRoot .description {
+  font-family: 'Quicksand', sans-serif !important;
+  font-size: .9rem;
+  line-height: 1rem;
+  width: 50%;
+  padding: 0 1rem 1rem;
+
+  text-overflow: ellipsiss;
+}
+
+.headerRoot h1 {
+  padding: 1rem;
+  width: 85%;
+  background-color:   rgb(255,228,77);
+  font-family: 'Oswald';
+  text-transform: uppercase;
+
+  font-size: 2rem;
+  line-height: 4rem;
+}
+
+
+@media (min-width: 700px) {
+  .headerRoot h1  {
+    text-transform: unset;
+    font-size: 3rem;
+    line-height: 4.55rem;
+    width: 70%;
+  }
+
+  .headerRoot .description {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    width: 40%;
+  }
+
+  .headerRoot img {
+    width: 60%;
+    height: 60vh;
+
+  }
+  .headerRoot {
+    height: 70vh;
+
+  }
+}

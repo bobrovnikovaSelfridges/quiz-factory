@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+  .mainButtonTheme   {
+    font-family: 'Quicksand', sans-serif !important;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: auto; 
+    text-decoration: unset;
+
+    text-align: center;
+    outline: none;
+    appearance: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 17px ;
+    line-height: 25px ;
+    padding: 10px 15px ;
+    background: none ;
+    margin-bottom: 1rem;
+    color: black;
+    border: unset;
+    background-color:   rgb(255,226,85);
+  }
+  
+  
+    .mainButtonTheme:hover {
+        background-color:   rgb(248, 217, 65);
+    }
+  
+  
+  @media (max-width: 700px) {
+    .mainButtonTheme {
+        width:100%;
+    }
+  }
+  
+  
+  

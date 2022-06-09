@@ -1,0 +1,8 @@
+
+@custom-media --tablet (min-width: 760px);
+
+@custom-media --tablet (min-width: 820px);
+
+@custom-media --desktop-small (min-width: 1080px);
+
+@custom-media --desktop-normal (min-width: 1370px);

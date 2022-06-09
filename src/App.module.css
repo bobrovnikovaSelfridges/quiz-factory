@@ -1,0 +1,50 @@
+@import './bp.css';
+
+.root {
+  box-sizing: border-box;
+  position: relative;
+  font-family: 'Oswald';
+    
+  width: 100vw;
+  /* left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+   */
+  padding: unset;
+  font-size: unset;
+  height: 100%;
+  color: #212121;
+  color:rgb(249, 239, 226);
+
+}
+
+.root * {
+  font-family: 'Oswald';
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  
+}
+
+.img { 
+  position: absolute;
+  left: 0;
+  top: 0;
+  min-height: 90vh;
+  object-fit: cover;
+  width: 100%;
+}
+
+@media (min-width: 700px) {
+  .img  {
+    max-height: 95vh;
+  }
+}
+  
+

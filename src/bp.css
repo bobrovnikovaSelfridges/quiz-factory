@@ -1,0 +1,10 @@
+
+/* Тут число колонок внутренней сетки становится равным 6 */
+@custom-media --tablet (min-width: 820px);
+
+/* появляется левая колонка, стакан прибивается влево */
+@custom-media --screen-desktop-plus (min-width: 1080px);
+
+/* @custom-media --desktop-normal (min-width: 1370px); */
+
+/* (--screen-desktop-plus) */

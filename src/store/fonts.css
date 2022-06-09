@@ -1,0 +1,78 @@
+/* selfridges styled */
+
+/* Graphik */
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('./fonts/graphik/regular.woff2') format('woff2'),
+    url('./fonts/graphik/regular.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('./fonts/graphik/medium.woff2') format('woff2'),
+    url('./fonts/graphik/medium.woff') format('woff');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('./fonts/graphik/semibold.woff2') format('woff2'),
+    url('./fonts/graphik/semibold.woff') format('woff');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+/* Charter */
+
+@font-face {
+  font-family: 'Charter';
+  src: url('./fonts/charter/regular.woff2') format('woff2'),
+    url('./fonts/charter/regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Ruble Sans */
+
+@font-face {
+  font-family: 'Ruble Sans';
+  src: url('./fonts/ruble-sans/regular.v2.woff2') format('woff2'),
+    url('./fonts/ruble-sans/regular.v2.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ruble Sans';
+  src: url('./fonts/ruble-sans/medium.v2.woff2') format('woff2'),
+    url('./fonts/ruble-sans/medium.v2.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ruble Sans';
+  src: url('./fonts/ruble-sans/semibold.v2.woff2') format('woff2'),
+    url('./fonts/ruble-sans/semibold.v2.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Ruble Serif */
+
+@font-face {
+  font-family: 'Ruble Serif';
+  src: url('./fonts/ruble-serif/regular.v2.woff2') format('woff2'),
+    url('./fonts/ruble-serif/regular.v2.woff') format('woff');
+}
+
+/* Avalon */
+@font-face {font-family: "Avalon"; src: url("//db.onlinewebfonts.com/t/004a514b6f70b2e670c485e4e1d9be64.eot"); src: url("//db.onlinewebfonts.com/t/004a514b6f70b2e670c485e4e1d9be64.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/004a514b6f70b2e670c485e4e1d9be64.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/004a514b6f70b2e670c485e4e1d9be64.woff") format("woff"), url("//db.onlinewebfonts.com/t/004a514b6f70b2e670c485e4e1d9be64.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/004a514b6f70b2e670c485e4e1d9be64.svg#Avalon") format("svg"); }
