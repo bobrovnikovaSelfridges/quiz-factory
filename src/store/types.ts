@@ -9,12 +9,25 @@ export type Config = {
     background: any;
     image1: string;
   };
-  quizValues: any;
-
+  quizValues: QuizValues;
   initialValues: any;
   colours: any;
 };
 
+export type OptionType = {
+  option: string;
+  point: number;
+};
+
+export type QuizValues = {
+  [key: number]: QuizValueType;
+};
+
+export type QuizValueType = {
+  img: string;
+  question: string;
+  options: Array<OptionType>;
+};
 // export type CategoriesType = { [key: string]: CardsCategory };
 // export type UiText = {
 //   resultTitle: string;

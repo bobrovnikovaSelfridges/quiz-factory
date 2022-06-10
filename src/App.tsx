@@ -1,19 +1,22 @@
 import React from "react";
-
+import { Formik, useField } from "formik";
+// import { FormValues, UserDetails } from "types";
 import { initValues } from "./dev/config";
 import s from "./App.module.css";
 import { MOBILE_STARTS } from "./services/constants";
+import { QuestionBox } from "./ui/question-box/question-box";
+// import QuizContext, { useQiuzContext } from "./services/quizContext";
+import { QuizValues, QuizValueType } from "./store/types";
+import { QuizElement } from "./ui/quiz-element/quiz-element";
+import { QuizContextProvider, useQiuzContext } from "./services/quizContext";
 
 const MyContext = React.createContext("undefined");
 
 const App: React.FunctionComponent = () => {
-  // const initialValues = CONFIG;
   const [isMobile, setisMobile] = React.useState(
     window.innerWidth < MOBILE_STARTS
   );
-  // const [selectedCards, setSelectedCards] = React.useState<
-  //   IRawDataUnit[] | undefined
-  // >([]);
+  console.log(useQiuzContext());
 
   React.useEffect(() => {
     const resizeObserver = new ResizeObserver((entries) => {
@@ -24,15 +27,19 @@ const App: React.FunctionComponent = () => {
       }
     });
     resizeObserver.observe(document.body);
-
-    // if initially loaded with query params:
-    // loadStateFromQueryParams(categoriesData, setSelectedCards);
   }, []);
-  const questions = Object.entries(initValues.quizValues);
+
+  const id = "";
+
+  const [field, meta, helpers] = useField<string[]>(id);
 
   return (
-    <MyContext.Provider value={"real life is hard"}>
+    <Formik>
       <div className={s.root}>
+        <QuestionBox isMobile={isMobile}>
+          {renderQuestions(initValues.quizValues)}
+        </QuestionBox>
+
         <img
           className={s.img}
           src={
@@ -42,8 +49,16 @@ const App: React.FunctionComponent = () => {
           }
         />
       </div>
-    </MyContext.Provider>
+    </Formik>
   );
+};
+
+const renderQuestions = (quizValues: QuizValues): React.ReactNode => {
+  const questions = Object.entries(initValues.quizValues);
+
+  return questions.map((questionUnits: [string, QuizValueType]) => {
+    return <QuizElement questionUnits={questionUnits} />;
+  });
 };
 
 export default App;
