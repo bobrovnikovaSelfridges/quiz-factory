@@ -36,7 +36,10 @@
    .root:disabled:hover {
     background-color:   rgb(255,226,85);
   }
- 
+  
+  .root.selected {
+    background-color:  #488f57;
+   }
   @media (max-width: 700px) {
     .root {
         width:100%;

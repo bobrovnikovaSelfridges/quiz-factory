@@ -1,8 +1,10 @@
+import classNames from "classnames";
 import s from "./btn.module.css";
 
 type Props = {
   text: string;
   onClick: () => void;
+  isSelected?: boolean;
   children?: any;
   disabled?: boolean;
   settings?: { width?: number; height?: number; colour?: string };
@@ -14,6 +16,7 @@ export const Btn = ({
   children,
   settings,
   disabled,
+  isSelected,
 }: Props): JSX.Element => {
   return (
     <button
@@ -24,7 +27,7 @@ export const Btn = ({
         backgroundColor: settings?.colour,
       }}
       onClick={onClick}
-      className={s.root}
+      className={classNames(s.root, isSelected && s.selected)}
     >
       {text}
       {children}

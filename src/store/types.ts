@@ -1,14 +1,25 @@
 // import { Dispatch, SetStateAction } from "react";
 
 export type ConfigRaw = any;
+export type IRawDataUnit = {
+  title: string;
+  description: string;
+  img: string;
+  price: string;
+  link: string;
+  id: string;
+  keyWord?: string;
+};
 
 export type Config = {
   uiText: {
     titles: {
       box: string;
+      result: string;
     };
     descriptions: {
       box: string;
+      result: string;
     };
   };
 
@@ -43,7 +54,7 @@ export type QuizContextType = {
   };
   configurations: Config;
   states: StatesContextType;
-  unparsedData: any;
+  dataset: { [key: string]: IRawDataUnit[] };
 };
 
 export type StatesContextType = {
@@ -106,15 +117,6 @@ export type QuizInitialValuesType = { [questionId: string]: OptionType };
 // export type QueryParams = { [paramName: string]: string };
 
 // export type ICampaigns = Array<{ type: string }>;
-
-// export type IRawDataUnit = {
-//   title: string;
-//   description: string;
-//   img: string;
-//   price: string;
-//   link: string;
-//   id: string;
-// };
 
 // export type IRawDataset = {
 //   white: IRawDataUnit[];

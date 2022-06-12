@@ -1,6 +1,7 @@
 .root {
 z-index: 999;
 display: flex; 
+justify-content: flex-end;
 }
 
 .root button:first-child {

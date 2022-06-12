@@ -12,10 +12,19 @@ export const QuestionOptions = (): React.ReactElement => {
   return (
     <div className={s.root}>
       {options.map((option: OptionType) => {
+        const currPageSelectedValue =
+          states.currentSelection.value[states.pageNumber.value.toString()];
+
         return (
           <Btn
+            isSelected={Boolean(
+              currPageSelectedValue &&
+                currPageSelectedValue.option === option.option
+            )}
             key={option.option}
-            onClick={() => updateSelection(option, states)}
+            onClick={() => {
+              updateSelection(option, states);
+            }}
             text={option.option}
           />
         );

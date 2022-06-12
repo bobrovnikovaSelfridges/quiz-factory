@@ -19,6 +19,10 @@
   flex-grow: 1;
 }
 
+.root button:visited {
+background-color: red;
+}
+ 
 @media (min-width: 700px) {
   .root button { 
     margin-right: 1rem;

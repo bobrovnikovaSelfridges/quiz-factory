@@ -1,4 +1,8 @@
-export const mocks = {
+import { IRawDataUnit } from "../store/types";
+
+export const mocks: {
+  [key: string]: IRawDataUnit[];
+} = {
   "SELFRIDGES SELECTION": [
     {
       title: "SELFRIDGES SELECTION",

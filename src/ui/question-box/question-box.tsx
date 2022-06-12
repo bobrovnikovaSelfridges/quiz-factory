@@ -4,13 +4,13 @@ import {
   Config,
   OptionType,
   QuizContextType,
-  QuizValues,
   QuizValueType,
 } from "../../store/types";
 import { Description } from "../description/description";
 import { Loader } from "../loader/loader";
 import { PageSwitcher } from "../page-switcher/page-switcher";
 import { QuizElement } from "../quiz-element/quiz-element";
+import { Results } from "../results/results";
 import s from "./question-box.module.css";
 
 export const QuestionBox = () => {
@@ -30,7 +30,6 @@ export const QuestionBox = () => {
       );
     }
   );
-  console.log(allKeyWords);
   const endOfQuiz = states.pageNumber.value + 1 > amountOfQuestions;
 
   const currentQuestion =
@@ -40,7 +39,7 @@ export const QuestionBox = () => {
   return (
     <div className={s.root}>
       {!endOfQuiz && <img className={s.img} src={currentQuestion.img} />}
-      {renderHeader(configurations, params.isMobile, isFirstPage)}
+      {renderHeader(configurations, params.isMobile, isFirstPage, endOfQuiz)}
 
       {!endOfQuiz && (
         <>
@@ -57,6 +56,7 @@ export const QuestionBox = () => {
         img={configurations.images.loader}
         isVisible={endOfQuiz}
       />
+      {endOfQuiz && <Results />}
     </div>
   );
 };
@@ -64,7 +64,8 @@ export const QuestionBox = () => {
 const renderHeader = (
   configurations: Config,
   isMobile: boolean,
-  isFirstPage: boolean
+  isFirstPage: boolean,
+  endOfQuiz: boolean
 ): React.ReactNode => {
   const description = configurations.uiText.descriptions.box;
   const shortenDecription =
@@ -72,7 +73,11 @@ const renderHeader = (
 
   return (
     <>
-      <h1>{configurations.uiText.titles.box}</h1>
+      <h1>
+        {endOfQuiz
+          ? configurations.uiText.titles.result
+          : configurations.uiText.titles.box}
+      </h1>
       {isFirstPage && (
         <Description
           description={isMobile ? shortenDecription : description}
