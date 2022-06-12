@@ -18,12 +18,12 @@ export const quizValues: QuizValues = {
       {
         option: "turkey",
         point: 3,
-        keyWords: ["traditional", "homemade", "handmade"],
+        keyWords: ["traditional", "british", "handmade"],
       },
       {
         option: "roast potatoes",
         point: 1,
-        keyWords: ["potatoe", "homemade", "grill"],
+        keyWords: ["potatoe", "handmade", "grill"],
       },
       {
         option: "gingerbread cookies",
@@ -32,90 +32,90 @@ export const quizValues: QuizValues = {
       },
     ],
   },
-  // 2: {
-  //   img: question_2,
-  //   question: "What is your favorite coffee shop?",
-  //   options: [
-  //     {
-  //       option: "starbucks or costa",
-  //       point: 3,
-  //       keyWords: [],
-  //     },
-  //     {
-  //       option: "small local cafe",
-  //       point: 1,
-  //       keyWords: [],
-  //     },
-  //     {
-  //       option: "No coffee, only cuppa",
-  //       point: 2,
-  //       keyWords: [],
-  //     },
-  //   ],
-  // },
-  // 3: {
-  //   img: question_1,
-  //   question: "What is one TV series you can watch over and over again?",
-  //   options: [
-  //     {
-  //       option: "Game of Thrones",
-  //       point: 3,
-  //       keyWords: [],
-  //     },
-  //     {
-  //       option: "Black Mirror",
-  //       point: 1,
-  //       keyWords: [],
-  //     },
-  //     {
-  //       option: "Peaky Blinders",
-  //       point: 2,
-  //       keyWords: [],
-  //     },
-  //   ],
-  // },
-  // 4: {
-  //   img: question_4,
-  //   question: "The main question!",
-  //   options: [
-  //     {
-  //       option: "carrot juice",
-  //       point: 3,
-  //       keyWords: [],
-  //     },
-  //     {
-  //       option: "beer",
-  //       point: 1,
-  //       keyWords: [],
-  //     },
-  //     {
-  //       option: "wine",
-  //       point: 2,
-  //       keyWords: [],
-  //     },
-  //   ],
-  // },
-  // 5: {
-  //   img: question_5,
-  //   question: "You got mad if you...",
-  //   options: [
-  //     {
-  //       option: "can't buy your favourite smoothie",
-  //       point: 3,
-  //       keyWords: [],
-  //     },
-  //     {
-  //       option: "need to talk with Uber driver",
-  //       point: 1,
-  //       keyWords: ["self care"],
-  //     },
-  //     {
-  //       option: "... never.",
-  //       point: 2,
-  //       keyWords: [""],
-  //     },
-  //   ],
-  // },
+  2: {
+    img: question_2,
+    question: "What is your favorite coffee shop?",
+    options: [
+      {
+        option: "starbucks or costa",
+        point: 3,
+        keyWords: ["coffee", "chocolate", "fragrance"],
+      },
+      {
+        option: "small local cafe",
+        point: 1,
+        keyWords: ["fragrance", "funny", "sweatshirt", "hoodie"],
+      },
+      {
+        option: "No coffee, only cuppa",
+        point: 2,
+        keyWords: ["tea", "jam", "rose"],
+      },
+    ],
+  },
+  3: {
+    img: question_1,
+    question: "What is one TV series you can watch over and over again?",
+    options: [
+      {
+        option: "Game of Thrones",
+        point: 3,
+        keyWords: ["Game of Thrones", "ANCIENT", "box", "rome"],
+      },
+      {
+        option: "Black Mirror",
+        point: 1,
+        keyWords: ["games", "mindfulness", "Bio-Synergy"],
+      },
+      {
+        option: "Peaky Blinders",
+        point: 2,
+        keyWords: ["BOTTLE OPENER", "DR. MARTENS", "black bag"],
+      },
+    ],
+  },
+  4: {
+    img: question_4,
+    question: "They prefer...",
+    options: [
+      {
+        option: "carrot juice",
+        point: 3,
+        keyWords: ["earth", "fruit", "fresh", "rainbow"],
+      },
+      {
+        option: "beer",
+        point: 1,
+        keyWords: ["beer", "gentlemen", "lazy", "gaming"],
+      },
+      {
+        option: "wine",
+        point: 2,
+        keyWords: ["aesthetic", "design", "satin"],
+      },
+    ],
+  },
+  5: {
+    img: question_5,
+    question: "This person loves...",
+    options: [
+      {
+        option: "modern tech",
+        point: 3,
+        keyWords: ["apple", "the tech bar", "controller", "binoculars"],
+      },
+      {
+        option: "sustainable fashion",
+        point: 1,
+        keyWords: ["sustainable", "ecology", "planet"],
+      },
+      {
+        option: "cozy evenings",
+        point: 2,
+        keyWords: ["bundle", "set", "cozy"],
+      },
+    ],
+  },
 };
 
 export const configurations: Config = {

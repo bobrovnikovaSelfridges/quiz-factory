@@ -26,16 +26,67 @@ async function startBrowser() {
   return browser;
 }
 
-const randomiserGifts = [
-  "CHOCOLATEs",
-  "watches",
-  "set",
-  "luxury",
+const keyWords = [
+  "SELFRIDGES SELECTION",
+  "british",
+  "handmade",
+  "potato",
+  "grill",
+  "cookie",
+  "sweets",
+  "chocolate gift",
+  "coffee",
+  "chocolate",
+  "fragrance",
+  "funny",
+  "sweatshirt",
+  "hoodie",
+  "tea",
+  "jam",
+  "rose",
+  "Game of Thrones",
+  "ANCIENT",
   "box",
-  "kit",
+  "rome",
+  "games",
+  "mindfulness",
+  "Bio-Synergy",
+  "BOTTLE OPENER",
+  "DR. MARTENS",
+  "black bag",
+  "earth",
+  "fruit",
+  "fresh",
+  "rainbow",
+  "beer",
+  "gentlemen",
+  "lazy",
+  "gaming",
+  "aesthetic",
+  "design",
+  "satin",
+  "apple",
+  "the tech bar",
+  "controller",
+  "binoculars",
+  "sustainable",
+  "ecology",
+  "planet",
+  "bundle",
+  "set",
+  "cozy",
 ];
 
-const pallette = ["white", "red", "blue", "green", "pink"];
+// const randomiserGifts = [
+//   "CHOCOLATEs",
+//   "watches",
+//   "set",
+//   "luxury",
+//   "box",
+//   "kit",
+// ];
+
+// const pallette = ["white", "red", "blue", "green", "pink"];
 
 const mocks = {};
 async function main() {
@@ -44,24 +95,25 @@ async function main() {
 
   if (browser) {
     let page = await browser.newPage();
-    const searchWords = pallette;
+    const searchWords = keyWords;
     const imgSelector = ".c-prod-card__images > img";
-    const btnShowMore = '[data-js-action="plpListingShowCta"]';
+    // const btnShowMore = '[data-js-action="plpListingShowCta"]';
     for (const searchWord of searchWords) {
       await page.goto(
-        `https://www.selfridges.com/GB/en/cat/?freeText=${searchWord}&srch=Y&pn=3`
+        `https://www.selfridges.com/GB/en/cat/?freeText=${searchWord}&srch=Y`
+        // `https://www.selfridges.com/GB/en/cat/?freeText=${searchWord}&srch=Y`
       );
 
       console.log(`Navigating to ${searchWord} url`);
       await page.waitForSelector("[data-js-plp-scroll]");
       await page.waitForSelector(imgSelector);
 
-      await page.$eval(btnShowMore, (el) => el.click());
-      await page.waitForSelector(btnShowMore);
-      await page.$eval(btnShowMore, (el) => el.click());
-      await page.waitForSelector(btnShowMore);
-      await page.$eval(btnShowMore, (el) => el.click());
-      await page.waitForSelector(btnShowMore);
+      // await page.$eval(btnShowMore, (el) => el.click());
+      // await page.waitForSelector(btnShowMore);
+      // await page.$eval(btnShowMore, (el) => el.click());
+      // await page.waitForSelector(btnShowMore);
+      // await page.$eval(btnShowMore, (el) => el.click());
+      // await page.waitForSelector(btnShowMore);
 
       console.log(`ask ${searchWord} search to show more`);
 

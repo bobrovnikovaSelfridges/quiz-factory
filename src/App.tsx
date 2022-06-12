@@ -4,7 +4,10 @@ import { MOBILE_STARTS } from "./services/constants";
 import { QuizContext } from "./services/quizContext";
 import { QuestionBox } from "./ui/question-box/question-box";
 import { QuizContextType } from "./store/types";
+import { mocks } from "./assets/mocks";
+
 import s from "./App.module.css";
+import { unparseNewData } from "./helpers/unparseNewData";
 
 const App: React.FunctionComponent = () => {
   const [isMobile, setisMobile] = React.useState(
@@ -24,7 +27,9 @@ const App: React.FunctionComponent = () => {
     resizeObserver.observe(document.body);
   }, []);
 
+  console.log(unparseNewData(mocks));
   const contextData: QuizContextType = {
+    unparsedData: unparseNewData(mocks),
     params: {
       isMobile,
     },

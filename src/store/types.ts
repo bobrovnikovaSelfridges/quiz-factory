@@ -43,6 +43,7 @@ export type QuizContextType = {
   };
   configurations: Config;
   states: StatesContextType;
+  unparsedData: any;
 };
 
 export type StatesContextType = {

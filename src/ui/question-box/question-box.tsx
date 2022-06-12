@@ -1,6 +1,12 @@
 import React, { useContext, useState } from "react";
 import { QuizContext } from "../../services/quizContext";
-import { Config, QuizContextType } from "../../store/types";
+import {
+  Config,
+  OptionType,
+  QuizContextType,
+  QuizValues,
+  QuizValueType,
+} from "../../store/types";
 import { Description } from "../description/description";
 import { Loader } from "../loader/loader";
 import { PageSwitcher } from "../page-switcher/page-switcher";
@@ -11,6 +17,20 @@ export const QuestionBox = () => {
   const { params, states, configurations } =
     useContext<QuizContextType>(QuizContext);
   const amountOfQuestions = Object.keys(configurations.quizValues).length;
+  let allKeyWords: string[] = [];
+
+  Object.values(configurations.quizValues).forEach(
+    (question: QuizValueType) => {
+      question.options.forEach((option: OptionType) =>
+        option.keyWords.forEach((keyWordsUnit: string) => {
+          if (!allKeyWords.includes(keyWordsUnit)) {
+            allKeyWords.push(keyWordsUnit);
+          }
+        })
+      );
+    }
+  );
+  console.log(allKeyWords);
   const endOfQuiz = states.pageNumber.value + 1 > amountOfQuestions;
 
   const currentQuestion =
