@@ -23,15 +23,15 @@
 
 .headerRoot img {
   object-fit: cover;
-  width: 50%;
-  height: 50vh;
+  width: 500px;
+  /* height: 50vh; */
 
   position: absolute;
   left: 0;
   top: 0;
   z-index: -1;
 }
-
+/* 
 .headerRoot .description {
   font-family: 'Quicksand', sans-serif !important;
   font-size: .9rem;
@@ -77,4 +77,4 @@
     height: 70vh;
 
   }
-}
+} */

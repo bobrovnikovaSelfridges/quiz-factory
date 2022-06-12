@@ -1,22 +1,29 @@
-import { Dispatch, SetStateAction } from "react";
+// import { Dispatch, SetStateAction } from "react";
 
 export type ConfigRaw = any;
 
 export type Config = {
-  uiText: any;
+  uiText: {
+    titles: {
+      box: string;
+    };
+    descriptions: {
+      box: string;
+    };
+  };
 
   images: {
     background: any;
     image1: string;
   };
   quizValues: QuizValues;
-  initialValues: any;
   colours: any;
 };
 
 export type OptionType = {
   option: string;
   point: number;
+  keyWords: string[];
 };
 
 export type QuizValues = {
@@ -28,6 +35,28 @@ export type QuizValueType = {
   question: string;
   options: Array<OptionType>;
 };
+
+export type QuizContextType = {
+  params: {
+    isMobile: boolean;
+  };
+  configurations: Config;
+  states: {
+    currentSelection: {
+      value: QuizInitialValuesType;
+      onChange: React.Dispatch<React.SetStateAction<QuizInitialValuesType>>;
+    };
+    pageNumber: {
+      value: number;
+      onChange: React.Dispatch<React.SetStateAction<number>>;
+    };
+  };
+};
+
+export type QuizInitialValuesType = { [questionId: string]: OptionType };
+
+// export type CurrentSelectionUnit = { [questionId: string]: OptionType };
+
 // export type CategoriesType = { [key: string]: CardsCategory };
 // export type UiText = {
 //   resultTitle: string;

@@ -1,20 +1,29 @@
 import { createContext, useContext } from "react";
-import { FieldHelperProps, FieldInputProps, FieldMetaProps } from "formik";
+import { configurations } from "../dev/config";
+import { QuizContextType } from "../store/types";
+import { MOBILE_STARTS } from "./constants";
 
-type Context = {
-  field: FieldInputProps<string[]>;
-  helpers: FieldHelperProps<string[]>;
-  meta: FieldMetaProps<string[]>;
-};
-
-const QuizContext = createContext<Context | null>(null);
-
-export const QuizContextProvider = QuizContext.Provider;
+export const QuizContext = createContext<QuizContextType>({
+  params: {
+    isMobile: window.innerWidth < MOBILE_STARTS,
+  },
+  configurations, // static
+  states: {
+    currentSelection: {
+      value: {},
+      onChange: () => {},
+    },
+    pageNumber: {
+      value: 0,
+      onChange: () => {},
+    },
+  },
+});
 
 export function useQiuzContext() {
   const context = useContext(QuizContext);
   if (!context) {
-    throw new Error("Must be used in scope of a CheckboxProvider");
+    throw new Error("Must be used in scope of a QuizContextProvider");
   }
 
   return context;

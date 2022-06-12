@@ -1,5 +1,5 @@
 import React from "react";
-import { QuizValues, QuizValueType } from "../../store/types";
+import { OptionType, QuizValueType } from "../../store/types";
 import { Description } from "../description/description";
 import { QuestionOptions } from "../question-options/question-options";
 import "./quiz-element.css";
@@ -14,14 +14,12 @@ export const QuizElement = ({ questionUnits }: Props) => {
     <div className="headerRoot">
       <img src={questionUnits[1].img} />
       <Description classname="=" description={questionUnits[1].question} />
-      {options.map((option: { option: string; point: number }) => {
-        return (
-          <QuestionOptions
-            option={option}
-            questionNumber={parseFloat(questionUnits[0])}
-          />
-        );
-      })}
+
+      {/* options selection */}
+      <QuestionOptions />
+      {/* {options.map((option: OptionType) => {
+        return <QuestionOptions />;
+      })} */}
 
       <div className="container" />
     </div>
