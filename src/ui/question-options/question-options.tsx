@@ -1,20 +1,34 @@
-import { OptionType } from "../../store/types";
+import React, { useContext } from "react";
+import { OptionType, StatesContextType } from "../../store/types";
 import { Btn } from "../btn/btn";
 import { QuizContext } from "../../services/quizContext";
-import "./question-options.css";
-import { useContext } from "react";
+import s from "./question-options.module.css";
 
-export const QuestionOptions = () => {
+export const QuestionOptions = (): React.ReactElement => {
   const { states, configurations } = useContext(QuizContext);
+  const options =
+    configurations.quizValues[states.pageNumber.value + 1].options;
 
-  const options = configurations.quizValues[states.pageNumber.value].options;
+  return (
+    <div className={s.root}>
+      {options.map((option: OptionType) => {
+        return (
+          <Btn
+            key={option.option}
+            onClick={() => updateSelection(option, states)}
+            text={option.option}
+          />
+        );
+      })}
+    </div>
+  );
+};
 
-  return options.map((option: OptionType) => {
-    return (
-      <Btn
-        onClick={states.currentSelection.onChange(states.option, questionId)}
-        text={option.option}
-      />
-    );
-  });
+const updateSelection = (
+  selectedOption: OptionType,
+  states: StatesContextType
+) => {
+  const newSelection = { ...states.currentSelection.value };
+  newSelection[states.pageNumber.value] = selectedOption;
+  states.currentSelection.onChange(newSelection);
 };

@@ -1,10 +1,10 @@
 import React from "react";
-import { configurations, quizValues } from "./dev/config";
-import s from "./App.module.css";
+import { configurations } from "./dev/config";
 import { MOBILE_STARTS } from "./services/constants";
+import { QuizContext } from "./services/quizContext";
 import { QuestionBox } from "./ui/question-box/question-box";
 import { QuizContextType } from "./store/types";
-import { QuizContext } from "./services/quizContext";
+import s from "./App.module.css";
 
 const App: React.FunctionComponent = () => {
   const [isMobile, setisMobile] = React.useState(
@@ -42,14 +42,14 @@ const App: React.FunctionComponent = () => {
     <QuizContext.Provider value={contextData}>
       <div className={s.root}>
         <QuestionBox />
-        <img
-          className={s.img}
-          src={
-            isMobile
-              ? configurations.images.background.mobile
-              : configurations.images.background.desktop
-          }
-        />
+        {/* <img
+        className={s.img}
+        src={
+          isMobile
+            ? configurations.images.background.mobile
+            : configurations.images.background.desktop
+        }
+      /> */}
       </div>
     </QuizContext.Provider>
   );

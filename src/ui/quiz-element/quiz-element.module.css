@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;700&display=swap');
+
+.root {
+display: flex;
+  
+}
+
+.container {
+  background-color: aliceblue;
+  width: 100%;
+}
+
+.img {
+  object-fit: cover;
+  width: 70%;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+ 
+.description {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}

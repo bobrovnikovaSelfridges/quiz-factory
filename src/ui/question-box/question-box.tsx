@@ -1,25 +1,27 @@
 import React, { useContext } from "react";
 import { QuizContext } from "../../services/quizContext";
-import {
-  Config,
-  QuizContextType,
-  QuizValues,
-  QuizValueType,
-} from "../../store/types";
+import { Config, QuizContextType } from "../../store/types";
 import { Description } from "../description/description";
+import { PageSwitcher } from "../page-switcher/page-switcher";
 import { QuizElement } from "../quiz-element/quiz-element";
-import "./question-box.css";
+import s from "./question-box.module.css";
 
 export const QuestionBox = () => {
   const { params, states, configurations } =
     useContext<QuizContextType>(QuizContext);
 
-  const isFirstPage = 1 === states.pageNumber.value;
+  const currentQuestion =
+    configurations.quizValues[states.pageNumber.value + 1];
+  const isFirstPage = 1 === states.pageNumber.value + 1;
   return (
-    <>
+    <div className={s.root}>
       {renderHeader(configurations, params.isMobile, isFirstPage)}
-      {renderQuestions(configurations.quizValues)}
-    </>
+      <QuizElement
+        key={currentQuestion.question}
+        questionUnits={currentQuestion}
+      />
+      <PageSwitcher />
+    </div>
   );
 };
 
@@ -31,27 +33,23 @@ const renderHeader = (
   const description = configurations.uiText.descriptions.box;
   const shortenDecription =
     description.substring(0, description.length / 3) + "...";
+
+  console.log(configurations.images.background);
   return (
-    <div className="headerRoot">
-      <div className="container" />
+    <>
       <h1>{configurations.uiText.titles.box}</h1>
       {isFirstPage && (
         <>
-          <img src={configurations.images.background} />
+          {/* <img
+            className={s.img}
+            src={configurations.images.background.desktop}
+          /> */}
           <Description
             description={isMobile ? shortenDecription : description}
-            classname={"description"}
+            classname={s.description}
           />
         </>
       )}
-    </div>
-  );
-};
-
-const renderQuestions = (quizValues: QuizValues): React.ReactNode => {
-  return Object.entries(quizValues).map(
-    (questionUnits: [string, QuizValueType]) => {
-      return <QuizElement questionUnits={questionUnits} />;
-    }
+    </>
   );
 };

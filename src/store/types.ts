@@ -13,7 +13,7 @@ export type Config = {
   };
 
   images: {
-    background: any;
+    background: { desktop: string; mobile: string; result: string };
     image1: string;
   };
   quizValues: QuizValues;
@@ -41,15 +41,17 @@ export type QuizContextType = {
     isMobile: boolean;
   };
   configurations: Config;
-  states: {
-    currentSelection: {
-      value: QuizInitialValuesType;
-      onChange: React.Dispatch<React.SetStateAction<QuizInitialValuesType>>;
-    };
-    pageNumber: {
-      value: number;
-      onChange: React.Dispatch<React.SetStateAction<number>>;
-    };
+  states: StatesContextType;
+};
+
+export type StatesContextType = {
+  currentSelection: {
+    value: QuizInitialValuesType;
+    onChange: React.Dispatch<React.SetStateAction<QuizInitialValuesType>>;
+  };
+  pageNumber: {
+    value: number;
+    onChange: React.Dispatch<React.SetStateAction<number>>;
   };
 };
 

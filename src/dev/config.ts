@@ -53,7 +53,7 @@ export const quizValues: QuizValues = {
     ],
   },
   3: {
-    img: question_3,
+    img: question_1,
     question: "What is one TV series you can watch over and over again?",
     options: [
       {

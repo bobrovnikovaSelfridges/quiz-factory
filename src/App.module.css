@@ -10,10 +10,15 @@
   font-size: unset;
   height: 100%;
   color: #212121;
+
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
 }
 
 .root * {
   font-family: 'Oswald';
+  color: #212121;
 }
 
 html {
