@@ -4,12 +4,14 @@ import { QuizContext } from "../../services/quizContext";
 import s from "./page-switcher.module.css";
 
 export const PageSwitcher = () => {
-  const { states, configurations } = useContext(QuizContext);
+  const { states } = useContext(QuizContext);
 
   return (
     <div className={s.root}>
       <Btn
-        text={"<="}
+        disabled={states.pageNumber.value === 0}
+        text={"←"}
+        settings={{ width: 50 }}
         onClick={() => {
           switchPage(states.pageNumber, true);
         }}

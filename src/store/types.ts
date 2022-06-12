@@ -15,6 +15,7 @@ export type Config = {
   images: {
     background: { desktop: string; mobile: string; result: string };
     image1: string;
+    loader: string;
   };
   quizValues: QuizValues;
   colours: any;

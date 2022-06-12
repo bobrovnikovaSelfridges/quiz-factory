@@ -42,14 +42,14 @@ const App: React.FunctionComponent = () => {
     <QuizContext.Provider value={contextData}>
       <div className={s.root}>
         <QuestionBox />
-        {/* <img
-        className={s.img}
-        src={
-          isMobile
-            ? configurations.images.background.mobile
-            : configurations.images.background.desktop
-        }
-      /> */}
+        <img
+          className={s.img}
+          src={
+            isMobile
+              ? configurations.images.background.mobile
+              : configurations.images.background.desktop
+          }
+        />
       </div>
     </QuizContext.Provider>
   );

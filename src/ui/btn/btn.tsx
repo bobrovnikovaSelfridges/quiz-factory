@@ -4,6 +4,7 @@ type Props = {
   text: string;
   onClick: () => void;
   children?: any;
+  disabled?: boolean;
   settings?: { width?: number; height?: number; colour?: string };
 };
 
@@ -12,16 +13,18 @@ export const Btn = ({
   onClick,
   children,
   settings,
+  disabled,
 }: Props): JSX.Element => {
   return (
     <button
+      disabled={disabled}
       style={{
         width: `${settings?.width}px`,
         height: `${settings?.height}px`,
         backgroundColor: settings?.colour,
       }}
       onClick={onClick}
-      className={s.mainButtonTheme}
+      className={s.root}
     >
       {text}
       {children}

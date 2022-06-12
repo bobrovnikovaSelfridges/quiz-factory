@@ -5,26 +5,38 @@
   width: 75%;
   min-width: 200px;
   height: 100%;
+  background-color: white;
+  padding: 0 1rem 2rem;
+  margin-top: 8rem;
 }
- 
 
-.container {
-  background-color: aliceblue;
-  width: 100%;
+.root h1 {
+  text-align: center;
 }
 
 .img {
   object-fit: cover;
-  width: 500px;
+  height: 15rem;
+  margin-top: -8rem;
+  margin-bottom: -1rem;
 
-  position: absolute;
-  left: 0;
-  top: 0;
   z-index: 2;
 }
- 
 
 .description {
   font-size: 1rem;
   line-height: 1.5rem;
 }
+
+
+@media (min-width: 700px) {
+  .img {
+    object-fit: cover;
+    height: 25rem;
+    margin-top: -13rem;
+  
+    z-index: 2;
+  }
+}
+  
+

@@ -4,9 +4,26 @@
 .root {
   width: 100%;
   display: flex;
-  flex-direction: row;
-  align-items: flex-end;
+  padding-top: 1rem;
+  flex-flow: wrap;
+  justify-content: center;
 }
 
 
+.root button { 
+  text-transform: uppercase;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+@media (min-width: 700px) {
+  .root button { 
+    margin-right: 1rem;
+  }
+  .root button:last-child {
+    margin-right: 0;
+  }
+}

@@ -3,13 +3,20 @@ import "./loader.css";
 import "swiper/css";
 import { CARD_HEIGHT } from "../../services/constants";
 
-type Props = { text?: string; img: string; isVisible: boolean };
-export const Loader: React.FC<Props> = ({ text, isVisible, img }: Props) => {
+type Props = {
+  text?: string;
+  img: string;
+  isVisible: boolean;
+  amount?: number;
+};
+export const Loader: React.FC<Props> = ({
+  text,
+  isVisible,
+  img,
+  amount,
+}: Props) => {
   return isVisible ? (
-    <div className="loaderRoot">
-      <div className="text">{text}</div>
-      {loadImgs(img)}
-    </div>
+    <div className="root">{loadImgs(img, amount)}</div>
   ) : (
     <></>
   );
@@ -26,23 +33,36 @@ const calculateAmountOfImages = () => {
   return maxAmount;
 };
 
-const loadImgs = (img: string): React.ReactElement[] | any => {
+const loadImgs = (img: string, amount?: number): React.ReactElement[] | any => {
   const data = [];
   let i = 0;
-  const amountOfImgs = calculateAmountOfImages();
-  while (i !== amountOfImgs) {
-    const item: React.ReactElement<HTMLImageElement> = (
-      <img
-        style={{
-          animationDelay: `${i / 10}s`,
-        }}
-        key={`${i}${img}`}
-        src={img}
-      />
-    );
-    data.push(item);
-    i++;
-  }
+  const imageHTML = (
+    <img
+      style={{
+        animationDelay: amount && amount === 1 ? "0" : `${i / 10}s`,
+      }}
+      key={`${i}${img}`}
+      src={img}
+    />
+  );
+  const amountOfImgs = amount ? amount : calculateAmountOfImages();
 
-  return data;
+  if (amountOfImgs === 1) {
+    return imageHTML;
+  } else {
+    while (i !== amountOfImgs) {
+      const item: React.ReactElement<HTMLImageElement> = (
+        <img
+          style={{
+            animationDelay: `${i / 10}s`,
+          }}
+          key={`${i}${img}`}
+          src={img}
+        />
+      );
+      data.push(item);
+      i++;
+    }
+    return data;
+  }
 };

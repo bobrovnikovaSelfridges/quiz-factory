@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
-  .mainButtonTheme   {
+  .root   {
     font-family: 'Quicksand', sans-serif !important;
     display:flex;
     flex-direction: column;
@@ -24,13 +24,21 @@
   }
   
   
-    .mainButtonTheme:hover {
-        background-color:   rgb(248, 217, 65);
+    .root:hover {
+        background-color: rgb(248, 217, 65);
     }
   
+
+   .root:disabled {
+     opacity: 0.4;
+   }
   
+   .root:disabled:hover {
+    background-color:   rgb(255,226,85);
+  }
+ 
   @media (max-width: 700px) {
-    .mainButtonTheme {
+    .root {
         width:100%;
     }
   }

@@ -11,16 +11,14 @@ type Props = {
 export const QuizElement = ({ questionUnits }: Props) => {
   return (
     <div className={s.root}>
-      <img className={s.img} src={questionUnits.img} />
+      <div className={s.asterisk}>* * * </div>
       <Description
-        classname={s.description}
+        classname={s.question}
         description={questionUnits.question}
       />
 
       {/* options selection */}
       <QuestionOptions />
-
-      <div className={s.container} />
     </div>
   );
 };
