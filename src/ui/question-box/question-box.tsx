@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { QuizContext } from "../../services/quizContext";
 import {
   Config,
@@ -17,8 +17,14 @@ export const QuestionBox = () => {
   const { params, states, configurations } =
     useContext<QuizContextType>(QuizContext);
   const amountOfQuestions = Object.keys(configurations.quizValues).length;
-  let allKeyWords: string[] = [];
+  const endOfQuiz = states.pageNumber.value + 1 > amountOfQuestions;
 
+  const currentQuestion =
+    configurations.quizValues[states.pageNumber.value + 1];
+  const isFirstPage = 1 === states.pageNumber.value + 1;
+
+  let allKeyWords: string[] = [];
+  const [showResults, setShownResults] = React.useState(false);
   Object.values(configurations.quizValues).forEach(
     (question: QuizValueType) => {
       question.options.forEach((option: OptionType) =>
@@ -30,11 +36,13 @@ export const QuestionBox = () => {
       );
     }
   );
-  const endOfQuiz = states.pageNumber.value + 1 > amountOfQuestions;
-
-  const currentQuestion =
-    configurations.quizValues[states.pageNumber.value + 1];
-  const isFirstPage = 1 === states.pageNumber.value + 1;
+  React.useEffect(() => {
+    if (endOfQuiz) {
+      setTimeout(() => {
+        setShownResults(true);
+      }, 2000);
+    }
+  }, [endOfQuiz]);
 
   return (
     <div className={s.root}>
@@ -56,7 +64,7 @@ export const QuestionBox = () => {
         img={configurations.images.loader}
         isVisible={endOfQuiz}
       />
-      {endOfQuiz && <Results />}
+      {showResults && <Results />}
     </div>
   );
 };

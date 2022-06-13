@@ -1,5 +1,4 @@
-import React, { useContext } from "react";
-import { Btn } from "../btn/btn";
+import { useContext, useEffect, useState } from "react";
 import { QuizContext } from "../../services/quizContext";
 import s from "./results.module.css";
 import {
@@ -7,22 +6,75 @@ import {
   OptionType,
   QuizInitialValuesType,
 } from "../../store/types";
+import { Card } from "../card/card";
+import { Btn } from "../btn/btn";
+import { getRandomNumber } from "../../helpers/getRandomNumber";
 
 export const Results = () => {
   const { states, dataset } = useContext(QuizContext);
+  const defaultAmount = 5;
+
+  const [amountOfShownCards, setAmount] = useState(defaultAmount);
+
   const allKeyWords =
     states.currentSelection.value && getKeyWords(states.currentSelection.value);
   const cards = generateResults(dataset, allKeyWords);
-  console.log(Boolean(states.currentSelection.value), { cards });
-
   const cardsData = Object.entries(cards);
+  const randomisedCards = getRandomCards(cardsData, amountOfShownCards);
   return (
     <div className={s.root}>
-      {cardsData.map((dataset: [string, IRawDataUnit]) => {
-        return <></>;
-      })}
+      <div className={s.cards}>
+        {randomisedCards}
+        {/* {cardsData.map((dataset: [string, IRawDataUnit], idx: number) => {
+          return (
+            <Card
+              isDisplayed={amountOfShownCards <= idx}
+              key={dataset[0]}
+              dataset={dataset}
+            />
+          );
+        })} */}
+      </div>
+      <div className={s.btnWrap}>
+        <Btn
+          disabled={amountOfShownCards >= cardsData.length}
+          text="see more"
+          onClick={() => {
+            if (amountOfShownCards < cardsData.length) {
+              setAmount(amountOfShownCards + defaultAmount);
+            }
+          }}
+        />
+      </div>
     </div>
   );
+};
+
+const getRandomCards = (
+  cardsData: [string, IRawDataUnit][],
+  amountOfShownCards: number
+): React.ReactElement[] => {
+  const nodes: React.ReactElement[] = [];
+  const usedNumbers: number[] = [];
+  let idx = 0;
+  while (idx < 10) {
+    console.log(usedNumbers.length, cardsData.length);
+    // for (const cardValue of cardsData) {
+    const randomID = getRandomNumber(cardsData.length - 1);
+    if (usedNumbers.includes(randomID)) {
+      const randomCard = cardsData[randomID];
+      usedNumbers.push(randomID);
+      nodes.push(
+        <Card
+          isDisplayed={amountOfShownCards <= idx}
+          key={randomCard[0]}
+          dataset={randomCard}
+        />
+      );
+    }
+    idx++;
+  }
+  return nodes;
 };
 
 const generateResults = (

@@ -1,19 +1,28 @@
+
+
 @import url('../../store/fonts.css');
 
-.card img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  
-  background-color: rgb(246,246,246);
+.root {
+  margin-bottom: 1.5rem;
+  height: 15rem;
+  width: 13rem;
+display: flex;
+  flex-direction: column;
+
+  position: relative;
+
 }
 
+ .cardImg {
+  height: 12rem;
+  width: 12rem;
+  object-fit: cover;
+  padding: 0 1rem;
 
+} 
 .textInCard {
-  margin-top: -14%;
   padding: 0 1rem 1rem;
-  min-height: 25%;
-  width: 100%;
+  margin-top: -1.5rem;
 }
 
 
@@ -25,15 +34,10 @@
   font-weight: 400;
 }
 
-@media (min-width: 700px) {
-  .textInCard  {
-      /* font: 3rem sans-serif; */
-    }
-  }
-  
+
 .productLinks {
   position: absolute;  
-  top: 1rem;
+  top: 0;
   right: 1rem;
 
   display: flex;
@@ -41,7 +45,8 @@
 }
 
 
-.btn.price, .btn.link {
+.root button.btn  {
+  all: unset;
   font-family: 'Quicksand', sans-serif !important;
 
   color: black;
@@ -52,17 +57,14 @@
   letter-spacing: .1rem;
   font-size: .7rem;
   opacity: .75; 
-}
 
-.btn.link {
   text-underline-offset: 1px;
   text-decoration: underline;
   text-decoration-color: rgb(101, 101, 101);
 }
-
-.card:hover .btn.price, 
-.card:hover .btn.link,
-.card:hover .textInCard {
+ 
+ 
+.btn:hover  {
   cursor: pointer;
   opacity: .95; 
   background-color: rgba(255, 255, 255, 0.3);

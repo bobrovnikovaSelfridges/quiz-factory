@@ -4,6 +4,7 @@
 .root {
   width: 75%;
   min-width: 200px;
+  min-height: 28rem;
   height: 100%;
   background-color: white;
   padding: 0 1rem 2rem;

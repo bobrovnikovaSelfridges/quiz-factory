@@ -1,22 +1,27 @@
 import { Description } from "../description/description";
-import { SelectBtn } from "../select-btn/select-btn";
-import s from "./card.modules.css";
-import "swiper/css/keyboard";
-import "swiper/css/lazy";
+import { ImageBtn } from "../select-btn/select-btn";
 import { IRawDataUnit } from "../../store/types";
+import s from "./card.module.css";
 
-type Props = { dataset: [string, IRawDataUnit] };
+type Props = {
+  isDisplayed: boolean;
+  dataset: [string, IRawDataUnit];
+};
+
 export const Card = (props: Props) => {
   const cardData = props.dataset[1];
   return (
-    <>
-      <SelectBtn {...props} />
+    <div
+      style={{
+        display: props.isDisplayed ? "none" : "inherit",
+      }}
+      id={props.dataset[0]}
+      className={s.root}
+    >
+      {/* <ImageBtn /> */}
 
       <div className={s.productLinks}>
-        <button
-          className={(s.btn, s.price)}
-          onClick={() => window.open(cardData.link)}
-        >
+        <button className={s.btn} onClick={() => window.open(cardData.link)}>
           {`${cardData.price}`}
         </button>
 
@@ -24,21 +29,13 @@ export const Card = (props: Props) => {
           {`Shop now`}
         </button>
       </div>
-      <img
-        style={{
-          // each third ?
-          height:
-            // (props.idx && props.idx % 3 === 0) ||
-            cardData.description.length > 64 ? "60%" : "75%",
-        }}
-        src={cardData.img}
-      />
+      <img className={s.cardImg} src={cardData.img} />
 
       <div className={s.textInCard}>
         <div className={s.title}> {cardData.title}</div>
 
         <Description description={cardData.description} classname={s.desc} />
       </div>
-    </>
+    </div>
   );
 };

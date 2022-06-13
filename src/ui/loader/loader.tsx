@@ -1,22 +1,22 @@
 import React from "react";
-import "./loader.css";
-import "swiper/css";
+import s from "./loader.module.css";
 import { CARD_HEIGHT } from "../../services/constants";
 
 type Props = {
-  text?: string;
   img: string;
   isVisible: boolean;
   amount?: number;
 };
-export const Loader: React.FC<Props> = ({
-  text,
-  isVisible,
-  img,
-  amount,
-}: Props) => {
+export const Loader: React.FC<Props> = ({ isVisible, img, amount }: Props) => {
   return isVisible ? (
-    <div className="root">{loadImgs(img, amount)}</div>
+    <div
+      className={s.root}
+      style={{
+        height: isVisible ? "0" : "auto",
+      }}
+    >
+      {loadImgs(img, amount)}
+    </div>
   ) : (
     <></>
   );

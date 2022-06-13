@@ -1,8 +1,21 @@
 .root {
-z-index: 999;
-display: flex; 
+    z-index: 999;
+
+    display: flex; 
+    justify-content: center;    
+    flex-direction: column;
+} 
+
+.cards {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;}
+
+.btnWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 2rem;
 }
 
-.root button:first-child {
-margin-right: 1rem;
-}

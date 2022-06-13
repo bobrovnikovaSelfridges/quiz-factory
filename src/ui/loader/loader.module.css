@@ -5,7 +5,9 @@
     color: #212121;
     box-sizing: border-box;
     pointer-events: none;  
-}
+    height: 0;
+    transition: height 1s ease-in-out;
+  }
 
 .root img {
 
@@ -13,9 +15,11 @@
   height: 7rem;
   padding: .5rem;
    
-  animation-name:  appear, slide;
+  animation-name: appear, slide;
   animation-duration:2s;
+  /* animation-iteration-count: infinite; */
   opacity: 0;
+  overflow: hidden;
 
 }
 
@@ -25,11 +29,11 @@
 
 @keyframes slide {
   from {
-    transform: translateX(0);
+    margin-left: 0;
   }
   to {
-    transform: translateX(200%);
-  }
+    margin-left: calc(100% - 7rem);
+   }
 }
 
 @keyframes appear {
