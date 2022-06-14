@@ -1,6 +1,6 @@
 @import url('../../store/fonts.css');
 
-.card .addToFav  {
+.root {
   position: absolute;
 
   top: 1rem;
@@ -19,22 +19,11 @@
   cursor: pointer;
 }
 
-/* @media (min-width: 700px) {
-  .card {
-
-  }
-  
-} */
-
-
-.card .addToFav:hover {
-opacity: .7;
-}
-.card .addToFav:focus {
+.root:focus {
   transform:  scale(1);
 
   animation-name: beat;
-  animation-duration: 1.5s;
+  animation-duration: 1.25s;
 }
   
 .loaderRoot div{

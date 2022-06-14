@@ -13,19 +13,19 @@ import { getRandomNumber } from "../../helpers/getRandomNumber";
 export const Results = () => {
   const { states, dataset } = useContext(QuizContext);
   const defaultAmount = 5;
-
   const [amountOfShownCards, setAmount] = useState(defaultAmount);
-
   const allKeyWords =
     states.currentSelection.value && getKeyWords(states.currentSelection.value);
   const cards = generateResults(dataset, allKeyWords);
   const cardsData = Object.entries(cards);
-  const randomisedCards = getRandomCards(cardsData, amountOfShownCards);
+
+  const rando = getRandomCards(cardsData);
+  const [randomisedCards] = useState(rando);
+
   return (
     <div className={s.root}>
       <div className={s.cards}>
-        {randomisedCards}
-        {/* {cardsData.map((dataset: [string, IRawDataUnit], idx: number) => {
+        {randomisedCards.map((dataset: [string, IRawDataUnit], idx: number) => {
           return (
             <Card
               isDisplayed={amountOfShownCards <= idx}
@@ -33,7 +33,7 @@ export const Results = () => {
               dataset={dataset}
             />
           );
-        })} */}
+        })}
       </div>
       <div className={s.btnWrap}>
         <Btn
@@ -51,30 +51,22 @@ export const Results = () => {
 };
 
 const getRandomCards = (
-  cardsData: [string, IRawDataUnit][],
-  amountOfShownCards: number
-): React.ReactElement[] => {
-  const nodes: React.ReactElement[] = [];
+  cardsData: [string, IRawDataUnit][]
+): [string, IRawDataUnit][] => {
+  const cards: [string, IRawDataUnit][] = [];
   const usedNumbers: number[] = [];
   let idx = 0;
-  while (idx < 10) {
-    console.log(usedNumbers.length, cardsData.length);
-    // for (const cardValue of cardsData) {
-    const randomID = getRandomNumber(cardsData.length - 1);
-    if (usedNumbers.includes(randomID)) {
+  while (usedNumbers.length !== cardsData.length) {
+    const randomID = getRandomNumber(cardsData.length);
+    if (!usedNumbers.includes(randomID)) {
       const randomCard = cardsData[randomID];
       usedNumbers.push(randomID);
-      nodes.push(
-        <Card
-          isDisplayed={amountOfShownCards <= idx}
-          key={randomCard[0]}
-          dataset={randomCard}
-        />
-      );
+      cards.push(randomCard);
+      idx++;
     }
-    idx++;
   }
-  return nodes;
+
+  return cards;
 };
 
 const generateResults = (
