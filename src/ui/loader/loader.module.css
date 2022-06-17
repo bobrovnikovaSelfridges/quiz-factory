@@ -17,10 +17,7 @@
    
   animation-name: appear, slide;
   animation-duration:2s;
-  /* animation-iteration-count: infinite; */
   opacity: 0;
-  overflow: hidden;
-
 }
 
 .root div{

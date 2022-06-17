@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import { QuizContext } from "../../services/quizContext";
 import s from "./results.module.css";
 import {

@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;700&display=swap');
 
-.root {
-  width: 75%;
+.root { 
   min-width: 200px;
   min-height: 28rem;
   height: 100%;
   background-color: white;
   padding: 0 1rem 2rem;
   margin-top: 8rem;
+
+
+  display: flex;
+  flex-direction: column;
 }
 
 .root h1 {
@@ -16,12 +19,14 @@
 }
 
 .img {
-  object-fit: cover;
-  height: 15rem;
-  margin-top: -8rem;
+  object-fit: contain;
+  height: 15rem;  
+
+  margin-top: -6rem;
   margin-bottom: -1rem;
 
   z-index: 2;
+
 }
 
 .description {
@@ -30,13 +35,13 @@
 }
 
 
-@media (min-width: 700px) {
+@media (min-width: 780px) {
   .img {
-    object-fit: cover;
-    height: 25rem;
-    margin-top: -13rem;
-  
+    height: 20rem; 
     z-index: 2;
+  }
+  .root {
+    width: 60%;
   }
 }
   

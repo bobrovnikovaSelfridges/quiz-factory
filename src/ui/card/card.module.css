@@ -8,12 +8,12 @@
   flex-direction: column;
 
   position: relative;
-  opacity: .8;
+  opacity: .7;
 }
 
 .root:hover {
   cursor: pointer;
-  opacity: 1;
+  opacity: 1 !important;
 }
 
 .cardImg {

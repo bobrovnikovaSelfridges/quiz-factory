@@ -54,7 +54,7 @@ export const quizValues: QuizValues = {
   //   ],
   // },
   // 3: {
-  //   img: question_1,
+  //   img: question_3,
   //   question: "What is one TV series you can watch over and over again?",
   //   options: [
   //     {
@@ -139,9 +139,29 @@ export const configurations: Config = {
     },
   },
 
+  tips: {
+    "LA MOLINA": {
+      text: "",
+      desc: "",
+    },
+
+    "ASK MUMMY AND DADDY": {
+      text: "",
+      desc: "",
+    },
+
+    sweets_15: {
+      text: "",
+      desc: "",
+    },
+  },
+
   quizValues,
 
   colours: {
-    colour1: "#2E2D2B",
+    tip: "#E694A3",
+    mainBtn: "rgb(255,226,85)",
+    tip1: "#2E2D2B",
+    tip2: "#2E2D2B",
   },
 };

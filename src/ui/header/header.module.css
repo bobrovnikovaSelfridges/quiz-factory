@@ -46,7 +46,7 @@
 }
 
 
-@media (min-width: 700px) {
+@media (min-width: 780px) {
   .headerRoot h1  {
     text-transform: unset;
     font-size: 3rem;

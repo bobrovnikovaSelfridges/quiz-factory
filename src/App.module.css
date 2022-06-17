@@ -38,7 +38,7 @@ html {
 z-index: -1;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 780px) {
   .img  {
     max-height: 95vh;
   }

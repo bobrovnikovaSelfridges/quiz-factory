@@ -4,6 +4,7 @@ import { MOBILE_STARTS } from "./services/constants";
 import { QuizContext } from "./services/quizContext";
 import { QuestionBox } from "./ui/question-box/question-box";
 import { QuizContextType } from "./store/types";
+import "bootstrap/dist/css/bootstrap.min.css";
 import s from "./App.module.css";
 
 const App: React.FunctionComponent = () => {

@@ -22,6 +22,7 @@ export type Config = {
       result: string;
     };
   };
+  tips: Tips;
 
   images: {
     background: { desktop: string; mobile: string; result: string };
@@ -29,13 +30,27 @@ export type Config = {
     loader: string;
   };
   quizValues: QuizValues;
-  colours: any;
+  colours: {
+    tip: string;
+    mainBtn: string;
+    tip1: string;
+    tip2: string;
+  };
 };
 
 export type OptionType = {
   option: string;
   point: number;
   keyWords: string[];
+};
+
+export type Tips = {
+  [name: string]: Tip;
+};
+
+export type Tip = {
+  text: string;
+  desc: string;
 };
 
 export type QuizValues = {

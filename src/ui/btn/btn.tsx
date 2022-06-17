@@ -1,4 +1,5 @@
 import classNames from "classnames";
+import { Button } from "react-bootstrap";
 import s from "./btn.module.css";
 
 type Props = {
@@ -19,18 +20,19 @@ export const Btn = ({
   isSelected,
 }: Props): JSX.Element => {
   return (
-    <button
-      disabled={disabled}
+    <Button
       style={{
         width: `${settings?.width}px`,
         height: `${settings?.height}px`,
         backgroundColor: settings?.colour,
       }}
-      onClick={onClick}
       className={classNames(s.root, isSelected && s.selected)}
+      onClick={onClick}
+      href="#"
+      disabled={disabled}
     >
       {text}
       {children}
-    </button>
+    </Button>
   );
 };

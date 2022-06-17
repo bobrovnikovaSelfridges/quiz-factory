@@ -1,8 +1,11 @@
 import { Description } from "../description/description";
 import { ImageBtn } from "../select-btn/select-btn";
-import { IRawDataUnit } from "../../store/types";
+import { IRawDataUnit, Tip as TipType } from "../../store/types";
+import { configurations } from "../../dev/config";
+
 import s from "./card.module.css";
 import { useState } from "react";
+import { Tip } from "../tip/tip";
 
 type Props = {
   isDisplayed: boolean;
@@ -12,6 +15,7 @@ type Props = {
 export const Card = (props: Props) => {
   const [isSelected, setSelection] = useState(false);
   const cardData = props.dataset[1];
+  const tip = findTip(cardData.id);
   return (
     <div
       style={{
@@ -21,6 +25,7 @@ export const Card = (props: Props) => {
       id={props.dataset[0]}
       className={s.root}
     >
+      {tip && <Tip tip={tip} />}
       <ImageBtn selectionSettings={{ isSelected, setSelection }} />
 
       <div className={s.productLinks}>
@@ -40,5 +45,13 @@ export const Card = (props: Props) => {
         <Description description={cardData.description} classname={s.desc} />
       </div>
     </div>
+  );
+};
+
+const findTip = (id: string) => {
+  return Object.entries(configurations.tips).find(
+    (value: [string, TipType]) => {
+      return value[0] === id;
+    }
   );
 };

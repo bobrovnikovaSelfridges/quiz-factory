@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
-  .root  {
+  .root   {
     font-family: 'Quicksand', sans-serif !important;
     display:flex;
     flex-direction: column;
@@ -18,18 +18,15 @@
     padding: 10px 15px ;
     background: none ;
     margin-bottom: 1rem;
-    color: black !important;
+    color: black;
     border: unset;
-    background-color:  rgb(255,226,85) !important;
- 
-    gap: 1rem
+    background-color:   rgb(255,226,85);
   }
-
-
+  
+  
     .root:hover {
-opacity: .7;    
-   color: black;
-      }
+        background-color: rgb(248, 217, 65);
+    }
   
 
    .root:disabled {
