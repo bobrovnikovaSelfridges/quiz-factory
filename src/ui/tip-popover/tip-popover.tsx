@@ -1,7 +1,4 @@
-import { useState } from "react";
 import { Popover } from "react-bootstrap";
-import { configurations } from "../../dev/config";
-import { Tip as TipType } from "../../store/types";
 import { Description } from "../description/description";
 // import s from "./tip-popover.module.css";
 

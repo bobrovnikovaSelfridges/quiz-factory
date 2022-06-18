@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { removeDuplicates } from "../../helpers/remove-duplicates";
 import { QuizContext } from "../../services/quizContext";
 import {
   Config,
@@ -23,19 +24,10 @@ export const QuestionBox = () => {
     configurations.quizValues[states.pageNumber.value + 1];
   const isFirstPage = 1 === states.pageNumber.value + 1;
 
-  let allKeyWords: string[] = [];
   const [showResults, setShownResults] = React.useState(false);
-  Object.values(configurations.quizValues).forEach(
-    (question: QuizValueType) => {
-      question.options.forEach((option: OptionType) =>
-        option.keyWords.forEach((keyWordsUnit: string) => {
-          if (!allKeyWords.includes(keyWordsUnit)) {
-            allKeyWords.push(keyWordsUnit);
-          }
-        })
-      );
-    }
-  );
+
+  const formattedData = removeDuplicates();
+
   React.useEffect(() => {
     if (endOfQuiz) {
       setTimeout(() => {

@@ -44,13 +44,12 @@ export type OptionType = {
   keyWords: string[];
 };
 
-export type Tips = {
-  [name: string]: Tip;
-};
+export type Tips = Array<Tip>;
 
 export type Tip = {
   text: string;
   desc: string;
+  keyWords: string[];
 };
 
 export type QuizValues = {

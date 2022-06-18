@@ -31,7 +31,7 @@ export const mocks: {
   ],
   SELFRIDGES_SELECTION: [
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Fathers Day gift box",
       img: "https://images.selfridges.com/is/image/selfridges/R03938626_ALT10?defaultImage=R03938626_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-fathers-day-gift-box_R03938626/",
@@ -39,7 +39,7 @@ export const mocks: {
       id: "SELFRIDGES_SELECTION_0",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "With Love gift box",
       img: "https://images.selfridges.com/is/image/selfridges/R03934146_ALT10?defaultImage=R03934146_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-with-love-gift-box_R03934146/",
@@ -47,7 +47,7 @@ export const mocks: {
       id: "SELFRIDGES_SELECTION_1",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "The Jubilee hamper",
       img: "https://images.selfridges.com/is/image/selfridges/R03938625_ALT10?defaultImage=R03938625_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-the-jubilee-hamper_R03938625/",
@@ -55,7 +55,7 @@ export const mocks: {
       id: "SELFRIDGES_SELECTION_2",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Birthday Extravaganza hamper",
       img: "https://images.selfridges.com/is/image/selfridges/R03930084_ALT10?defaultImage=R03930084_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-birthday-extravaganza-hamper_R03930084/",
@@ -63,7 +63,7 @@ export const mocks: {
       id: "SELFRIDGES_SELECTION_3",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Birthday Treat gift box",
       img: "https://images.selfridges.com/is/image/selfridges/R03941645_ALT10?defaultImage=R03941645_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-birthday-treat-gift-box_R03941645/",
@@ -71,7 +71,7 @@ export const mocks: {
       id: "SELFRIDGES_SELECTION_4",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Old World Wine gift box",
       img: "https://images.selfridges.com/is/image/selfridges/R03821098_ALT10?defaultImage=R03821098_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-old-world-wine-gift-box_R03821098/",
@@ -79,7 +79,7 @@ export const mocks: {
       id: "SELFRIDGES_SELECTION_5",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "The Pantry Picnic Selection gift box",
       img: "https://images.selfridges.com/is/image/selfridges/R03931542_ALT10?defaultImage=R03931542_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-the-pantry-picnic-selection-gift-box_R03931542/",
@@ -87,7 +87,7 @@ export const mocks: {
       id: "SELFRIDGES_SELECTION_6",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Champagne and chocolates gift box",
       img: "https://images.selfridges.com/is/image/selfridges/R03821088_ALT10?defaultImage=R03821088_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-champagne-and-chocolates-gift-box_R03821088/",
@@ -95,7 +95,7 @@ export const mocks: {
       id: "SELFRIDGES_SELECTION_7",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Truffle Lover gift box",
       img: "https://images.selfridges.com/is/image/selfridges/R03913716_ALT10?defaultImage=R03913716_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-truffle-lover-gift-box_R03913716/",
@@ -103,7 +103,7 @@ export const mocks: {
       id: "SELFRIDGES_SELECTION_8",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Brand New Home hamper",
       img: "https://images.selfridges.com/is/image/selfridges/R03940597_ALT10?defaultImage=R03940597_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-brand-new-home-hamper_R03940597/",
@@ -111,7 +111,7 @@ export const mocks: {
       id: "SELFRIDGES_SELECTION_9",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Best Of Selfridges hamper",
       img: "https://images.selfridges.com/is/image/selfridges/R03656766_ALT10?defaultImage=R03656766_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-best-of-selfridges-hamper_R03656766/",
@@ -119,7 +119,7 @@ export const mocks: {
       id: "SELFRIDGES_SELECTION_10",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Organic Wine gift box",
       img: "https://images.selfridges.com/is/image/selfridges/R03821100_ALT10?defaultImage=R03821100_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-organic-wine-gift-box_R03821100/",
@@ -127,7 +127,7 @@ export const mocks: {
       id: "SELFRIDGES_SELECTION_11",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Italian Pantry Essentials hamper",
       img: "https://images.selfridges.com/is/image/selfridges/R03913717_ALT10?defaultImage=R03913717_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-italian-pantry-essentials-hamper_R03913717/",
@@ -135,7 +135,7 @@ export const mocks: {
       id: "SELFRIDGES_SELECTION_12",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Esprit Brut NV champagne 750ml",
       img: "https://images.selfridges.com/is/image/selfridges/414-3001526-SELFBRUT_ALT10?defaultImage=414-3001526-SELFBRUT_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-esprit-brut-nv-champagne-750ml_414-3001526-SELFBRUT/",
@@ -143,7 +143,7 @@ export const mocks: {
       id: "SELFRIDGES_SELECTION_13",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Prosecco 750ml",
       img: "https://images.selfridges.com/is/image/selfridges/414-3001198-SELFPROSEC_ALT10?defaultImage=414-3001198-SELFPROSEC_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-prosecco-750ml_414-3001198-SELFPROSEC/",
@@ -159,7 +159,7 @@ export const mocks: {
       id: "SELFRIDGES_SELECTION_15",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Malbec 750ml",
       img: "https://images.selfridges.com/is/image/selfridges/414-2001392-SOLM10_ALT10?defaultImage=414-2001392-SOLM10_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-malbec-750ml_414-2001392-SOLM10/",
@@ -167,7 +167,7 @@ export const mocks: {
       id: "SELFRIDGES_SELECTION_16",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Traditional rich fruit cake 450g",
       img: "https://images.selfridges.com/is/image/selfridges/R03774730_ALT10?defaultImage=R03774730_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-traditional-rich-fruit-cake-450g_R03774730/",
@@ -175,7 +175,7 @@ export const mocks: {
       id: "SELFRIDGES_SELECTION_17",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Traditional shortbread petticoat tails 340g",
       img: "https://images.selfridges.com/is/image/selfridges/R03774731_ALT10?defaultImage=R03774731_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-traditional-shortbread-petticoat-tails-340g_R03774731/",
@@ -183,7 +183,7 @@ export const mocks: {
       id: "SELFRIDGES_SELECTION_18",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Vegan Organic Red 750ml",
       img: "https://images.selfridges.com/is/image/selfridges/R00123386_ALT10?defaultImage=R00123386_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-vegan-organic-red-750ml_R00123386/",
@@ -191,7 +191,7 @@ export const mocks: {
       id: "SELFRIDGES_SELECTION_19",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Logo-embroidered wicker hamper basket 60cm",
       img: "https://images.selfridges.com/is/image/selfridges/R03769346_ALT10?defaultImage=R03769346_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-logo-embroidered-wicker-hamper-basket-60cm_R03769346/",
@@ -208,7 +208,7 @@ export const mocks: {
       id: "SELFRIDGES_SELECTION_21",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "New Zealand Manuka honey 227g",
       img: "https://images.selfridges.com/is/image/selfridges/R03884267_ALT10?defaultImage=R03884267_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-new-zealand-manuka-honey-227g_R03884267/",
@@ -216,7 +216,7 @@ export const mocks: {
       id: "SELFRIDGES_SELECTION_22",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Hand-cut Ling Heather honeycomb 227g",
       img: "https://images.selfridges.com/is/image/selfridges/R03884268_ALT10?defaultImage=R03884268_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-hand-cut-ling-heather-honeycomb-227g_R03884268/",
@@ -224,7 +224,7 @@ export const mocks: {
       id: "SELFRIDGES_SELECTION_23",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Traditional tea trio 111g",
       img: "https://images.selfridges.com/is/image/selfridges/R03896357_ALT10?defaultImage=R03896357_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-traditional-tea-trio-111g_R03896357/",
@@ -240,7 +240,7 @@ export const mocks: {
       id: "SELFRIDGES_SELECTION_25",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "All-butter shortbread tin 250g",
       img: "https://images.selfridges.com/is/image/selfridges/R03738485_ALT10?defaultImage=R03738485_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-all-butter-shortbread-tin-250g_R03738485/",
@@ -248,7 +248,7 @@ export const mocks: {
       id: "SELFRIDGES_SELECTION_26",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Traditional strawberry shortbread 250g",
       img: "https://images.selfridges.com/is/image/selfridges/R03738490_ALT10?defaultImage=R03738490_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-traditional-strawberry-shortbread-250g_R03738490/",
@@ -256,7 +256,7 @@ export const mocks: {
       id: "SELFRIDGES_SELECTION_27",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "25-piece chocolate selection box 320g",
       img: "https://images.selfridges.com/is/image/selfridges/R03808106_ALT10?defaultImage=R03808106_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-25-piece-chocolate-selection-box-320g_R03808106/",
@@ -272,7 +272,7 @@ export const mocks: {
       id: "SELFRIDGES_SELECTION_29",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "British honey trio 3x90g",
       img: "https://images.selfridges.com/is/image/selfridges/569-3001655-HONTRIO_ALT10?defaultImage=569-3001655-HONTRIO_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-british-honey-trio-3x90g_569-3001655-HONTRIO/",
@@ -280,7 +280,7 @@ export const mocks: {
       id: "SELFRIDGES_SELECTION_30",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "British Heather honey 227g",
       img: "https://images.selfridges.com/is/image/selfridges/569-3001655-HEATHER_ALT10?defaultImage=569-3001655-HEATHER_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-british-heather-honey-227g_569-3001655-HEATHER/",
@@ -288,7 +288,7 @@ export const mocks: {
       id: "SELFRIDGES_SELECTION_31",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Limited-edition Honduras coffee beans 250g",
       img: "https://images.selfridges.com/is/image/selfridges/R03884429_ALT10?defaultImage=R03884429_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-limited-edition-honduras-coffee-beans-250g_R03884429/",
@@ -296,7 +296,7 @@ export const mocks: {
       id: "SELFRIDGES_SELECTION_32",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Limited-edition Kenyan coffee beans 250g",
       img: "https://images.selfridges.com/is/image/selfridges/R03884430_ALT10?defaultImage=R03884430_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-limited-edition-kenyan-coffee-beans-250g_R03884430/",
@@ -304,7 +304,7 @@ export const mocks: {
       id: "SELFRIDGES_SELECTION_33",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Vegan Organic rosé 750ml",
       img: "https://images.selfridges.com/is/image/selfridges/R00123387_ALT10?defaultImage=R00123387_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-vegan-organic-ros-750ml_R00123387/",
@@ -312,7 +312,7 @@ export const mocks: {
       id: "SELFRIDGES_SELECTION_34",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "New Discoveries mixed wine case 6x750ml",
       img: "https://images.selfridges.com/is/image/selfridges/R03930506_ALT10?defaultImage=R03930506_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-new-discoveries-mixed-wine-case-6x750ml_R03930506/",
@@ -320,7 +320,7 @@ export const mocks: {
       id: "SELFRIDGES_SELECTION_35",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Italian Nocellara Belice olives 510g",
       img: "https://images.selfridges.com/is/image/selfridges/R03841873_ALT10?defaultImage=R03841873_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-italian-nocellara-belice-olives-510g_R03841873/",
@@ -328,7 +328,7 @@ export const mocks: {
       id: "SELFRIDGES_SELECTION_36",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Greek Kalamata olives 485g",
       img: "https://images.selfridges.com/is/image/selfridges/R03841874_ALT10?defaultImage=R03841874_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-greek-kalamata-olives-485g_R03841874/",
@@ -336,7 +336,7 @@ export const mocks: {
       id: "SELFRIDGES_SELECTION_37",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Artichokes in olive oil 485g",
       img: "https://images.selfridges.com/is/image/selfridges/R03841875_ALT10?defaultImage=R03841875_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-artichokes-in-olive-oil-485g_R03841875/",
@@ -344,7 +344,7 @@ export const mocks: {
       id: "SELFRIDGES_SELECTION_38",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Italian Thick & Indulgent hot chocolate carton 250g",
       img: "https://images.selfridges.com/is/image/selfridges/569-2001083-SSITALIANTHICKHOTCHOCCART_ALT10?defaultImage=569-2001083-SSITALIANTHICKHOTCHOCCART_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-italian-thick-indulgent-hot-chocolate-carton-250g_569-2001083-SSITALIANTHICKHOTCHOCCART/",
@@ -352,7 +352,7 @@ export const mocks: {
       id: "SELFRIDGES_SELECTION_39",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Artisan extra virgin olive oil of Tuscany 500ml",
       img: "https://images.selfridges.com/is/image/selfridges/569-83023464-SSOLIVEOILCERAMIC_ALT10?defaultImage=569-83023464-SSOLIVEOILCERAMIC_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-artisan-extra-virgin-olive-oil-of-tuscany-500ml_569-83023464-SSOLIVEOILCERAMIC/",
@@ -384,7 +384,7 @@ export const mocks: {
       id: "SELFRIDGES_SELECTION_43",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Traditional English Breakfast tea caddy 37g",
       img: "https://images.selfridges.com/is/image/selfridges/R03827632_ALT10?defaultImage=R03827632_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-traditional-english-breakfast-tea-caddy-37g_R03827632/",
@@ -408,7 +408,7 @@ export const mocks: {
       id: "SELFRIDGES_SELECTION_46",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Mini Curd Trio 3x115g",
       img: "https://images.selfridges.com/is/image/selfridges/R02173511_ALT10?defaultImage=R02173511_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-mini-curd-trio-3x115g_R02173511/",
@@ -416,7 +416,7 @@ export const mocks: {
       id: "SELFRIDGES_SELECTION_47",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "British Preserve Trio 110g",
       img: "https://images.selfridges.com/is/image/selfridges/569-87032910-SSMINIPRESERVETRIO_ALT10?defaultImage=569-87032910-SSMINIPRESERVETRIO_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-british-preserve-trio-110g_569-87032910-SSMINIPRESERVETRIO/",
@@ -424,7 +424,7 @@ export const mocks: {
       id: "SELFRIDGES_SELECTION_48",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Salted caramel shortbread tin 250g",
       img: "https://images.selfridges.com/is/image/selfridges/R03738491_ALT10?defaultImage=R03738491_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-salted-caramel-shortbread-tin-250g_R03738491/",
@@ -432,7 +432,7 @@ export const mocks: {
       id: "SELFRIDGES_SELECTION_49",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Stem ginger shortbread tin 250g",
       img: "https://images.selfridges.com/is/image/selfridges/R03738489_ALT10?defaultImage=R03738489_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-stem-ginger-shortbread-tin-250g_R03738489/",
@@ -448,7 +448,7 @@ export const mocks: {
       id: "SELFRIDGES_SELECTION_51",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Hazelnut and Cocoa Butter 170g",
       img: "https://images.selfridges.com/is/image/selfridges/R03753754_ALT10?defaultImage=R03753754_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-hazelnut-and-cocoa-butter-170g_R03753754/",
@@ -472,7 +472,7 @@ export const mocks: {
       id: "SELFRIDGES_SELECTION_54",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Heather honeycomb starflower honey 900g",
       img: "https://images.selfridges.com/is/image/selfridges/569-3003551-SSHONEYCOMB_ALT10?defaultImage=569-3003551-SSHONEYCOMB_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-heather-honeycomb-starflower-honey-900g_569-3003551-SSHONEYCOMB/",
@@ -488,7 +488,7 @@ export const mocks: {
       id: "SELFRIDGES_SELECTION_56",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Salted truffle roasted nuts 150g",
       img: "https://images.selfridges.com/is/image/selfridges/R03841876_ALT10?defaultImage=R03841876_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-salted-truffle-roasted-nuts-150g_R03841876/",
@@ -496,7 +496,7 @@ export const mocks: {
       id: "SELFRIDGES_SELECTION_57",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Pink Shimmering Marc de Champagne truffles 9 pieces 105g",
       img: "https://images.selfridges.com/is/image/selfridges/R03808104_ALT10?defaultImage=R03808104_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-pink-shimmering-marc-de-champagne-truffles-9-pieces-105g_R03808104/",
@@ -522,7 +522,7 @@ export const mocks: {
       id: "british_0",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Heather honeycomb starflower honey 900g",
       img: "https://images.selfridges.com/is/image/selfridges/569-3003551-SSHONEYCOMB_ALT10?defaultImage=569-3003551-SSHONEYCOMB_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-heather-honeycomb-starflower-honey-900g_569-3003551-SSHONEYCOMB/",
@@ -812,7 +812,7 @@ export const mocks: {
       id: "british_36",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Traditional strawberry shortbread 250g",
       img: "https://images.selfridges.com/is/image/selfridges/R03738490_ALT10?defaultImage=R03738490_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-traditional-strawberry-shortbread-250g_R03738490/",
@@ -2014,7 +2014,7 @@ export const mocks: {
       id: "cookie_2",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "All-butter shortbread tin 250g",
       img: "https://images.selfridges.com/is/image/selfridges/R03738485_ALT10?defaultImage=R03738485_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-all-butter-shortbread-tin-250g_R03738485/",
@@ -2022,7 +2022,7 @@ export const mocks: {
       id: "cookie_3",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Traditional strawberry shortbread 250g",
       img: "https://images.selfridges.com/is/image/selfridges/R03738490_ALT10?defaultImage=R03738490_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-traditional-strawberry-shortbread-250g_R03738490/",
@@ -2134,7 +2134,7 @@ export const mocks: {
       id: "cookie_17",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Salted caramel shortbread tin 250g",
       img: "https://images.selfridges.com/is/image/selfridges/R03738491_ALT10?defaultImage=R03738491_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-salted-caramel-shortbread-tin-250g_R03738491/",
@@ -2142,7 +2142,7 @@ export const mocks: {
       id: "cookie_18",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "All-butter shortbread bites 250g",
       img: "https://images.selfridges.com/is/image/selfridges/569-3003735-SS008G_ALT10?defaultImage=569-3003735-SS008G_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-all-butter-shortbread-bites-250g_569-3003735-SS008G/",
@@ -2150,7 +2150,7 @@ export const mocks: {
       id: "cookie_19",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Chocolate shortbread mini bites 100g",
       img: "https://images.selfridges.com/is/image/selfridges/569-3003735-SS009G_ALT10?defaultImage=569-3003735-SS009G_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-chocolate-shortbread-mini-bites-100g_569-3003735-SS009G/",
@@ -2158,7 +2158,7 @@ export const mocks: {
       id: "cookie_20",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Parmesan & Garlic savoury biscuits 150g",
       img: "https://images.selfridges.com/is/image/selfridges/R03794093_ALT10?defaultImage=R03794093_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-parmesan-garlic-savoury-biscuits-150g_R03794093/",
@@ -2166,7 +2166,7 @@ export const mocks: {
       id: "cookie_21",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Traditional salted caramel shortbread bites 250g",
       img: "https://images.selfridges.com/is/image/selfridges/R03774734_ALT10?defaultImage=R03774734_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-traditional-salted-caramel-shortbread-bites-250g_R03774734/",
@@ -2238,7 +2238,7 @@ export const mocks: {
       id: "cookie_30",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Demerara sugar shortbread tin 250g",
       img: "https://images.selfridges.com/is/image/selfridges/R03738486_ALT10?defaultImage=R03738486_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-demerara-sugar-shortbread-tin-250g_R03738486/",
@@ -2254,7 +2254,7 @@ export const mocks: {
       id: "cookie_32",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Rich chocolate shortbread tin 250g",
       img: "https://images.selfridges.com/is/image/selfridges/R03738488_ALT10?defaultImage=R03738488_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-rich-chocolate-shortbread-tin-250g_R03738488/",
@@ -2350,7 +2350,7 @@ export const mocks: {
       id: "cookie_44",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Stem ginger shortbread tin 250g",
       img: "https://images.selfridges.com/is/image/selfridges/R03738489_ALT10?defaultImage=R03738489_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-stem-ginger-shortbread-tin-250g_R03738489/",
@@ -2472,7 +2472,7 @@ export const mocks: {
   ],
   sweets: [
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Traditional Classic Vanilla Fudge 180g",
       img: "https://images.selfridges.com/is/image/selfridges/R02043311_ALT10?defaultImage=R02043311_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-traditional-classic-vanilla-fudge-180g_R02043311/",
@@ -2480,7 +2480,7 @@ export const mocks: {
       id: "sweets_0",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Pecan nut brittle 175g",
       img: "https://images.selfridges.com/is/image/selfridges/349-3003093-FUDG000033_ALT10?defaultImage=349-3003093-FUDG000033_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-pecan-nut-brittle-175g_349-3003093-FUDG000033/",
@@ -2959,15 +2959,15 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/R03788461_ALT10?defaultImage=R03788461_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/lindt-milk-chocolatenbspand-hazelnut-praline-golf-balls-110g_R03788461/",
       price: "£5.99",
-      id: "chocolate gift_0",
+      id: "choc_gift_0",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Champagne and chocolates gift box",
       img: "https://images.selfridges.com/is/image/selfridges/R03821088_ALT10?defaultImage=R03821088_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-champagne-and-chocolates-gift-box_R03821088/",
       price: "£70.00",
-      id: "chocolate gift_1",
+      id: "choc_gift_1",
     },
     {
       title: "CHOC ON CHOC",
@@ -2975,7 +2975,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/409-3005629-CM265_ALT10?defaultImage=409-3005629-CM265_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/choc-on-choc-chocolate-ice-lollies-box-of-four-185g_409-3005629-CM265/",
       price: "£11.99",
-      id: "chocolate gift_2",
+      id: "choc_gift_2",
     },
     {
       title: "HOLDSWORTH",
@@ -2983,7 +2983,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/409-84019581-HC111_ALT10?defaultImage=409-84019581-HC111_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/holdsworth-the-union-jack-assorted-chocolates-box-200g_409-84019581-HC111/",
       price: "£14.99",
-      id: "chocolate gift_3",
+      id: "choc_gift_3",
     },
     {
       title: "CHOC ON CHOC",
@@ -2991,7 +2991,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/409-3005629-CM208_ALT10?defaultImage=409-3005629-CM208_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/choc-on-choc-white-chocolate-strawberry-punnet-6-pieces_409-3005629-CM208/",
       price: "£8.99",
-      id: "chocolate gift_4",
+      id: "choc_gift_4",
     },
     {
       title: "NEUHAUS",
@@ -2999,7 +2999,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/R03921616_ALT10?defaultImage=R03921616_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/neuhaus-spring-assorted-chocolate-box-160g_R03921616/",
       price: "£13.25",
-      id: "chocolate gift_5",
+      id: "choc_gift_5",
     },
     {
       title: "ORGANIC ZOO",
@@ -3007,7 +3007,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/R03804986_MULTI_ALT10?defaultImage=R03804986_MULTI_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/organic-zoo-milk-chocolate-organic-cotton-playsuit-gift-set-0-3-months_R03804986/#colour=MULTI",
       price: "£75.00",
-      id: "chocolate gift_6",
+      id: "choc_gift_6",
     },
     {
       title: "VENCHI",
@@ -3015,7 +3015,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/R03953330_ALT10?defaultImage=R03953330_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/venchi-garden-heart-assorted-chocolate-selection-gift-box-230g_R03953330/",
       price: "£28.99",
-      id: "chocolate gift_7",
+      id: "choc_gift_7",
     },
     {
       title: "ROCOCO",
@@ -3023,7 +3023,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/409-85076252-120690_ALT10?defaultImage=409-85076252-120690_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/rococo-chocolate-praline-quail-eggs-200g_409-85076252-120690/",
       price: "£11.99",
-      id: "chocolate gift_8",
+      id: "choc_gift_8",
     },
     {
       title: "CHOC ON CHOC",
@@ -3031,7 +3031,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/409-3005629-M5_ALT10?defaultImage=409-3005629-M5_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/choc-on-choc-chocolate-sushi-120g_409-3005629-M5/",
       price: "£9.99",
-      id: "chocolate gift_9",
+      id: "choc_gift_9",
     },
     {
       title: "NEUHAUS",
@@ -3039,7 +3039,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/R03929866_ALT10?defaultImage=R03929866_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/neuhaus-almond-paste-chocolate-egg-500g_R03929866/",
       price: "£28.00",
-      id: "chocolate gift_10",
+      id: "choc_gift_10",
     },
     {
       title: "HOLDSWORTH",
@@ -3047,7 +3047,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/R03938598_ALT10?defaultImage=R03938598_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/holdsworth-the-platinum-collection-110g_R03938598/",
       price: "£10.99",
-      id: "chocolate gift_11",
+      id: "choc_gift_11",
     },
     {
       title: "HOUSE OF DORCHESTER",
@@ -3055,7 +3055,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/409-88017141-0136HODBC18_ALT10?defaultImage=409-88017141-0136HODBC18_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/house-of-dorchester-british-selection-assorted-chocolates-box-of-6_409-88017141-0136HODBC18/",
       price: "£7.99",
-      id: "chocolate gift_12",
+      id: "choc_gift_12",
     },
     {
       title: "CHARBONNEL ET WALKER",
@@ -3064,15 +3064,15 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/554-3002394-1344_ALT10?defaultImage=554-3002394-1344_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/charbonnel-et-walker-marc-de-champagne-milk-dark-and-pink-chocolate-truffles-gift-set-132g_554-3002394-1344/",
       price: "£26.99",
-      id: "chocolate gift_13",
+      id: "choc_gift_13",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Milk Chocolate Covered Pistachios 125g",
       img: "https://images.selfridges.com/is/image/selfridges/349-3004010-CHOCOLATEPISTACHIOS_ALT10?defaultImage=349-3004010-CHOCOLATEPISTACHIOS_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-milk-chocolate-covered-pistachios-125g_349-3004010-CHOCOLATEPISTACHIOS/",
       price: "£9.99",
-      id: "chocolate gift_14",
+      id: "choc_gift_14",
     },
     {
       title: "HOLDSWORTH",
@@ -3080,7 +3080,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/409-84019581-BHAC215_ALT10?defaultImage=409-84019581-BHAC215_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/holdsworth-dark-chocolate-heaven-assortment-160g_409-84019581-BHAC215/",
       price: "£12.99",
-      id: "chocolate gift_15",
+      id: "choc_gift_15",
     },
     {
       title: "LE CHOCOLAT DES FRANCAIS",
@@ -3088,7 +3088,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/R03942705_ALT10?defaultImage=R03942705_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/le-chocolat-des-francais-london-edition-salted-caramel-milk-chocolate-bar-80g_R03942705/",
       price: "£5.99",
-      id: "chocolate gift_16",
+      id: "choc_gift_16",
     },
     {
       title: "JELLY BELLY",
@@ -3096,7 +3096,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/409-72057092-66265_ALT10?defaultImage=409-72057092-66265_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/jelly-belly-harry-potter-chocolate-frog-15g_409-72057092-66265/",
       price: "£5.49",
-      id: "chocolate gift_17",
+      id: "choc_gift_17",
     },
     {
       title: "VENCHI",
@@ -3104,7 +3104,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/R03710047_ALT10?defaultImage=R03710047_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/venchi-garden-cremini-gift-box-127g_R03710047/",
       price: "£16.99",
-      id: "chocolate gift_18",
+      id: "choc_gift_18",
     },
     {
       title: "CHOC ON CHOC",
@@ -3112,7 +3112,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/409-3005629-CM201_ALT10?defaultImage=409-3005629-CM201_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/choc-on-choc-five-a-day-chocolate-set-115g_409-3005629-CM201/",
       price: "£9.99",
-      id: "chocolate gift_19",
+      id: "choc_gift_19",
     },
     {
       title: "CAFFAREL",
@@ -3120,7 +3120,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/409-73059994-71636_ALT10?defaultImage=409-73059994-71636_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/caffarel-gianduia-1865-gianduja-chocolate-hazelnut-pralines-100g_409-73059994-71636/",
       price: "£8.99",
-      id: "chocolate gift_20",
+      id: "choc_gift_20",
     },
     {
       title: "FARHI",
@@ -3128,7 +3128,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/409-2001549-TRM4452AR_ALT10?defaultImage=409-2001549-TRM4452AR_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/farhi-chocolate-almond-assortment_409-2001549-TRM4452AR/",
       price: "£7.99",
-      id: "chocolate gift_21",
+      id: "choc_gift_21",
     },
     {
       title: "CHOC ON CHOC",
@@ -3136,7 +3136,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/409-3005629-CCL_ALT10?defaultImage=409-3005629-CCL_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/choc-on-choc-chocolate-cocktail-lollies-320g_409-3005629-CCL/",
       price: "£18.99",
-      id: "chocolate gift_22",
+      id: "choc_gift_22",
     },
     {
       title: "NEUHAUS",
@@ -3144,7 +3144,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/R03921610_ALT10?defaultImage=R03921610_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/neuhaus-chocolate-assortment-tin-200g_R03921610/",
       price: "£11.75",
-      id: "chocolate gift_23",
+      id: "choc_gift_23",
     },
     {
       title: "CHOC ON CHOC",
@@ -3152,7 +3152,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/409-3005629-C846_ALT10?defaultImage=409-3005629-C846_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/choc-on-choc-tennis-ball-shaped-chocolates-box-of-two_409-3005629-C846/",
       price: "£11.99",
-      id: "chocolate gift_24",
+      id: "choc_gift_24",
     },
     {
       title: "FARHI",
@@ -3160,7 +3160,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/409-2001549-TRM1218A_ALT10?defaultImage=409-2001549-TRM1218A_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/farhi-chocolate-raisins-mix-250g_409-2001549-TRM1218A/",
       price: "£5.99",
-      id: "chocolate gift_25",
+      id: "choc_gift_25",
     },
     {
       title: "LE CHOCOLAT DES FRANCAIS",
@@ -3168,7 +3168,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/R03942704_ALT10?defaultImage=R03942704_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/le-chocolat-des-francais-41-milk-chocolate-bar-80g_R03942704/",
       price: "£5.99",
-      id: "chocolate gift_26",
+      id: "choc_gift_26",
     },
     {
       title: "CHARBONNEL ET WALKER",
@@ -3176,7 +3176,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/R03938597_ALT10?defaultImage=R03938597_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/charbonnel-et-walker-platinum-jubilee-salted-caramel-truffle-trio-144g_R03938597/",
       price: "£29.99",
-      id: "chocolate gift_27",
+      id: "choc_gift_27",
     },
     {
       title: "REESE'S",
@@ -3184,7 +3184,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/409-3005976-863_ALT10?defaultImage=409-3005976-863_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/reeses-peanut-butter-hamper-box-350g_409-3005976-863/",
       price: "£19.99",
-      id: "chocolate gift_28",
+      id: "choc_gift_28",
     },
     {
       title: "ROCOCO",
@@ -3192,7 +3192,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/409-85076252-120700_ALT10?defaultImage=409-85076252-120700_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/rococo-salted-caramel-seagull-eggs-200g_409-85076252-120700/",
       price: "£11.99",
-      id: "chocolate gift_29",
+      id: "choc_gift_29",
     },
     {
       title: "COCO CHOCOLATIER",
@@ -3201,7 +3201,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/R03952838_ALT10?defaultImage=R03952838_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/coco-chocolatier-talisker-collection-whisky-and-sea-salted-caramel-chocolatesnbsp350g_R03952838/",
       price: "£19.99",
-      id: "chocolate gift_30",
+      id: "choc_gift_30",
     },
     {
       title: "THE EAST INDIA COMPANY",
@@ -3209,7 +3209,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/409-3002110-FGCH12106_ALT10?defaultImage=409-3002110-FGCH12106_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/the-east-india-company-dark-chocolate-ginger-175g_409-3002110-FGCH12106/",
       price: "£15.99",
-      id: "chocolate gift_31",
+      id: "choc_gift_31",
     },
     {
       title: "THE EAST INDIA COMPANY",
@@ -3217,7 +3217,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/409-3002110-FGCH12105_ALT10?defaultImage=409-3002110-FGCH12105_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/the-east-india-company-dark-chocolate-espresso-beans-200g_409-3002110-FGCH12105/",
       price: "£14.99",
-      id: "chocolate gift_32",
+      id: "choc_gift_32",
     },
     {
       title: "FUDGE KITCHEN",
@@ -3225,7 +3225,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/409-3003093-2573_ALT10?defaultImage=409-3003093-2573_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/fudge-kitchen-traditional-british-fudge-125g_409-3003093-2573/",
       price: "£6.49",
-      id: "chocolate gift_33",
+      id: "choc_gift_33",
     },
     {
       title: "LA MOLINA",
@@ -3233,7 +3233,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/409-3005977-69_ALT10?defaultImage=409-3005977-69_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/la-molina-milk-chocolate-hazelnut-dragees-250g_409-3005977-69/",
       price: "£14.99",
-      id: "chocolate gift_34",
+      id: "choc_gift_34",
     },
     {
       title: "FARHI",
@@ -3241,7 +3241,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/409-2001549-TRM1901R_ALT10?defaultImage=409-2001549-TRM1901R_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/farhi-milk-chocolate-pistachios-210g_409-2001549-TRM1901R/",
       price: "£12.99",
-      id: "chocolate gift_35",
+      id: "choc_gift_35",
     },
     {
       title: "CHOC ON CHOC",
@@ -3249,7 +3249,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/409-3005629-C719_ALT10?defaultImage=409-3005629-C719_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/choc-on-choc-mr-mrs-chocolate-lolly-70g_409-3005629-C719/",
       price: "£5.99",
-      id: "chocolate gift_36",
+      id: "choc_gift_36",
     },
     {
       title: "NAIVE",
@@ -3257,7 +3257,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/409-3005938-CNEGS2_ALT10?defaultImage=409-3005938-CNEGS2_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/naive-chocolate-3-mini-gift-set-60g_409-3005938-CNEGS2/",
       price: "£12.99",
-      id: "chocolate gift_37",
+      id: "choc_gift_37",
     },
     {
       title: "HOUSE OF DORCHESTER",
@@ -3265,7 +3265,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/409-88017141-01312HODB_ALT10?defaultImage=409-88017141-01312HODB_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/house-of-dorchester-british-chocolate-selection-box-150g_409-88017141-01312HODB/",
       price: "£13.99",
-      id: "chocolate gift_38",
+      id: "choc_gift_38",
     },
     {
       title: "PIERRE MARCOLINI",
@@ -3273,7 +3273,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/R03781002_ALT10?defaultImage=R03781002_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/pierre-marcolini-signature-three-drawer-chocolate-gift-box-662g_R03781002/",
       price: "£111.00",
-      id: "chocolate gift_39",
+      id: "choc_gift_39",
     },
     {
       title: "THE EAST INDIA COMPANY",
@@ -3281,7 +3281,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/409-3002110-FGCH12114_ALT10?defaultImage=409-3002110-FGCH12114_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/the-east-india-company-milk-chocolate-macadamia-nuts-200g_409-3002110-FGCH12114/",
       price: "£14.99",
-      id: "chocolate gift_40",
+      id: "choc_gift_40",
     },
     {
       title: "JELLY BELLY",
@@ -3289,7 +3289,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/409-72057092-66372_ALT10?defaultImage=409-72057092-66372_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/jelly-belly-harry-potter-chocolate-wand-42g_409-72057092-66372/",
       price: "£11.49",
-      id: "chocolate gift_41",
+      id: "choc_gift_41",
     },
     {
       title: "FARHI",
@@ -3297,7 +3297,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/409-2001549-TRM1902R_ALT10?defaultImage=409-2001549-TRM1902R_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/farhi-dark-chocolate-pistachios-210g_409-2001549-TRM1902R/",
       price: "£12.99",
-      id: "chocolate gift_42",
+      id: "choc_gift_42",
     },
     {
       title: "MAJANI",
@@ -3305,7 +3305,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/R03685246_ALT10?defaultImage=R03685246_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/majani-tortellino-milk-chocolate-gift-box-256g_R03685246/",
       price: "£14.99",
-      id: "chocolate gift_43",
+      id: "choc_gift_43",
     },
     {
       title: "NEUHAUS",
@@ -3313,7 +3313,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/R03921604_ALT10?defaultImage=R03921604_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/neuhaus-assorted-chocolate-box-100g_R03921604/",
       price: "£6.75",
-      id: "chocolate gift_44",
+      id: "choc_gift_44",
     },
     {
       title: "FARHI",
@@ -3321,7 +3321,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/409-2001549-TRM4944G_ALT10?defaultImage=409-2001549-TRM4944G_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/farhi-milk-white-and-chocolate-almonds-770g_409-2001549-TRM4944G/",
       price: "£14.99",
-      id: "chocolate gift_45",
+      id: "choc_gift_45",
     },
     {
       title: "CHOC ON CHOC",
@@ -3329,7 +3329,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/409-3005629-CM255_ALT10?defaultImage=409-3005629-CM255_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/choc-on-choc-gin-and-tonic-shaped-chocolate-box-of-three_409-3005629-CM255/",
       price: "£11.99",
-      id: "chocolate gift_46",
+      id: "choc_gift_46",
     },
     {
       title: "VENCHI",
@@ -3337,7 +3337,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/R00114177_ALT10?defaultImage=R00114177_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/venchi-assorted-pralines-gift-box-108g_R00114177/",
       price: "£16.99",
-      id: "chocolate gift_47",
+      id: "choc_gift_47",
     },
     {
       title: "COCOBA",
@@ -3345,7 +3345,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/409-3003815-COCO03000039_ALT10?defaultImage=409-3003815-COCO03000039_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/cocoba-dark-chocolate-brazil-nuts-200g_409-3003815-COCO03000039/",
       price: "£6.99",
-      id: "chocolate gift_48",
+      id: "choc_gift_48",
     },
     {
       title: "CHOC ON CHOC",
@@ -3353,7 +3353,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/409-3005629-CM205_ALT10?defaultImage=409-3005629-CM205_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/choc-on-choc-fish-and-chips-chocolate-three-pieces-90g_409-3005629-CM205/",
       price: "£8.99",
-      id: "chocolate gift_49",
+      id: "choc_gift_49",
     },
     {
       title: "FARHI",
@@ -3361,7 +3361,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/409-2001549-TRM1205AX_ALT10?defaultImage=409-2001549-TRM1205AX_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/farhi-assorted-chocolate-almonds-210g_409-2001549-TRM1205AX/",
       price: "£5.99",
-      id: "chocolate gift_50",
+      id: "choc_gift_50",
     },
     {
       title: "COCO CHOCOLATIER",
@@ -3369,7 +3369,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/R03840295_ALT10?defaultImage=R03840295_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/coco-chocolatier-giant-white-chocolate-buttons-100g_R03840295/",
       price: "£5.99",
-      id: "chocolate gift_51",
+      id: "choc_gift_51",
     },
     {
       title: "COCO CHOCOLATIER",
@@ -3377,7 +3377,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/R03840294_ALT10?defaultImage=R03840294_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/coco-chocolatier-giant-dark-chocolate-buttons-100g_R03840294/",
       price: "£5.99",
-      id: "chocolate gift_52",
+      id: "choc_gift_52",
     },
     {
       title: "COCO CHOCOLATIER",
@@ -3385,7 +3385,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/R03840293_ALT10?defaultImage=R03840293_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/coco-chocolatier-giant-milk-chocolate-buttons-100g_R03840293/",
       price: "£5.99",
-      id: "chocolate gift_53",
+      id: "choc_gift_53",
     },
     {
       title: "CHOC ON CHOC",
@@ -3393,7 +3393,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/409-3005629-C874_ALT10?defaultImage=409-3005629-C874_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/choc-on-choc-congratulations-box-of-chocolates-180g_409-3005629-C874/",
       price: "£11.99",
-      id: "chocolate gift_54",
+      id: "choc_gift_54",
     },
     {
       title: "CHOC ON CHOC",
@@ -3401,7 +3401,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/409-3005629-A10_ALT10?defaultImage=409-3005629-A10_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/choc-on-choc-farmyard-box-of-chocolates-180g_409-3005629-A10/",
       price: "£11.99",
-      id: "chocolate gift_55",
+      id: "choc_gift_55",
     },
     {
       title: "LA MOLINA",
@@ -3409,7 +3409,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/409-3005977-207_ALT10?defaultImage=409-3005977-207_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/la-molina-8-layer-ottavia-gianduja-chocolate-spread-500g_409-3005977-207/",
       price: "£26.99",
-      id: "chocolate gift_56",
+      id: "choc_gift_56",
     },
     {
       title: "COCO CHOCOLATIER",
@@ -3417,7 +3417,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/R03685600_ALT10?defaultImage=R03685600_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/coco-chocolatier-dark-chocolate-giant-raisins-130g_R03685600/",
       price: "£8.99",
-      id: "chocolate gift_57",
+      id: "choc_gift_57",
     },
     {
       title: "COCO CHOCOLATIER",
@@ -3425,7 +3425,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/R03685601_ALT10?defaultImage=R03685601_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/coco-chocolatier-salted-caramel-milk-chocolate-batons-120g_R03685601/",
       price: "£13.99",
-      id: "chocolate gift_58",
+      id: "choc_gift_58",
     },
     {
       title: "NERDS",
@@ -3433,7 +3433,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/409-3005976-866_ALT10?defaultImage=409-3005976-866_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/nerds-american-candy-mix-hamper-box-450g_409-3005976-866/",
       price: "£19.99",
-      id: "chocolate gift_59",
+      id: "choc_gift_59",
     },
   ],
   coffee: [
@@ -3487,7 +3487,7 @@ export const mocks: {
       id: "coffee_5",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Single Origin Colombian Bella Vista ground coffee 250g",
       img: "https://images.selfridges.com/is/image/selfridges/R01575011_ALT10?defaultImage=R01575011_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-single-origin-colombian-bella-vista-ground-coffee-250g_R01575011/",
@@ -3511,7 +3511,7 @@ export const mocks: {
       id: "coffee_8",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Limited-edition Honduras coffee beans 250g",
       img: "https://images.selfridges.com/is/image/selfridges/R03884429_ALT10?defaultImage=R03884429_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-limited-edition-honduras-coffee-beans-250g_R03884429/",
@@ -3519,7 +3519,7 @@ export const mocks: {
       id: "coffee_9",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Limited-edition Kenyan coffee beans 250g",
       img: "https://images.selfridges.com/is/image/selfridges/R03884430_ALT10?defaultImage=R03884430_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-limited-edition-kenyan-coffee-beans-250g_R03884430/",
@@ -3615,7 +3615,7 @@ export const mocks: {
       id: "coffee_21",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Single Origin Myanmar coffee beans 250g",
       img: "https://images.selfridges.com/is/image/selfridges/R01575611_ALT10?defaultImage=R01575611_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-single-origin-myanmar-coffee-beans-250g_R01575611/",
@@ -3719,7 +3719,7 @@ export const mocks: {
       id: "coffee_34",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Single Origin Brazilian Fazenda ground coffee 250g",
       img: "https://images.selfridges.com/is/image/selfridges/R01575311_ALT10?defaultImage=R01575311_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-single-origin-brazilian-fazenda-ground-coffee-250g_R01575311/",
@@ -3937,7 +3937,7 @@ export const mocks: {
       id: "chocolate_1",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Milk chocolate salted caramel truffles box of nine 105g",
       img: "https://images.selfridges.com/is/image/selfridges/R03808100_ALT10?defaultImage=R03808100_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-milk-chocolate-salted-caramel-truffles-box-of-nine-105g_R03808100/",
@@ -4017,7 +4017,7 @@ export const mocks: {
       id: "chocolate_11",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "British Salted Caramel Milk Chocolate bar 85g",
       img: "https://images.selfridges.com/is/image/selfridges/349-88017141-SSSALTEDCARAMELBAR_ALT10?defaultImage=349-88017141-SSSALTEDCARAMELBAR_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-british-salted-caramel-milk-chocolate-bar-85g_349-88017141-SSSALTEDCARAMELBAR/",
@@ -4025,7 +4025,7 @@ export const mocks: {
       id: "chocolate_12",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Milk chocolate honeycomb 150g",
       img: "https://images.selfridges.com/is/image/selfridges/R03884027_ALT10?defaultImage=R03884027_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-milk-chocolate-honeycomb-150g_R03884027/",
@@ -4033,7 +4033,7 @@ export const mocks: {
       id: "chocolate_13",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Dark Chocolate Candied Orangettes 125g",
       img: "https://images.selfridges.com/is/image/selfridges/349-3004010-DARKCHOCOLATEORANGEPEEL_ALT10?defaultImage=349-3004010-DARKCHOCOLATEORANGEPEEL_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-dark-chocolate-candied-orangettes-125g_349-3004010-DARKCHOCOLATEORANGEPEEL/",
@@ -5895,7 +5895,7 @@ export const mocks: {
   ],
   tea: [
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Traditional tea trio 111g",
       img: "https://images.selfridges.com/is/image/selfridges/R03896357_ALT10?defaultImage=R03896357_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-traditional-tea-trio-111g_R03896357/",
@@ -5903,7 +5903,7 @@ export const mocks: {
       id: "tea_0",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Traditional English Breakfast tea caddy 37g",
       img: "https://images.selfridges.com/is/image/selfridges/R03827632_ALT10?defaultImage=R03827632_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-traditional-english-breakfast-tea-caddy-37g_R03827632/",
@@ -5927,7 +5927,7 @@ export const mocks: {
       id: "tea_3",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Traditional Earl Grey tea caddy 37g",
       img: "https://images.selfridges.com/is/image/selfridges/R03827633_ALT10?defaultImage=R03827633_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-traditional-earl-grey-tea-caddy-37g_R03827633/",
@@ -5935,7 +5935,7 @@ export const mocks: {
       id: "tea_4",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Traditional Afternoon tea caddy 37g",
       img: "https://images.selfridges.com/is/image/selfridges/R03827634_ALT10?defaultImage=R03827634_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-traditional-afternoon-tea-caddy-37g_R03827634/",
@@ -6056,7 +6056,7 @@ export const mocks: {
       id: "tea_19",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Traditional English Breakfast Tea 60g",
       img: "https://images.selfridges.com/is/image/selfridges/569-2001083-SSENGBREAKTEABAGSCARTON_ALT10?defaultImage=569-2001083-SSENGBREAKTEABAGSCARTON_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-traditional-english-breakfast-tea-60g_569-2001083-SSENGBREAKTEABAGSCARTON/",
@@ -6072,7 +6072,7 @@ export const mocks: {
       id: "tea_21",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Traditional Tea Trio",
       img: "https://images.selfridges.com/is/image/selfridges/569-2001083-SSTRADTEATRIOCOLLECTION_ALT10?defaultImage=569-2001083-SSTRADTEATRIOCOLLECTION_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-traditional-tea-trio_569-2001083-SSTRADTEATRIOCOLLECTION/",
@@ -6178,7 +6178,7 @@ export const mocks: {
       id: "tea_34",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Traditional English Breakfast Tea 125g",
       img: "https://images.selfridges.com/is/image/selfridges/569-2001083-SSENGBREAKLOOSECARTON_ALT10?defaultImage=569-2001083-SSENGBREAKLOOSECARTON_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-traditional-english-breakfast-tea-125g_569-2001083-SSENGBREAKLOOSECARTON/",
@@ -6202,7 +6202,7 @@ export const mocks: {
       id: "tea_37",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Herbal Infusions trio 32.5g",
       img: "https://images.selfridges.com/is/image/selfridges/569-2001083-SS024G_ALT10?defaultImage=569-2001083-SS024G_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-herbal-infusions-trio-325g_569-2001083-SS024G/",
@@ -6218,7 +6218,7 @@ export const mocks: {
       id: "tea_39",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "London Strong Brew Tea 50g",
       img: "https://images.selfridges.com/is/image/selfridges/569-2001083-SSLONDONSTRONGBREWTEABAGS_ALT10?defaultImage=569-2001083-SSLONDONSTRONGBREWTEABAGS_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-london-strong-brew-tea-50g_569-2001083-SSLONDONSTRONGBREWTEABAGS/",
@@ -6250,7 +6250,7 @@ export const mocks: {
       id: "tea_43",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Traditional Afternoon Tea 125g",
       img: "https://images.selfridges.com/is/image/selfridges/569-2001083-SSAFTERNOONTEALOOSECARTON_ALT10?defaultImage=569-2001083-SSAFTERNOONTEALOOSECARTON_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-traditional-afternoon-tea-125g_569-2001083-SSAFTERNOONTEALOOSECARTON/",
@@ -6322,7 +6322,7 @@ export const mocks: {
       id: "tea_52",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Traditional Earl Grey Tea 125g",
       img: "https://images.selfridges.com/is/image/selfridges/569-2001083-SSEARLGREYTEALOOSECARTON_ALT10?defaultImage=569-2001083-SSEARLGREYTEALOOSECARTON_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-traditional-earl-grey-tea-125g_569-2001083-SSEARLGREYTEALOOSECARTON/",
@@ -6362,7 +6362,7 @@ export const mocks: {
       id: "tea_57",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Traditional Earl Grey Tea 50g",
       img: "https://images.selfridges.com/is/image/selfridges/569-2001083-SSEARLGREYTEABAGSGIFTTIN_ALT10?defaultImage=569-2001083-SSEARLGREYTEABAGSGIFTTIN_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-traditional-earl-grey-tea-50g_569-2001083-SSEARLGREYTEABAGSGIFTTIN/",
@@ -6404,7 +6404,7 @@ export const mocks: {
       id: "jam_2",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "British Strawberry and Champagne Jam 340g",
       img: "https://images.selfridges.com/is/image/selfridges/569-87032910-SSSTRAWBCHAMP_ALT10?defaultImage=569-87032910-SSSTRAWBCHAMP_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-british-strawberry-and-champagne-jam-340g_569-87032910-SSSTRAWBCHAMP/",
@@ -6412,7 +6412,7 @@ export const mocks: {
       id: "jam_3",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "British Rhubarb Jam 340g",
       img: "https://images.selfridges.com/is/image/selfridges/569-87032910-SSRHUBARBJAM_ALT10?defaultImage=569-87032910-SSRHUBARBJAM_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-british-rhubarb-jam-340g_569-87032910-SSRHUBARBJAM/",
@@ -6420,7 +6420,7 @@ export const mocks: {
       id: "jam_4",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Lemon Curd 205g",
       img: "https://images.selfridges.com/is/image/selfridges/R02172611_ALT10?defaultImage=R02172611_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-lemon-curd-205g_R02172611/",
@@ -6436,7 +6436,7 @@ export const mocks: {
       id: "jam_6",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "British Shropshire honey 227g",
       img: "https://images.selfridges.com/is/image/selfridges/569-3001655-BRITSHH_ALT10?defaultImage=569-3001655-BRITSHH_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-british-shropshire-honey-227g_569-3001655-BRITSHH/",
@@ -6444,7 +6444,7 @@ export const mocks: {
       id: "jam_7",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "British Summer honey 227g",
       img: "https://images.selfridges.com/is/image/selfridges/569-3001655-SUMMERHONEY_ALT10?defaultImage=569-3001655-SUMMERHONEY_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-british-summer-honey-227g_569-3001655-SUMMERHONEY/",
@@ -6460,7 +6460,7 @@ export const mocks: {
       id: "jam_9",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Traditional orange, lime and grapefruit marmalade 340g",
       img: "https://images.selfridges.com/is/image/selfridges/569-87032910-SELFSEL941_ALT10?defaultImage=569-87032910-SELFSEL941_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-traditional-orange-lime-and-grapefruit-marmalade-340g_569-87032910-SELFSEL941/",
@@ -6468,7 +6468,7 @@ export const mocks: {
       id: "jam_10",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Traditional blood orange marmalade 340g",
       img: "https://images.selfridges.com/is/image/selfridges/569-87032910-SELFSEL942_ALT10?defaultImage=569-87032910-SELFSEL942_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-traditional-blood-orange-marmalade-340g_569-87032910-SELFSEL942/",
@@ -6516,7 +6516,7 @@ export const mocks: {
       id: "jam_16",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Passion Fruit Curd 205g",
       img: "https://images.selfridges.com/is/image/selfridges/R02172911_ALT10?defaultImage=R02172911_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-passion-fruit-curd-205g_R02172911/",
@@ -6564,7 +6564,7 @@ export const mocks: {
       id: "jam_22",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Mini Curd Trio 3x115g",
       img: "https://images.selfridges.com/is/image/selfridges/R02173511_ALT10?defaultImage=R02173511_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-mini-curd-trio-3x115g_R02173511/",
@@ -6572,7 +6572,7 @@ export const mocks: {
       id: "jam_23",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "British honey trio 3x90g",
       img: "https://images.selfridges.com/is/image/selfridges/569-3001655-HONTRIO_ALT10?defaultImage=569-3001655-HONTRIO_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-british-honey-trio-3x90g_569-3001655-HONTRIO/",
@@ -6679,7 +6679,7 @@ export const mocks: {
       id: "jam_36",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "British Starflower honey 227g",
       img: "https://images.selfridges.com/is/image/selfridges/569-3001655-STARFLOWER_ALT10?defaultImage=569-3001655-STARFLOWER_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-british-starflower-honey-227g_569-3001655-STARFLOWER/",
@@ -6687,7 +6687,7 @@ export const mocks: {
       id: "jam_37",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "British Strawberry Jam 340g",
       img: "https://images.selfridges.com/is/image/selfridges/569-87032910-SSSTRAWBJAM_ALT10?defaultImage=569-87032910-SSSTRAWBJAM_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-british-strawberry-jam-340g_569-87032910-SSSTRAWBJAM/",
@@ -6695,7 +6695,7 @@ export const mocks: {
       id: "jam_38",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Hand-cut Ling Heather honeycomb 227g",
       img: "https://images.selfridges.com/is/image/selfridges/R03884268_ALT10?defaultImage=R03884268_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-hand-cut-ling-heather-honeycomb-227g_R03884268/",
@@ -6711,7 +6711,7 @@ export const mocks: {
       id: "jam_40",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Traditional Marmalade Trio 3x110g",
       img: "https://images.selfridges.com/is/image/selfridges/569-SELFSEL777-87032910_ALT10?defaultImage=569-SELFSEL777-87032910_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-traditional-marmalade-trio-3x110g_569-SELFSEL777-87032910/",
@@ -6751,7 +6751,7 @@ export const mocks: {
       id: "jam_45",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "British Heather honey 227g",
       img: "https://images.selfridges.com/is/image/selfridges/569-3001655-HEATHER_ALT10?defaultImage=569-3001655-HEATHER_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-british-heather-honey-227g_569-3001655-HEATHER/",
@@ -6767,7 +6767,7 @@ export const mocks: {
       id: "jam_47",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "British Cherry Jam 340g",
       img: "https://images.selfridges.com/is/image/selfridges/569-87032910-SSBLACKCHERRYJAM_ALT10?defaultImage=569-87032910-SSBLACKCHERRYJAM_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-british-cherry-jam-340g_569-87032910-SSBLACKCHERRYJAM/",
@@ -6791,7 +6791,7 @@ export const mocks: {
       id: "jam_50",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "British Preserve Trio 110g",
       img: "https://images.selfridges.com/is/image/selfridges/569-87032910-SSMINIPRESERVETRIO_ALT10?defaultImage=569-87032910-SSMINIPRESERVETRIO_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-british-preserve-trio-110g_569-87032910-SSMINIPRESERVETRIO/",
@@ -6994,7 +6994,7 @@ export const mocks: {
       id: "rose_15",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Vegan Organic rosé 750ml",
       img: "https://images.selfridges.com/is/image/selfridges/R00123387_ALT10?defaultImage=R00123387_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-vegan-organic-ros-750ml_R00123387/",
@@ -7066,7 +7066,7 @@ export const mocks: {
       id: "rose_24",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Three-bottle wooden wine box",
       img: "https://images.selfridges.com/is/image/selfridges/414-3003851-IM707_ALT10?defaultImage=414-3003851-IM707_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-three-bottle-wooden-wine-box_414-3003851-IM707/",
@@ -7210,7 +7210,7 @@ export const mocks: {
       id: "rose_42",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Chocolate Enrobed Rose Caramels 150g",
       img: "https://images.selfridges.com/is/image/selfridges/349-3003093-SELFROSECARAMELS_ALT10?defaultImage=349-3003093-SELFROSECARAMELS_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-chocolate-enrobed-rose-caramels-150g_349-3003093-SELFROSECARAMELS/",
@@ -7673,7 +7673,7 @@ export const mocks: {
       id: "box_4",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Fathers Day gift box",
       img: "https://images.selfridges.com/is/image/selfridges/R03938626_ALT10?defaultImage=R03938626_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-fathers-day-gift-box_R03938626/",
@@ -7697,7 +7697,7 @@ export const mocks: {
       id: "box_7",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "With Love gift box",
       img: "https://images.selfridges.com/is/image/selfridges/R03934146_ALT10?defaultImage=R03934146_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-with-love-gift-box_R03934146/",
@@ -7705,7 +7705,7 @@ export const mocks: {
       id: "box_8",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Milk chocolate salted caramel truffles box of nine 105g",
       img: "https://images.selfridges.com/is/image/selfridges/R03808100_ALT10?defaultImage=R03808100_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-milk-chocolate-salted-caramel-truffles-box-of-nine-105g_R03808100/",
@@ -7729,7 +7729,7 @@ export const mocks: {
       id: "box_11",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Birthday Treat gift box",
       img: "https://images.selfridges.com/is/image/selfridges/R03941645_ALT10?defaultImage=R03941645_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-birthday-treat-gift-box_R03941645/",
@@ -7753,7 +7753,7 @@ export const mocks: {
       id: "box_14",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Old World Wine gift box",
       img: "https://images.selfridges.com/is/image/selfridges/R03821098_ALT10?defaultImage=R03821098_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-old-world-wine-gift-box_R03821098/",
@@ -7785,7 +7785,7 @@ export const mocks: {
       id: "box_18",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Truffle Lover gift box",
       img: "https://images.selfridges.com/is/image/selfridges/R03913716_ALT10?defaultImage=R03913716_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-truffle-lover-gift-box_R03913716/",
@@ -7809,7 +7809,7 @@ export const mocks: {
       id: "box_21",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Champagne and chocolates gift box",
       img: "https://images.selfridges.com/is/image/selfridges/R03821088_ALT10?defaultImage=R03821088_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-champagne-and-chocolates-gift-box_R03821088/",
@@ -7865,7 +7865,7 @@ export const mocks: {
       id: "box_28",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Organic Wine gift box",
       img: "https://images.selfridges.com/is/image/selfridges/R03821100_ALT10?defaultImage=R03821100_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-organic-wine-gift-box_R03821100/",
@@ -10565,7 +10565,7 @@ export const mocks: {
       id: "fruit_3",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Passion Fruit Curd 205g",
       img: "https://images.selfridges.com/is/image/selfridges/R02172911_ALT10?defaultImage=R02172911_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-passion-fruit-curd-205g_R02172911/",
@@ -10605,7 +10605,7 @@ export const mocks: {
       id: "fruit_8",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Traditional rich fruit cake 450g",
       img: "https://images.selfridges.com/is/image/selfridges/R03774730_ALT10?defaultImage=R03774730_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-traditional-rich-fruit-cake-450g_R03774730/",
@@ -10743,7 +10743,7 @@ export const mocks: {
       id: "fruit_25",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Herbal Infusions trio 32.5g",
       img: "https://images.selfridges.com/is/image/selfridges/569-2001083-SS024G_ALT10?defaultImage=569-2001083-SS024G_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-herbal-infusions-trio-325g_569-2001083-SS024G/",
@@ -10823,7 +10823,7 @@ export const mocks: {
       id: "fruit_35",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Herbal Passion Fruit and Orange Infusion 37.5g",
       img: "https://images.selfridges.com/is/image/selfridges/569-2001083-SSPASSIONFRUITORANGECARTON_ALT10?defaultImage=569-2001083-SSPASSIONFRUITORANGECARTON_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-herbal-passion-fruit-and-orange-infusion-375g_569-2001083-SSPASSIONFRUITORANGECARTON/",
@@ -11051,7 +11051,7 @@ export const mocks: {
       id: "fresh_3",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Traditional strawberry shortbread 250g",
       img: "https://images.selfridges.com/is/image/selfridges/R03738490_ALT10?defaultImage=R03738490_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-traditional-strawberry-shortbread-250g_R03738490/",
@@ -11059,7 +11059,7 @@ export const mocks: {
       id: "fresh_4",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "All-butter shortbread tin 250g",
       img: "https://images.selfridges.com/is/image/selfridges/R03738485_ALT10?defaultImage=R03738485_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-all-butter-shortbread-tin-250g_R03738485/",
@@ -11107,7 +11107,7 @@ export const mocks: {
       id: "fresh_10",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Small bamboo serving board 27cm x 14cm",
       img: "https://images.selfridges.com/is/image/selfridges/R03815404_ALT10?defaultImage=R03815404_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-small-bamboo-serving-board-27cm-x-14cm_R03815404/",
@@ -11147,7 +11147,7 @@ export const mocks: {
       id: "fresh_15",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Stem ginger shortbread tin 250g",
       img: "https://images.selfridges.com/is/image/selfridges/R03738489_ALT10?defaultImage=R03738489_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-stem-ginger-shortbread-tin-250g_R03738489/",
@@ -11179,7 +11179,7 @@ export const mocks: {
       id: "fresh_19",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Traditional shortbread petticoat tails 340g",
       img: "https://images.selfridges.com/is/image/selfridges/R03774731_ALT10?defaultImage=R03774731_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-traditional-shortbread-petticoat-tails-340g_R03774731/",
@@ -12017,7 +12017,7 @@ export const mocks: {
       id: "beer_2",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "New Discoveries mixed wine case 6x750ml",
       img: "https://images.selfridges.com/is/image/selfridges/R03930506_ALT10?defaultImage=R03930506_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-new-discoveries-mixed-wine-case-6x750ml_R03930506/",
@@ -12146,7 +12146,7 @@ export const mocks: {
       id: "beer_18",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Esprit Brut NV champagne 750ml",
       img: "https://images.selfridges.com/is/image/selfridges/414-3001526-SELFBRUT_ALT10?defaultImage=414-3001526-SELFBRUT_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-esprit-brut-nv-champagne-750ml_414-3001526-SELFBRUT/",
@@ -12163,7 +12163,7 @@ export const mocks: {
       id: "beer_20",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Prosecco 750ml",
       img: "https://images.selfridges.com/is/image/selfridges/414-3001198-SELFPROSEC_ALT10?defaultImage=414-3001198-SELFPROSEC_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-prosecco-750ml_414-3001198-SELFPROSEC/",
@@ -12267,7 +12267,7 @@ export const mocks: {
       id: "beer_33",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Earthly Spirits gin 700ml",
       img: "https://images.selfridges.com/is/image/selfridges/R03885344_ALT10?defaultImage=R03885344_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-earthly-spirits-gin-700ml_R03885344/",
@@ -12348,7 +12348,7 @@ export const mocks: {
       id: "beer_43",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Malbec 750ml",
       img: "https://images.selfridges.com/is/image/selfridges/414-2001392-SOLM10_ALT10?defaultImage=414-2001392-SOLM10_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-malbec-750ml_414-2001392-SOLM10/",
@@ -12414,7 +12414,7 @@ export const mocks: {
       id: "beer_51",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Vegan Organic Red 750ml",
       img: "https://images.selfridges.com/is/image/selfridges/R00123386_ALT10?defaultImage=R00123386_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-vegan-organic-red-750ml_R00123386/",
@@ -14490,7 +14490,7 @@ export const mocks: {
       id: "apple_40",
     },
     {
-      title: "SELFRIDGES_SELECTION",
+      title: "SELFRIDGES SELECTION",
       description: "Apple, Pear & Plum Chutney 220g",
       img: "https://images.selfridges.com/is/image/selfridges/R03753777_ALT10?defaultImage=R03753777_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/selfridges-selection-apple-pear-plum-chutney-220g_R03753777/",

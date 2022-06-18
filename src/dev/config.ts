@@ -139,22 +139,28 @@ export const configurations: Config = {
     },
   },
 
-  tips: {
-    "LA MOLINA": {
-      text: "",
-      desc: "",
+  tips: [
+    {
+      text: "make them play",
+      desc: "Look at our gaming guide!!",
+      keyWords: ["Funny", "game"],
     },
-
-    "ASK MUMMY AND DADDY": {
-      text: "",
-      desc: "",
+    {
+      text: "Make urself warm",
+      desc: "Look at our gaming guide!!",
+      keyWords: ["sweatshirt", "warm"],
     },
-
-    sweets_15: {
-      text: "",
-      desc: "",
+    {
+      text: "selfridges candies guide",
+      desc: "This amazing brand has also so manyyy sweets",
+      keyWords: ["chocolate", "bisquits", "truffles"],
     },
-  },
+    {
+      text: "some tips for you",
+      desc: "This amazing brand has sale!",
+      keyWords: ["parfum"],
+    },
+  ],
 
   quizValues,
 

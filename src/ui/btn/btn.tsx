@@ -28,7 +28,6 @@ export const Btn = ({
       }}
       className={classNames(s.root, isSelected && s.selected)}
       onClick={onClick}
-      href="#"
       disabled={disabled}
     >
       {text}
