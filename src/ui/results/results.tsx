@@ -11,16 +11,13 @@ import { Btn } from "../btn/btn";
 import { getRandomNumber } from "../../helpers/getRandomNumber";
 
 export const Results = () => {
-  const { states, dataset } = useContext(QuizContext);
+  const { states } = useContext(QuizContext);
   const defaultAmount = 5;
   const [amountOfShownCards, setAmount] = useState(defaultAmount);
-  const allKeyWords =
-    states.currentSelection.value && getKeyWords(states.currentSelection.value);
-  const cards = generateResults(dataset, allKeyWords);
-  const cardsData = Object.entries(cards);
 
-  const rando = getRandomCards(cardsData);
-  const [randomisedCards] = useState(rando);
+  const cards = Object.entries(states.currentCardsSelection.values);
+  const randomData = getRandomCards(cards);
+  const [randomisedCards] = useState(randomData);
 
   return (
     <div className={s.root}>
@@ -37,10 +34,10 @@ export const Results = () => {
       </div>
       <div className={s.btnWrap}>
         <Btn
-          disabled={amountOfShownCards >= cardsData.length}
+          disabled={amountOfShownCards >= cards.length}
           text="see more"
           onClick={() => {
-            if (amountOfShownCards < cardsData.length) {
+            if (amountOfShownCards < cards.length) {
               setAmount(amountOfShownCards + defaultAmount);
             }
           }}
@@ -67,34 +64,4 @@ const getRandomCards = (
   }
 
   return cards;
-};
-
-const generateResults = (
-  data: { [key: string]: DataOfItem[] },
-  allKeyWords: string[]
-): { [title: string]: DataOfItem } => {
-  const cardsData: { [title: string]: DataOfItem } = {};
-  allKeyWords.forEach((allKeyWord: string) => {
-    const recommendedCards = data[allKeyWord];
-    if (recommendedCards) {
-      recommendedCards.forEach((card: DataOfItem) => {
-        if (!cardsData.hasOwnProperty(card.title)) {
-          cardsData[card.title] = card;
-        }
-      });
-    }
-  });
-
-  return cardsData;
-};
-
-const getKeyWords = (currentSelection: QuizInitialValuesType) => {
-  const selectionValues = Object.entries(currentSelection);
-  const keyWords: string[] = [];
-  selectionValues.forEach((selectionValue: [string, OptionType]) => {
-    selectionValue[1].keyWords.forEach((keyWord: string) =>
-      keyWords.push(keyWord)
-    );
-  });
-  return keyWords;
 };

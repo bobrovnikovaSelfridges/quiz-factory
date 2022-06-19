@@ -8,22 +8,22 @@ export const QuestionOptions = (): React.ReactElement => {
   const { states, configurations, dataset } = useContext(QuizContext);
   const options =
     configurations.quizValues[states.pageNumber.value + 1].options;
-
   return (
     <div className={s.root}>
       {options.map((option: OptionType) => {
-        const currPageSelectedValue =
-          states.currentSelection.values[states.pageNumber.value.toString()];
+        const isSelected = Boolean(
+          Object.entries(states.selectedOptions.values).find(
+            (value: [string, OptionType]) => value[1].option === option.option
+          )
+        );
 
         return (
           <Btn
-            isSelected={Boolean(
-              currPageSelectedValue &&
-                currPageSelectedValue.option === option.option
-            )}
+            isSelected={isSelected}
             key={option.option}
             onClick={() => {
-              updateSelection(option, states, dataset);
+              updateCardsSelection(option, states, dataset);
+              updateOptionsSelection(option, states);
             }}
             text={option.option}
           />
@@ -33,20 +33,30 @@ export const QuestionOptions = (): React.ReactElement => {
   );
 };
 
+const updateOptionsSelection = (
+  selectedOption: OptionType,
+  states: StatesContextType
+): void => {
+  const currPage = states.pageNumber.value;
+  const oldOptions = { ...states.selectedOptions.values };
+  oldOptions[currPage] = selectedOption;
+
+  states.selectedOptions.onChange(oldOptions);
+};
+
 // todo make helpers
-const updateSelection = (
+const updateCardsSelection = (
   selectedOption: OptionType,
   states: StatesContextType,
   dataset: { [key: string]: DataOfItem[] }
-) => {
+): void => {
   const newSelection = {
-    ...states.currentSelection.values,
+    ...states.currentCardsSelection.values,
     ...getNewOptions(dataset, selectedOption),
   };
 
   console.log({ newSelection });
-  // newSelection[states.pageNumber.value] = selectedOption;
-  states.currentSelection.onChange(newSelection);
+  states.currentCardsSelection.onChange(newSelection);
 };
 
 const getNewOptions = (

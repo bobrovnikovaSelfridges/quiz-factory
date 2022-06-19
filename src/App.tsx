@@ -3,7 +3,7 @@ import { configurations } from "./dev/config";
 import { MOBILE_STARTS } from "./services/constants";
 import { QuizContext } from "./services/quizContext";
 import { QuestionBox } from "./ui/question-box/question-box";
-import { QuizContextType } from "./store/types";
+import { DataOfItem, OptionType, QuizContextType } from "./store/types";
 import "bootstrap/dist/css/bootstrap.min.css";
 import s from "./App.module.css";
 import { UserSelection } from "./ui/user-selection/user-selection";
@@ -13,7 +13,12 @@ const App: React.FunctionComponent = () => {
     window.innerWidth < MOBILE_STARTS
   );
   const [pageNumber, setPageNumber] = React.useState(0);
-  const [currentSelection, setCurrentSelection] = React.useState({});
+  const [selectedOptions, setSelectedOptions] = React.useState<OptionType[]>(
+    []
+  );
+  const [currentCardsSelection, setCurrentCardsSelection] = React.useState<{
+    [key: string]: DataOfItem;
+  }>({});
 
   React.useEffect(() => {
     const resizeObserver = new ResizeObserver((entries) => {
@@ -38,9 +43,14 @@ const App: React.FunctionComponent = () => {
     },
     configurations,
     states: {
-      currentSelection: {
-        value: currentSelection,
-        onChange: setCurrentSelection,
+      selectedOptions: {
+        values: selectedOptions,
+        onChange: setSelectedOptions,
+      },
+
+      currentCardsSelection: {
+        values: currentCardsSelection,
+        onChange: setCurrentCardsSelection,
       },
       pageNumber: { value: pageNumber, onChange: setPageNumber },
     },

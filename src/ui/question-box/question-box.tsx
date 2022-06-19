@@ -24,8 +24,6 @@ export const QuestionBox = () => {
 
   const [showResults, setShownResults] = React.useState(false);
 
-  const formattedData = removeDuplicates();
-
   React.useEffect(() => {
     if (params.isEndOfQuiz) {
       setTimeout(() => {

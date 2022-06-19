@@ -12,10 +12,12 @@ export const UserSelection = () => {
   const { params, states, configurations } =
     useContext<QuizContextType>(QuizContext);
 
-  return <div>{renderCards(states.currentSelection.values)}</div>;
+  return <div>{renderCards(states.currentCardsSelection.values)}</div>;
 };
-const renderCards = (currentSelection: QuizInitialValuesType) => {
-  return Object.entries(currentSelection).map((card: [string, OptionType]) => {
-    return <Card dataset={card[1]} isDisplayed={true} />;
-  });
+const renderCards = (currentCardsSelection: QuizInitialValuesType) => {
+  return Object.entries(currentCardsSelection).map(
+    (card: [string, OptionType]) => {
+      return <Card dataset={card[1]} isDisplayed={true} />;
+    }
+  );
 };

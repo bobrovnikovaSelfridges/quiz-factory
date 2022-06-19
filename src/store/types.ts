@@ -72,10 +72,17 @@ export type QuizContextType = {
 };
 
 export type StatesContextType = {
-  currentSelection: {
-    values: { [key: string]: DataOfItem[] };
+  currentCardsSelection: {
+    values: { [key: string]: DataOfItem };
     onChange: React.Dispatch<
-      React.SetStateAction<{ [key: string]: DataOfItem[] }>
+      React.SetStateAction<{ [key: string]: DataOfItem }>
+    >;
+  };
+
+  selectedOptions: {
+    values: { [page: string]: OptionType };
+    onChange: React.Dispatch<
+      React.SetStateAction<{ [page: string]: OptionType }>
     >;
   };
   pageNumber: {
