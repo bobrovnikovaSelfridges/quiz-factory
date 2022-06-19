@@ -5,8 +5,8 @@ import s from "./page-switcher.module.css";
 
 export const PageSwitcher = () => {
   const { states } = useContext(QuizContext);
-  const isBlocked =
-    !states.currentCardsSelection.value[states.pageNumber.value.toString()];
+  const isBlocked = false;
+  // !states.currentCardsSelection.values[states.pageNumber.value.toString()];
 
   return (
     <div className={s.root}>

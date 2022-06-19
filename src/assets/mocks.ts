@@ -17066,7 +17066,7 @@ export const mocks: {
       id: "bundle_32",
     },
   ],
-  set: [
+  gift_set: [
     {
       title: "DIOR",
       description: "Addict Natural Glow limited-edition gift set",

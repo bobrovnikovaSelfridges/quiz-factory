@@ -13,9 +13,9 @@ const App: React.FunctionComponent = () => {
     window.innerWidth < MOBILE_STARTS
   );
   const [pageNumber, setPageNumber] = React.useState(0);
-  const [selectedOptions, setSelectedOptions] = React.useState<OptionType[]>(
-    []
-  );
+  const [selectedOptions, setSelectedOptions] = React.useState<{
+    [pageNum: string]: OptionType;
+  }>({});
   const [currentCardsSelection, setCurrentCardsSelection] = React.useState<{
     [key: string]: DataOfItem;
   }>({});

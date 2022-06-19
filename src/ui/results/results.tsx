@@ -1,11 +1,7 @@
 import { useContext, useState } from "react";
 import { QuizContext } from "../../services/quizContext";
 import s from "./results.module.css";
-import {
-  DataOfItem,
-  OptionType,
-  QuizInitialValuesType,
-} from "../../store/types";
+import { DataOfItem } from "../../store/types";
 import { Card } from "../card/card";
 import { Btn } from "../btn/btn";
 import { getRandomNumber } from "../../helpers/getRandomNumber";

@@ -13,7 +13,7 @@ export const QuizContext = createContext<QuizContextType>({
   configurations, // static
   states: {
     selectedOptions: {
-      values: [],
+      values: {},
       onChange: () => {},
     },
     currentCardsSelection: {
