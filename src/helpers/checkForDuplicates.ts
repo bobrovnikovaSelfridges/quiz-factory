@@ -1,22 +1,21 @@
-import { IRawDataUnit } from "../store/types";
+import { DataOfItem } from "../store/types";
 
 export function checkForDuplicates(categoryData: {
-  [key: string]: IRawDataUnit[];
-}): { [key: string]: IRawDataUnit[] } {
-  const uniqueProducts: { [key: string]: IRawDataUnit[] } = {};
-  // const hashTable = new Map<string, IRawDataUnit>();
+  [key: string]: DataOfItem[];
+}): { [key: string]: DataOfItem[] } {
+  const uniqueProducts: { [key: string]: DataOfItem[] } = {};
 
   const allData = Object.entries(categoryData);
 
-  allData.forEach((dataUnit: [string, IRawDataUnit[]], i: number) => {
+  allData.forEach((dataUnit: [string, DataOfItem[]], i: number) => {
     const keyWord = dataUnit[0];
     const keyWordUnits = dataUnit[1];
     uniqueProducts[keyWord] = [];
 
     const titles: string[] = [];
-    keyWordUnits.forEach((dataUnit: IRawDataUnit) => {
+    keyWordUnits.forEach((dataUnit: DataOfItem) => {
       const allWords = dataUnit.title.split(" ");
-      const dataset: IRawDataUnit = {
+      const dataset: DataOfItem = {
         id: dataUnit.id,
         description: dataUnit.description,
         img: dataUnit.img,
@@ -47,7 +46,7 @@ export function checkForDuplicates(categoryData: {
 
 // function checkParamsInTable(
 //   words: string[],
-//   hashTable: { [key: string]: IRawDataUnit[] },
+//   hashTable: { [key: string]: DataOfItem[] },
 //   mainWord: string
 // ): boolean {
 //   // check if current item from is already in hash table

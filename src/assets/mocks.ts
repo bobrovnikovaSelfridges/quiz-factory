@@ -1,28 +1,28 @@
-import { IRawDataUnit } from "../store/types";
+import { DataOfItem } from "../store/types";
 
 export const mocks: {
-  [key: string]: IRawDataUnit[];
+  [key: string]: DataOfItem[];
 } = {
   happy_hop: [
     {
-      title: "PLUM happy_hop",
-      description: "happy_hop inflatable play centre 3m",
+      title: "PLUM Happy Hop",
+      description: "Happy Hop inflatable play centre 3m",
       img: "https://images.selfridges.com/is/image/selfridges/R03936429_ALT10?defaultImage=R03936429_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/plum-happy-hop-inflatable-play-centre-3m_R03936429/",
       price: "£179.99",
       id: "happy_hop_0",
     },
     {
-      title: "PLUM happy_hop slide",
-      description: "happy_hop double inflatable water slide 6m",
+      title: "PLUM Happy Hop slide",
+      description: "Happy Hop double inflatable water slide 6m",
       img: "https://images.selfridges.com/is/image/selfridges/R03936423_ALT10?defaultImage=R03936423_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/plum-happy-hop-double-inflatable-water-slide-6m_R03936423/",
       price: "£319.99",
       id: "happy_hop_1",
     },
     {
-      title: "PLUM happy_hop Sharks",
-      description: "happy_hop Sharks Club inflatable water slide",
+      title: "PLUM Happy Hop Sharks",
+      description: "Happy Hop Sharks Club inflatable water slide",
       img: "https://images.selfridges.com/is/image/selfridges/R03936422_ALT10?defaultImage=R03936422_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/plum-happy-hop-sharks-club-inflatable-water-slide_R03936422/",
       price: "£399.99",

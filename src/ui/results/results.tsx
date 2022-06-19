@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import { QuizContext } from "../../services/quizContext";
 import s from "./results.module.css";
 import {
-  IRawDataUnit,
+  DataOfItem,
   OptionType,
   QuizInitialValuesType,
 } from "../../store/types";
@@ -25,7 +25,7 @@ export const Results = () => {
   return (
     <div className={s.root}>
       <div className={s.cards}>
-        {randomisedCards.map((dataset: [string, IRawDataUnit], idx: number) => {
+        {randomisedCards.map((dataset: [string, DataOfItem], idx: number) => {
           return (
             <Card
               isDisplayed={amountOfShownCards <= idx}
@@ -51,18 +51,18 @@ export const Results = () => {
 };
 
 const getRandomCards = (
-  cardsData: [string, IRawDataUnit][]
-): [string, IRawDataUnit][] => {
-  const cards: [string, IRawDataUnit][] = [];
+  cardsData: [string, DataOfItem][]
+): [string, DataOfItem][] => {
+  const cards: [string, DataOfItem][] = [];
   const usedNumbers: number[] = [];
-  let idx = 0;
+  // let idx = 0;
   while (usedNumbers.length !== cardsData.length) {
     const randomID = getRandomNumber(cardsData.length);
     if (!usedNumbers.includes(randomID)) {
       const randomCard = cardsData[randomID];
       usedNumbers.push(randomID);
       cards.push(randomCard);
-      idx++;
+      // idx++;
     }
   }
 
@@ -70,14 +70,14 @@ const getRandomCards = (
 };
 
 const generateResults = (
-  data: { [key: string]: IRawDataUnit[] },
+  data: { [key: string]: DataOfItem[] },
   allKeyWords: string[]
-): { [title: string]: IRawDataUnit } => {
-  const cardsData: { [title: string]: IRawDataUnit } = {};
+): { [title: string]: DataOfItem } => {
+  const cardsData: { [title: string]: DataOfItem } = {};
   allKeyWords.forEach((allKeyWord: string) => {
     const recommendedCards = data[allKeyWord];
     if (recommendedCards) {
-      recommendedCards.forEach((card: IRawDataUnit) => {
+      recommendedCards.forEach((card: DataOfItem) => {
         if (!cardsData.hasOwnProperty(card.title)) {
           cardsData[card.title] = card;
         }

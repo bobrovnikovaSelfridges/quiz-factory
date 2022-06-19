@@ -11,6 +11,7 @@ import { MOBILE_STARTS } from "./constants";
 export const QuizContext = createContext<QuizContextType>({
   dataset: mocks,
   params: {
+    isEndOfQuiz: false,
     isMobile: window.innerWidth < MOBILE_STARTS,
   },
   configurations, // static

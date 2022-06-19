@@ -6,6 +6,7 @@ import { QuestionBox } from "./ui/question-box/question-box";
 import { QuizContextType } from "./store/types";
 import "bootstrap/dist/css/bootstrap.min.css";
 import s from "./App.module.css";
+import { UserSelection } from "./ui/user-selection/user-selection";
 
 const App: React.FunctionComponent = () => {
   const [isMobile, setisMobile] = React.useState(
@@ -24,10 +25,15 @@ const App: React.FunctionComponent = () => {
     });
     resizeObserver.observe(document.body);
   }, []);
+  const amountOfQuestions = Object.keys(configurations.quizValues).length;
+
   const { dataset } = useContext<QuizContextType>(QuizContext);
+  const isEndOfQuiz = pageNumber + 1 > amountOfQuestions;
+
   const contextData: QuizContextType = {
     dataset,
     params: {
+      isEndOfQuiz,
       isMobile,
     },
     configurations,
@@ -44,6 +50,8 @@ const App: React.FunctionComponent = () => {
     <QuizContext.Provider value={contextData}>
       <div className={s.root}>
         <QuestionBox />
+
+        {isEndOfQuiz && <UserSelection />}
         <img
           className={s.img}
           src={

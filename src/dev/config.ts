@@ -134,6 +134,7 @@ export const configurations: Config = {
       box: "Let the festive season commence by decking your halls with the yuletide offerings in our Christmas shop.. Expect Christmas décor, advent calendars, ornaments, stocking fillers and more. Don’t forget our luxury Christmas Hampers for gifting!",
     },
     titles: {
+      savePdfBtn: "",
       result: "Genereting your personal gift selection...",
       box: "Collect you first choice gift selection for someone special",
     },

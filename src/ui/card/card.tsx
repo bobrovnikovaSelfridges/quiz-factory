@@ -1,6 +1,6 @@
 import { Description } from "../description/description";
 import { ImageBtn } from "../select-btn/select-btn";
-import { IRawDataUnit, Tip as TipType } from "../../store/types";
+import { DataOfItem, Tip as TipType } from "../../store/types";
 import { configurations } from "../../dev/config";
 
 import s from "./card.module.css";
@@ -9,7 +9,7 @@ import { Tip } from "../tip/tip";
 
 type Props = {
   isDisplayed: boolean;
-  dataset: [string, IRawDataUnit];
+  dataset: [string, DataOfItem];
 };
 
 export const Card = (props: Props) => {

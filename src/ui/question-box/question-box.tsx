@@ -17,8 +17,6 @@ import s from "./question-box.module.css";
 export const QuestionBox = () => {
   const { params, states, configurations } =
     useContext<QuizContextType>(QuizContext);
-  const amountOfQuestions = Object.keys(configurations.quizValues).length;
-  const endOfQuiz = states.pageNumber.value + 1 > amountOfQuestions;
 
   const currentQuestion =
     configurations.quizValues[states.pageNumber.value + 1];
@@ -29,19 +27,26 @@ export const QuestionBox = () => {
   const formattedData = removeDuplicates();
 
   React.useEffect(() => {
-    if (endOfQuiz) {
+    if (params.isEndOfQuiz) {
       setTimeout(() => {
         setShownResults(true);
       }, 2000);
     }
-  }, [endOfQuiz]);
+  }, [params.isEndOfQuiz]);
 
   return (
     <div className={s.root}>
-      {!endOfQuiz && <img className={s.img} src={currentQuestion.img} />}
-      {renderHeader(configurations, params.isMobile, isFirstPage, endOfQuiz)}
+      {!params.isEndOfQuiz && (
+        <img className={s.img} src={currentQuestion.img} />
+      )}
+      {renderHeader(
+        configurations,
+        params.isMobile,
+        isFirstPage,
+        params.isEndOfQuiz
+      )}
 
-      {!endOfQuiz && (
+      {!params.isEndOfQuiz && (
         <>
           <QuizElement
             key={currentQuestion.question}
@@ -54,7 +59,7 @@ export const QuestionBox = () => {
       <Loader
         amount={1}
         img={configurations.images.loader}
-        isVisible={endOfQuiz}
+        isVisible={params.isEndOfQuiz}
       />
       {showResults && <Results />}
     </div>

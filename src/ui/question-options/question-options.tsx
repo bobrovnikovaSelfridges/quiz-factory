@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
-import { OptionType, StatesContextType } from "../../store/types";
+import { DataOfItem, OptionType, StatesContextType } from "../../store/types";
 import { Btn } from "../btn/btn";
 import { QuizContext } from "../../services/quizContext";
 import s from "./question-options.module.css";
 
 export const QuestionOptions = (): React.ReactElement => {
-  const { states, configurations } = useContext(QuizContext);
+  const { states, configurations, dataset } = useContext(QuizContext);
   const options =
     configurations.quizValues[states.pageNumber.value + 1].options;
 
@@ -13,7 +13,7 @@ export const QuestionOptions = (): React.ReactElement => {
     <div className={s.root}>
       {options.map((option: OptionType) => {
         const currPageSelectedValue =
-          states.currentSelection.value[states.pageNumber.value.toString()];
+          states.currentSelection.values[states.pageNumber.value.toString()];
 
         return (
           <Btn
@@ -23,7 +23,7 @@ export const QuestionOptions = (): React.ReactElement => {
             )}
             key={option.option}
             onClick={() => {
-              updateSelection(option, states);
+              updateSelection(option, states, dataset);
             }}
             text={option.option}
           />
@@ -33,11 +33,48 @@ export const QuestionOptions = (): React.ReactElement => {
   );
 };
 
+// todo make helpers
 const updateSelection = (
   selectedOption: OptionType,
-  states: StatesContextType
+  states: StatesContextType,
+  dataset: { [key: string]: DataOfItem[] }
 ) => {
-  const newSelection = { ...states.currentSelection.value };
-  newSelection[states.pageNumber.value] = selectedOption;
+  const newSelection = {
+    ...states.currentSelection.values,
+    ...getNewOptions(dataset, selectedOption),
+  };
+
+  console.log({ newSelection });
+  // newSelection[states.pageNumber.value] = selectedOption;
   states.currentSelection.onChange(newSelection);
+};
+
+const getNewOptions = (
+  dataset: { [key: string]: DataOfItem[] },
+  selectedOption: OptionType
+): { [key: string]: DataOfItem } => {
+  let newSelection: { [key: string]: DataOfItem } = {};
+  Object.entries(dataset).forEach((dataUnit: [string, DataOfItem[]]) => {
+    dataUnit[1].forEach((cardData: DataOfItem) => {
+      const keyWordsFromCard = splitKeyWords(cardData);
+      const selectedKeyWords = (
+        selectedOption.keyWords +
+        " " +
+        selectedOption.option
+      ).split(" ");
+      for (const keyWord of selectedKeyWords) {
+        if (keyWordsFromCard.includes(keyWord)) {
+          // return true;
+          newSelection[cardData.id] = cardData;
+        }
+      }
+    });
+  });
+  return newSelection;
+};
+
+const splitKeyWords = (cardData: DataOfItem): string[] => {
+  const allWords =
+    cardData.description + " " + cardData.id + " " + cardData.title;
+  return allWords.split(" ");
 };
