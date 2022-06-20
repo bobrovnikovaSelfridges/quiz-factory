@@ -7,11 +7,17 @@ import { MOBILE_STARTS } from "./constants";
 export const QuizContext = createContext<QuizContextType>({
   dataset: mocks,
   params: {
+    showSelection: false,
     isEndOfQuiz: false,
     isMobile: window.innerWidth < MOBILE_STARTS,
   },
   configurations, // static
+
   states: {
+    url: {
+      values: [""],
+      onChange: () => {},
+    },
     selectedOptions: {
       values: {},
       onChange: () => {},

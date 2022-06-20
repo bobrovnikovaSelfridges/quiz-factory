@@ -10,7 +10,8 @@ import { Description } from "../description/description";
 import { Loader } from "../loader/loader";
 import { PageSwitcher } from "../page-switcher/page-switcher";
 import { QuizElement } from "../quiz-element/quiz-element";
-import { Results } from "../results/results";
+import { Recommendations } from "../recommendations/recommendations";
+import { UserSelection } from "../user-selection/user-selection";
 import s from "./question-box.module.css";
 
 export const QuestionBox = () => {
@@ -58,7 +59,8 @@ export const QuestionBox = () => {
         img={configurations.images.loader}
         isVisible={params.isEndOfQuiz}
       />
-      {showResults && <Results />}
+      {showResults && <Recommendations />}
+      {params.showSelection && showResults && <UserSelection />}
     </div>
   );
 };

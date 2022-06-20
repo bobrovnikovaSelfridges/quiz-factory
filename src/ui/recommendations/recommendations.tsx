@@ -1,14 +1,14 @@
 import { useContext, useState } from "react";
 import { QuizContext } from "../../services/quizContext";
-import s from "./results.module.css";
+import s from "./recommendations.module.css";
 import { DataOfItem } from "../../store/types";
 import { Card } from "../card/card";
 import { Btn } from "../btn/btn";
 import { getRandomNumber } from "../../helpers/getRandomNumber";
 
-export const Results = () => {
-  const { states } = useContext(QuizContext);
-  const defaultAmount = 6;
+export const Recommendations = () => {
+  const { states, params } = useContext(QuizContext);
+  const defaultAmount = params.isMobile ? 6 : 8;
   const [amountOfShownCards, setAmount] = useState(defaultAmount);
 
   const cards = Object.entries(states.currentCardsSelection.values);
@@ -21,7 +21,7 @@ export const Results = () => {
         {randomisedCards.map((dataset: [string, DataOfItem], idx: number) => {
           return (
             <Card
-              isDisplayed={amountOfShownCards <= idx}
+              isDisplayed={amountOfShownCards > idx}
               key={dataset[0]}
               dataset={dataset}
             />

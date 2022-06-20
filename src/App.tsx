@@ -4,9 +4,11 @@ import { MOBILE_STARTS } from "./services/constants";
 import { QuizContext } from "./services/quizContext";
 import { QuestionBox } from "./ui/question-box/question-box";
 import { DataOfItem, OptionType, QuizContextType } from "./store/types";
+import { setParamsForUrl } from "./services/set-params-in-curr-location-url";
 import "bootstrap/dist/css/bootstrap.min.css";
 import s from "./App.module.css";
 import { UserSelection } from "./ui/user-selection/user-selection";
+import { getSearchParamsFromQueryString } from "./services/get-search-params-from-query-string";
 
 const App: React.FunctionComponent = () => {
   const [isMobile, setisMobile] = React.useState(
@@ -39,14 +41,33 @@ const App: React.FunctionComponent = () => {
   const { dataset } = useContext<QuizContextType>(QuizContext);
   const isEndOfQuiz = pageNumber + 1 > amountOfQuestions;
 
+  const searchParams = getSearchParamsFromQueryString();
+  const selectedGifstByUser = searchParams.get("gifts");
+  const selectionIds = selectedGifstByUser?.split("&");
+  const userArrivedBySavedLink = Boolean(
+    selectionIds && selectionIds.length > 0
+  );
+  const [showSelection, setShownSelection] = React.useState<boolean>(
+    userArrivedBySavedLink
+  );
+
+  const [urlParams, setUrlParams] = React.useState<Array<string> | undefined>(
+    selectionIds
+  );
+
   const contextData: QuizContextType = {
     dataset,
     params: {
       isEndOfQuiz,
       isMobile,
+      showSelection,
     },
     configurations,
     states: {
+      url: {
+        values: urlParams,
+        onChange: setUrlParams,
+      },
       selectedOptions: {
         values: selectedOptions,
         onChange: setSelectedOptions,
@@ -65,12 +86,21 @@ const App: React.FunctionComponent = () => {
     },
   };
 
+  React.useEffect(() => {
+    setParamsForUrl(contextData.states.url.values || [""]);
+  }, [
+    contextData.states.url.values,
+    contextData.states.usersSelectedCards.values,
+  ]);
+  React.useEffect(() => {
+    setShownSelection(Boolean(urlParams && urlParams.length > 0));
+  }, [urlParams]);
+
   return (
     <QuizContext.Provider value={contextData}>
       <div className={s.root}>
         <QuestionBox />
 
-        {isEndOfQuiz && <UserSelection />}
         <img
           className={s.img}
           src={

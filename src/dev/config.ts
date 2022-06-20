@@ -32,6 +32,7 @@ export const quizValues: QuizValues = {
           "recipes",
           "oregano",
           "thyme",
+          "luxury",
         ],
       },
       {
@@ -41,6 +42,7 @@ export const quizValues: QuizValues = {
           "BBQ",
           "home",
 
+          "prime",
           "recipes",
           "BATHING",
           "Butterfingers",
@@ -54,7 +56,7 @@ export const quizValues: QuizValues = {
       {
         option: "gingerbread cookies",
         point: 2,
-        keyWords: ["cookie", "sweets", "chocolate gift", "handmade"],
+        keyWords: ["cookie", "vip", "sweets", "chocolate gift", "handmade"],
       },
     ],
   },
@@ -161,12 +163,18 @@ export const configurations: Config = {
     loader: loader,
     image1: "string",
   },
+  notes: [
+    "Granny will be surprised",
+    "Mummy or auntie",
+    "Nice one for brother",
+  ],
   uiText: {
     descriptions: {
       result: "",
       box: "Let the festive season commence by decking your halls with the yuletide offerings in our Christmas shop.. Expect Christmas décor, advent calendars, ornaments, stocking fillers and more. Don’t forget our luxury Christmas Hampers for gifting!",
     },
     titles: {
+      selection: "save your personal top {NUMBER} of Christmas {GIFT}",
       savePdfBtn: "",
       result: "Genereting your personal gift selection...",
       box: "Collect you first choice gift selection for someone special",

@@ -15,6 +15,7 @@ export type Config = {
       box: string;
       result: string;
       savePdfBtn: string;
+      selection: string;
     };
     descriptions: {
       box: string;
@@ -22,6 +23,7 @@ export type Config = {
     };
   };
   tips: Tips;
+  notes: string[];
 
   images: {
     background: { desktop: string; mobile: string; result: string };
@@ -65,13 +67,19 @@ export type QuizContextType = {
   params: {
     isEndOfQuiz: boolean;
     isMobile: boolean;
+    showSelection: boolean;
   };
+
   configurations: Config;
   states: StatesContextType;
   dataset: { [key: string]: DataOfItem[] };
 };
 
 export type StatesContextType = {
+  url: {
+    values: string[] | undefined;
+    onChange: React.Dispatch<React.SetStateAction<Array<string> | undefined>>;
+  };
   currentCardsSelection: {
     values: { [key: string]: DataOfItem };
     onChange: React.Dispatch<
@@ -98,3 +106,4 @@ export type StatesContextType = {
 };
 
 export type QuizInitialValuesType = { [questionId: string]: OptionType };
+export type QueryParams = { [paramName: string]: string };
