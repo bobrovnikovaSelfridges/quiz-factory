@@ -2,7 +2,9 @@ import React, { useContext } from "react";
 import { DataOfItem, OptionType, StatesContextType } from "../../store/types";
 import { Btn } from "../btn/btn";
 import { QuizContext } from "../../services/quizContext";
+
 import s from "./question-options.module.css";
+import { exclusions } from "../../assets 1/keywords_example";
 
 export const QuestionOptions = (): React.ReactElement => {
   const { states, configurations, dataset } = useContext(QuizContext);
@@ -52,34 +54,63 @@ const updateCardsSelection = (
 ): void => {
   const newSelection = {
     ...states.currentCardsSelection.values,
-    ...getNewOptions(dataset, selectedOption),
+    ...getCardsFromSelectedOption(dataset, selectedOption),
   };
-
-  console.log({ newSelection });
   states.currentCardsSelection.onChange(newSelection);
 };
 
-const getNewOptions = (
+const getCardsFromSelectedOption = (
   dataset: { [key: string]: DataOfItem[] },
   selectedOption: OptionType
 ): { [key: string]: DataOfItem } => {
+  let keyWordsFromCards: any = [];
   let newSelection: { [key: string]: DataOfItem } = {};
+
   Object.entries(dataset).forEach((dataUnit: [string, DataOfItem[]]) => {
     dataUnit[1].forEach((cardData: DataOfItem) => {
       const keyWordsFromCard = splitKeyWords(cardData);
+      keyWordsFromCard.forEach((wordVal: string) => {
+        const word = wordVal.trim().toLowerCase();
+        const isNumber = parseFloat(word) > 0;
+        const isNotAWord =
+          word.includes("£") || word.includes("#") || word.includes("_");
+
+        if (
+          !keyWordsFromCards.includes(word) &&
+          word.length > 1 &&
+          !isNumber &&
+          !isNotAWord
+        ) {
+          keyWordsFromCards.push(word);
+        }
+      });
+
       const selectedKeyWords = (
         selectedOption.keyWords +
         " " +
         selectedOption.option
-      ).split(" ");
-      for (const keyWord of selectedKeyWords) {
-        if (keyWordsFromCard.includes(keyWord)) {
-          // return true;
-          newSelection[cardData.id] = cardData;
+      )
+        .split(" ")
+        .join(", ")
+        .split(",");
+
+      let hasForbiddenWord = false;
+
+      for (const exclusionWord of exclusions) {
+        hasForbiddenWord = keyWordsFromCard.includes(exclusionWord);
+        if (hasForbiddenWord) break;
+      }
+
+      if (!hasForbiddenWord) {
+        for (const keyWord of selectedKeyWords) {
+          if (keyWordsFromCard.includes(keyWord.trim())) {
+            newSelection[cardData.id] = cardData;
+          }
         }
       }
     });
   });
+
   return newSelection;
 };
 

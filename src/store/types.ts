@@ -79,6 +79,12 @@ export type StatesContextType = {
     >;
   };
 
+  usersSelectedCards: {
+    values: { [id: string]: DataOfItem };
+    onChange: React.Dispatch<
+      React.SetStateAction<{ [id: string]: DataOfItem }>
+    >;
+  };
   selectedOptions: {
     values: { [page: string]: OptionType };
     onChange: React.Dispatch<

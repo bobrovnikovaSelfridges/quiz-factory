@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import { removeDuplicates } from "../../helpers/remove-duplicates";
 import { QuizContext } from "../../services/quizContext";
 import {
   Config,

@@ -24,6 +24,10 @@ export const QuizContext = createContext<QuizContextType>({
       value: 0,
       onChange: () => {},
     },
+    usersSelectedCards: {
+      values: {},
+      onChange: () => {},
+    },
   },
 });
 

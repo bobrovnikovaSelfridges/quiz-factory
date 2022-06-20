@@ -5,15 +5,14 @@ import { Card } from "../card/card";
 // import s from "./user-selection.module.css";
 
 export const UserSelection = () => {
-  const { params, states, configurations } =
-    useContext<QuizContextType>(QuizContext);
+  const { states } = useContext<QuizContextType>(QuizContext);
 
   return <div>{renderCards(states.currentCardsSelection.values)}</div>;
 };
 const renderCards = (currentCardsSelection: { [key: string]: DataOfItem }) => {
   return Object.entries(currentCardsSelection).map(
-    (card: [string, DataOfItem]) => {
-      return <Card dataset={card} isDisplayed={true} />;
+    (card: [string, DataOfItem], i: number) => {
+      return <Card key={card[0] + i} dataset={card} isDisplayed={true} />;
     }
   );
 };

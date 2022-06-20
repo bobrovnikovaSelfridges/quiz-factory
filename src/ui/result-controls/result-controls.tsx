@@ -1,9 +1,6 @@
 import React, { useContext } from "react";
 import { configurations } from "../../dev/config";
 // import { jsPDF, fromHTML } from "jspdf";
-import { removeDuplicates } from "../../helpers/remove-duplicates";
-import { QuizContext } from "../../services/quizContext";
-import { Config, QuizContextType } from "../../store/types";
 import { Btn } from "../btn/btn";
 
 import s from "./result-controls.module.css";

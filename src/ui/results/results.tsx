@@ -8,7 +8,7 @@ import { getRandomNumber } from "../../helpers/getRandomNumber";
 
 export const Results = () => {
   const { states } = useContext(QuizContext);
-  const defaultAmount = 5;
+  const defaultAmount = 6;
   const [amountOfShownCards, setAmount] = useState(defaultAmount);
 
   const cards = Object.entries(states.currentCardsSelection.values);
@@ -48,14 +48,18 @@ const getRandomCards = (
 ): [string, DataOfItem][] => {
   const cards: [string, DataOfItem][] = [];
   const usedNumbers: number[] = [];
-  // let idx = 0;
+
+  // cardsData.forEach((dataUnit: [string, DataOfItem]) => {
+  //   IDs.push(dataUnit[0].split("_")[0]);
+  // });
+
   while (usedNumbers.length !== cardsData.length) {
     const randomID = getRandomNumber(cardsData.length);
+
     if (!usedNumbers.includes(randomID)) {
       const randomCard = cardsData[randomID];
       usedNumbers.push(randomID);
       cards.push(randomCard);
-      // idx++;
     }
   }
 

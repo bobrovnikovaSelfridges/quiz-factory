@@ -12,12 +12,16 @@ const App: React.FunctionComponent = () => {
   const [isMobile, setisMobile] = React.useState(
     window.innerWidth < MOBILE_STARTS
   );
+
   const [pageNumber, setPageNumber] = React.useState(0);
   const [selectedOptions, setSelectedOptions] = React.useState<{
     [pageNum: string]: OptionType;
   }>({});
   const [currentCardsSelection, setCurrentCardsSelection] = React.useState<{
-    [key: string]: DataOfItem;
+    [id: string]: DataOfItem;
+  }>({});
+  const [usersSelectedCards, setUsersSelectedCards] = React.useState<{
+    [id: string]: DataOfItem;
   }>({});
 
   React.useEffect(() => {
@@ -51,6 +55,11 @@ const App: React.FunctionComponent = () => {
       currentCardsSelection: {
         values: currentCardsSelection,
         onChange: setCurrentCardsSelection,
+      },
+
+      usersSelectedCards: {
+        values: usersSelectedCards,
+        onChange: setUsersSelectedCards,
       },
       pageNumber: { value: pageNumber, onChange: setPageNumber },
     },

@@ -14,4 +14,6 @@ export function removeDuplicates(): any {
       );
     }
   );
+
+  // console.log(allKeyWords);
 }

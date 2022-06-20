@@ -8,7 +8,7 @@
   flex-direction: column;
 
   position: relative;
-  opacity: .7;
+  opacity: .75;
 }
 
 .root:hover {
@@ -26,11 +26,10 @@
   padding: 0 1rem 1rem;
   margin-top: -1.5rem;
 }
-
-.textInCard .cardDescription {
+ 
+.cardDescription {
   margin-top: 0.5rem;
   font-size: 80%;
-  font-family: "Quicksand", sans-serif !important;
   opacity: 0.9;
   font-weight: 400;
 }

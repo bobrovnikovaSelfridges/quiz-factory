@@ -5,24 +5,18 @@ const select = `url("data:image/svg+xml,%3Csvg width='24' height='24' xmlns='htt
 const selected = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z'/%3E%3C/svg%3E")`;
 
 export type Props = {
-  selectionSettings: {
-    isSelected: boolean;
-    setSelection: Dispatch<SetStateAction<boolean>>;
-  };
+  isSelected: boolean;
+  onChange: () => void;
 };
 
 export const ImageBtn = (props: Props) => {
   return (
     <button
       style={{
-        backgroundImage: props.selectionSettings.isSelected ? selected : select,
+        backgroundImage: props.isSelected ? selected : select,
       }}
       className={s.root}
-      onClick={() =>
-        props.selectionSettings.setSelection(
-          !props.selectionSettings.isSelected
-        )
-      }
+      onClick={() => props.onChange()}
     />
   );
 };
