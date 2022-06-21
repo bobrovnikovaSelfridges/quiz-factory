@@ -11,7 +11,6 @@ export function setParamsForUrl(queryParams: QueryParams): void {
 
 // url new
 function getUpdatedUrl(updatedSearchParams: object): string {
-  console.log(updatedSearchParams.toString());
   return (
     window.location.origin +
     window.location.pathname +

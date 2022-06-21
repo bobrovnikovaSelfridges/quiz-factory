@@ -13,15 +13,22 @@ export const UserSelection = () => {
   const title = configurations.uiText.titles.selection
     .replace("{NUMBER}", cardsAmount.toString())
     .replace("{GIFT}", cardsAmount > 1 ? "gifts" : "gift");
-  return (
-    <>
-      <div data-of-js-pdf className={s.root}>
-        <h1>{title}</h1>
-        <div className={s.cards}>{renderCards(cards)}</div>
-      </div>
-      <ResultControls />
-    </>
-  );
+
+  const hasSelectedGifts =
+    Object.keys(states.usersSelectedCards.values).length > 0;
+  if (hasSelectedGifts) {
+    return (
+      <>
+        <div data-of-js-pdf className={s.root}>
+          <h1>{title}</h1>
+          <div className={s.cards}>{renderCards(cards)}</div>
+        </div>
+        <ResultControls />
+      </>
+    );
+  } else {
+    return <></>;
+  }
 };
 
 const renderCards = (cards: { [key: string]: DataOfItem }) => {

@@ -134,8 +134,6 @@ const loadGiftsFromQueryParams = (
       });
     });
   }
-
-  console.log(selection);
   onChange(selection);
 };
 export default App;

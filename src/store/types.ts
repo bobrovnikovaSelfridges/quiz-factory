@@ -1,3 +1,5 @@
+import { EventAttributes } from "ics";
+
 export type ConfigRaw = any;
 export type DataOfItem = {
   title: string;
@@ -8,13 +10,16 @@ export type DataOfItem = {
   id: string;
   keyWord?: string;
 };
-
 export type Config = {
+  reminders: EventAttributes;
   uiText: {
     titles: {
+      calendarEvent: string;
       box: string;
       result: string;
       savePdfBtn: string;
+      saveReminderBtn: string;
+      copyLink: string;
       selection: string;
     };
     descriptions: {

@@ -174,13 +174,32 @@ export const configurations: Config = {
       box: "Let the festive season commence by decking your halls with the yuletide offerings in our Christmas shop.. Expect Christmas décor, advent calendars, ornaments, stocking fillers and more. Don’t forget our luxury Christmas Hampers for gifting!",
     },
     titles: {
+      calendarEvent: "my_gifts_reminder",
+      copyLink: "Copy link",
+      saveReminderBtn: "Set a reminder",
       selection: "save your personal top {NUMBER} of Christmas {GIFT}",
       savePdfBtn: "Download",
       result: "Genereting your personal gift selection...",
       box: "Collect you first choice gift selection for someone special",
     },
   },
-
+  reminders: {
+    // "Early winter": {
+    end: [2023, 12, 10],
+    url: "https://www.selfridges.com/GB/en/",
+    start: [2023, 12, 1],
+    title: "It's time to look at your guide at Selfridges!",
+    location: "Selfridges, Oxford street",
+    // },
+    // "Almost Christmas eve": {
+    //   end: [2023, 12, 15],
+    //   url: "https://www.selfridges.com/GB/en/",
+    //   start: [2023, 12, 10],
+    //   title: "Your favourite Christmas party at Selfridges! Stay tuned",
+    //   location: "Selfridges, Oxford street",
+    // },
+    // "Twice!": undefined,
+  },
   tips: [
     {
       text: "make them play",
