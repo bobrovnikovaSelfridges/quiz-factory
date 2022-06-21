@@ -1,21 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;700&display=swap');
 
 .root { 
+  position: relative;
     width: 100%;
     color: #212121;
     box-sizing: border-box;
     pointer-events: none;  
-    height: 0;
+    /* height: 0; */
     transition: height 1s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
 .root img {
+  position: absolute;
+  top: 0;
 
-  width: 7rem;
-  height: 7rem;
+  /* width: 40%; */
+  height: 20rem;
   padding: .5rem;
+  
    
-  animation-name: appear, slide;
+  /* animation-name: appear, slide; */
+  animation-name: appear, spin;
   animation-duration:2s;
   opacity: 0;
 }
@@ -23,6 +31,17 @@
 .root div{
     width: 100%;
 }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
 
 @keyframes slide {
   from {
@@ -36,10 +55,12 @@
 @keyframes appear {
     from {
         opacity: 1;
-    }
+        height: 30rem;
+      }
     to {
         opacity: 0;
-    }
+        height: 20rem;
+      }
   }
 
 @keyframes spin {

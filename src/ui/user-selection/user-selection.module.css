@@ -11,13 +11,14 @@
 }
 
 .card { 
-    width: min-content;
+    /* width: min-content; */
+    height: 16rem;
 }
 
 .cards {
     display: flex;
     flex-wrap: wrap;
-    gap: .5rem;
+    gap: 1rem;
 }
 
 .notes {

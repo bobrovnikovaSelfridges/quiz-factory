@@ -9,14 +9,7 @@ type Props = {
 };
 export const Loader: React.FC<Props> = ({ isVisible, img, amount }: Props) => {
   return isVisible ? (
-    <div
-      className={s.root}
-      style={{
-        height: isVisible ? "0" : "auto",
-      }}
-    >
-      {loadImgs(img, amount)}
-    </div>
+    <div className={s.root}>{loadImgs(img, amount)}</div>
   ) : (
     <></>
   );

@@ -8,7 +8,7 @@ import question_2 from "./../assets/question_2.png";
 import question_3 from "./../assets/question_3.png";
 import question_4 from "./../assets/question_4.png";
 import question_5 from "./../assets/question_5.png";
-import loader from "./../assets/loader.jpeg";
+import loader2 from "./../assets/loader_2.png";
 
 export const quizValues: QuizValues = {
   1: {
@@ -160,7 +160,7 @@ export const configurations: Config = {
       mobile: mobile_desktop,
       result: background_result,
     },
-    loader: loader,
+    loader: loader2,
     image1: "string",
   },
   notes: [

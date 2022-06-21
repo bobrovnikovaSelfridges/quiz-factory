@@ -7,8 +7,8 @@ import { DataOfItem, OptionType, QuizContextType } from "./store/types";
 import { setParamsForUrl } from "./services/set-params-in-curr-location-url";
 import "bootstrap/dist/css/bootstrap.min.css";
 import s from "./App.module.css";
-import { UserSelection } from "./ui/user-selection/user-selection";
 import { getSearchParamsFromQueryString } from "./services/get-search-params-from-query-string";
+import { mocks } from "./assets/mocks";
 
 const App: React.FunctionComponent = () => {
   const [isMobile, setisMobile] = React.useState(
@@ -87,14 +87,14 @@ const App: React.FunctionComponent = () => {
   };
 
   React.useEffect(() => {
-    setParamsForUrl(contextData.states.url.values || [""]);
-  }, [
-    contextData.states.url.values,
-    contextData.states.usersSelectedCards.values,
-  ]);
+    loadGiftsFromQueryParams(
+      mocks,
+      contextData.states.usersSelectedCards.onChange
+    );
+  }, []);
   React.useEffect(() => {
     setShownSelection(Boolean(urlParams && urlParams.length > 0));
-  }, [urlParams]);
+  }, [urlParams, contextData.states.usersSelectedCards.values]);
 
   return (
     <QuizContext.Provider value={contextData}>
@@ -114,4 +114,28 @@ const App: React.FunctionComponent = () => {
   );
 };
 
+const loadGiftsFromQueryParams = (
+  values: { [key: string]: DataOfItem[] },
+  onChange: React.Dispatch<React.SetStateAction<{ [id: string]: DataOfItem }>>
+) => {
+  const searchParams = getSearchParamsFromQueryString();
+  const cardsInUrl = searchParams.get("gifts");
+  let selection: { [id: string]: DataOfItem } = {};
+  if (cardsInUrl) {
+    const ids = cardsInUrl.split("-");
+
+    const allGifts: [string, DataOfItem[]][] = Object.entries(values);
+
+    allGifts.forEach((category: [string, DataOfItem[]]) => {
+      category[1].forEach((element: DataOfItem) => {
+        if (ids.includes(element.id)) {
+          selection[element.id] = element;
+        }
+      });
+    });
+  }
+
+  console.log(selection);
+  onChange(selection);
+};
 export default App;

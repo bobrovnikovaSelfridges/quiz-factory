@@ -10,6 +10,7 @@ import s from "./card.module.css";
 import { useContext } from "react";
 import { Tip } from "../tip/tip";
 import { QuizContext } from "../../services/quizContext";
+import { setParamsForUrl } from "../../services/set-params-in-curr-location-url";
 
 type Props = {
   isDisplayed: boolean;
@@ -89,6 +90,12 @@ const updateUsersSelection = (
     newValues[addedCard[0]] = addedCard[1];
   }
   const newUrl = Object.keys(newValues);
+  setParamsForUrl({ gifts: getNewUrl(newUrl) });
+
   states.url.onChange(newUrl);
   states.usersSelectedCards.onChange(newValues);
+};
+
+const getNewUrl = (newUrl: string[] | undefined): string => {
+  return newUrl ? newUrl.map((urlId: string) => urlId).join("-") : "";
 };

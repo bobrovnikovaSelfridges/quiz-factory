@@ -41,7 +41,7 @@ opacity: .7;
   }
   
   .root.selected {
-    background-color:  #488f57;
+    background-color:  #488f57 !important;
    }
   @media (max-width: 700px) {
     .root {

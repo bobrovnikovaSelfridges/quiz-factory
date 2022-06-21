@@ -62,13 +62,13 @@ export type QuizValueType = {
   question: string;
   options: Array<OptionType>;
 };
-
+export type Params = {
+  isEndOfQuiz: boolean;
+  isMobile: boolean;
+  showSelection: boolean;
+};
 export type QuizContextType = {
-  params: {
-    isEndOfQuiz: boolean;
-    isMobile: boolean;
-    showSelection: boolean;
-  };
+  params: Params;
 
   configurations: Config;
   states: StatesContextType;

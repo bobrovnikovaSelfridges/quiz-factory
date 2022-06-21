@@ -65,7 +65,7 @@ const getCardsFromSelectedOption = (
 ): { [key: string]: DataOfItem } => {
   let keyWordsFromCards: any = [];
   let newCards: { [key: string]: DataOfItem } = {};
-
+  const descriptions: string[] = [];
   Object.entries(dataset).forEach((dataUnit: [string, DataOfItem[]]) => {
     dataUnit[1].forEach((cardData: DataOfItem) => {
       const keyWordsFromCard = splitKeyWords(cardData);
@@ -104,8 +104,10 @@ const getCardsFromSelectedOption = (
       if (!hasForbiddenWord) {
         for (const keyWord of selectedKeyWords) {
           if (keyWordsFromCard.includes(keyWord.trim())) {
-            console.log(newCards);
-            newCards[cardData.id] = cardData;
+            if (!descriptions.includes(cardData.description)) {
+              newCards[cardData.id] = cardData;
+              descriptions.push(cardData.description);
+            }
           }
         }
       }
