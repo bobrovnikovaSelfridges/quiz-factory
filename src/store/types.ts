@@ -14,7 +14,7 @@ export type Config = {
   reminders: EventAttributes;
   uiText: {
     titles: {
-      calendarEvent: string;
+      calendarEventFile: string;
       box: string;
       result: string;
       savePdfBtn: string;

@@ -174,7 +174,7 @@ export const configurations: Config = {
       box: "Let the festive season commence by decking your halls with the yuletide offerings in our Christmas shop.. Expect Christmas décor, advent calendars, ornaments, stocking fillers and more. Don’t forget our luxury Christmas Hampers for gifting!",
     },
     titles: {
-      calendarEvent: "my_gifts_reminder",
+      calendarEventFile: "my_gifts_reminder",
       copyLink: "Copy link",
       saveReminderBtn: "Set a reminder",
       selection: "save your personal top {NUMBER} of Christmas {GIFT}",

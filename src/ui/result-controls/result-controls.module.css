@@ -16,3 +16,30 @@
   gap: 1rem;
 }
 
+
+.btn { 
+  box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif !important;
+    display:flex;
+align-items: center;
+    justify-content:center;
+    width: auto; 
+    text-decoration: unset;
+
+    text-align: center;
+    outline: none;
+    appearance: none;
+    border-radius: 4px;
+    border: 1px solid rgb(13, 110, 253) ;
+    cursor: pointer;
+    font-size: 17px ;
+    line-height: 25px ;
+    padding: 10px 15px ;
+    background: none ;
+    margin-bottom: 1rem;
+    color: black !important;
+    background-color:  rgb(255,226,85) !important;
+    height: 38px;
+   
+
+}

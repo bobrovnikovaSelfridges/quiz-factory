@@ -16,16 +16,16 @@ export const ResultControls = () => {
       />
 
       <Btn
-        text={configurations.uiText.titles.saveReminderBtn}
+        text={configurations.uiText.titles.copyLink}
         onClick={() => {
           navigator.clipboard.writeText(window.location.href);
         }}
       />
 
       <a
-        download={configurations.uiText.titles.calendarEvent + ".ics"}
+        download={configurations.uiText.titles.calendarEventFile + ".ics"}
         href={saveReminder([configurations.reminders])}
-        className={"saveToCalendar"}
+        className={s.btn}
       >
         {configurations.uiText.titles.saveReminderBtn}
       </a>
@@ -44,7 +44,7 @@ const getPdf = () => {
   const element: HTMLAnchorElement | null =
     document.querySelector("[data-of-js-pdf]");
   const opt = {
-    margin: 0,
+    margin: 0.5,
     filename: "myGifts.pdf",
     image: { type: "jpeg", quality: 0.98 },
     html2canvas: {
