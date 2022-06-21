@@ -1,9 +1,9 @@
 import { useContext } from "react";
-import { Form } from "react-bootstrap";
 import { configurations } from "../../dev/config";
 import { QuizContext } from "../../services/quizContext";
 import { DataOfItem, QuizContextType } from "../../store/types";
 import { Card } from "../card/card";
+import { ResultControls } from "../result-controls/result-controls";
 import s from "./user-selection.module.css";
 
 export const UserSelection = () => {
@@ -14,10 +14,13 @@ export const UserSelection = () => {
     .replace("{NUMBER}", cardsAmount.toString())
     .replace("{GIFT}", cardsAmount > 1 ? "gifts" : "gift");
   return (
-    <div className={s.root}>
-      <h1>{title}</h1>
-      <div className={s.cards}>{renderCards(cards)}</div>
-    </div>
+    <>
+      <div data-of-js-pdf className={s.root}>
+        <h1>{title}</h1>
+        <div className={s.cards}>{renderCards(cards)}</div>
+      </div>
+      <ResultControls />
+    </>
   );
 };
 
@@ -26,14 +29,10 @@ const renderCards = (cards: { [key: string]: DataOfItem }) => {
     return (
       <div className={s.card}>
         <Card key={card[0] + i} dataset={card} isDisplayed={true}>
-          <div className={s.notes}>
-            <Form.Control
-              type="text"
-              id=""
-              placeholder={configurations.notes[i] || "your notes"}
-              aria-describedby="passwordHelpBlock"
-            />
-          </div>
+          <textarea
+            placeholder={configurations.notes[i] || "your notes"}
+            className={s.notes}
+          />
         </Card>
       </div>
     );

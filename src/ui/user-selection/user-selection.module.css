@@ -10,11 +10,7 @@
     text-transform: uppercase;
 }
 
-.card {
-    border-top: 1px solid black;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-
+.card { 
     width: min-content;
 }
 
@@ -24,13 +20,15 @@
     gap: .5rem;
 }
 
-.notes input{
+.notes {
     border:unset ;
     font-style: italic;
     border-radius: 0;
-    /* padding: 0 2px; */
-    margin: 0 .5rem;
+    width: 100%;
+
     border-bottom: 1px solid black;
+}
 
-
+.notes::placeholder {
+    opacity: .7;
 }

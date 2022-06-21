@@ -52,11 +52,11 @@ const updateCardsSelection = (
   states: StatesContextType,
   dataset: { [key: string]: DataOfItem[] }
 ): void => {
-  const newSelection = {
+  const newCards = {
     ...states.currentCardsSelection.values,
     ...getCardsFromSelectedOption(dataset, selectedOption),
   };
-  states.currentCardsSelection.onChange(newSelection);
+  states.currentCardsSelection.onChange(newCards);
 };
 
 const getCardsFromSelectedOption = (
@@ -64,7 +64,7 @@ const getCardsFromSelectedOption = (
   selectedOption: OptionType
 ): { [key: string]: DataOfItem } => {
   let keyWordsFromCards: any = [];
-  let newSelection: { [key: string]: DataOfItem } = {};
+  let newCards: { [key: string]: DataOfItem } = {};
 
   Object.entries(dataset).forEach((dataUnit: [string, DataOfItem[]]) => {
     dataUnit[1].forEach((cardData: DataOfItem) => {
@@ -104,14 +104,15 @@ const getCardsFromSelectedOption = (
       if (!hasForbiddenWord) {
         for (const keyWord of selectedKeyWords) {
           if (keyWordsFromCard.includes(keyWord.trim())) {
-            newSelection[cardData.id] = cardData;
+            console.log(newCards);
+            newCards[cardData.id] = cardData;
           }
         }
       }
     });
   });
 
-  return newSelection;
+  return newCards;
 };
 
 const splitKeyWords = (cardData: DataOfItem): string[] => {

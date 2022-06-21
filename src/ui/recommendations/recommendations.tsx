@@ -49,10 +49,6 @@ const getRandomCards = (
   const cards: [string, DataOfItem][] = [];
   const usedNumbers: number[] = [];
 
-  // cardsData.forEach((dataUnit: [string, DataOfItem]) => {
-  //   IDs.push(dataUnit[0].split("_")[0]);
-  // });
-
   while (usedNumbers.length !== cardsData.length) {
     const randomID = getRandomNumber(cardsData.length);
 

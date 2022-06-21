@@ -175,7 +175,7 @@ export const configurations: Config = {
     },
     titles: {
       selection: "save your personal top {NUMBER} of Christmas {GIFT}",
-      savePdfBtn: "",
+      savePdfBtn: "Download",
       result: "Genereting your personal gift selection...",
       box: "Collect you first choice gift selection for someone special",
     },
