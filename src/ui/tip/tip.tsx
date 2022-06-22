@@ -1,10 +1,9 @@
-import classNames from "classnames";
 import { useState } from "react";
 import { configurations } from "../../dev/config";
 import { Tip as TipType } from "../../store/types";
 import { Btn } from "../btn/btn";
 import { TipPopover } from "../tip-popover/tip-popover";
-import s from "./tip.module.css";
+// import s from "./tip.module.css";
 
 type Props = {
   tip: [string, TipType];

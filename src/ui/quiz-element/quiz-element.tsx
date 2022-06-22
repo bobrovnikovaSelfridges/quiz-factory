@@ -1,5 +1,4 @@
-import React from "react";
-import { OptionType, QuizValueType } from "../../store/types";
+import { QuizValueType } from "../../store/types";
 import { Description } from "../description/description";
 import { QuestionOptions } from "../question-options/question-options";
 import s from "./quiz-element.module.css";

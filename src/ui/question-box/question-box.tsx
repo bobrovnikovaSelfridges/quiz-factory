@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { QuizContext } from "../../services/quizContext";
-import { Config, OptionType, QuizContextType, Params } from "../../store/types";
+import { Config, QuizContextType, Params } from "../../store/types";
 import { Description } from "../description/description";
 import { Loader } from "../loader/loader";
 import { PageSwitcher } from "../page-switcher/page-switcher";
