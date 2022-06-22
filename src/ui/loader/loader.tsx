@@ -31,6 +31,7 @@ const loadImgs = (img: string, amount?: number): React.ReactElement[] | any => {
   let i = 0;
   const imageHTML = (
     <img
+      alt="image of loader"
       style={{
         animationDelay: amount && amount === 1 ? "0" : `${i / 10}s`,
       }}
@@ -46,6 +47,7 @@ const loadImgs = (img: string, amount?: number): React.ReactElement[] | any => {
     while (i !== amountOfImgs) {
       const item: React.ReactElement<HTMLImageElement> = (
         <img
+          alt="image of loader"
           style={{
             animationDelay: `${i / 10}s`,
           }}

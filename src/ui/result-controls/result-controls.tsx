@@ -1,7 +1,7 @@
 import { EventAttributes } from "ics";
 import { configurations } from "../../dev/config";
 import html2pdf from "html2pdf.js";
-import Dropdown from "react-bootstrap/Dropdown";
+// import Dropdown from "react-bootstrap/Dropdown";
 import { Btn } from "../btn/btn";
 import s from "./result-controls.module.css";
 
