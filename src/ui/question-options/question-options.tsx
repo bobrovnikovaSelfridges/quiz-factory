@@ -4,7 +4,7 @@ import { Btn } from "../btn/btn";
 import { QuizContext } from "../../services/quizContext";
 
 import s from "./question-options.module.css";
-import { exclusions } from "../../assets 1/keywords_example";
+import { exclusions } from "../../assets/keywords_example";
 
 export const QuestionOptions = (): React.ReactElement => {
   const { states, configurations, dataset } = useContext(QuizContext);

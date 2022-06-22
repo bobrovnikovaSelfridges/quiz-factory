@@ -1,14 +1,13 @@
 import { Config, QuizValues } from "../store/types";
 import background_desktop from "../assets/background_desktop.jpg";
 import mobile_desktop from "../assets/background_mobile.jpg";
-import background_result from "../assets/background_result.jpg";
 
 import question_1 from "./../assets/question_1.png";
 import question_2 from "./../assets/question_2.png";
 import question_3 from "./../assets/question_3.png";
 import question_4 from "./../assets/question_4.png";
 import question_5 from "./../assets/question_5.png";
-import loader2 from "./../assets/loader_2.png";
+import loader from "./../assets/loader.png";
 
 export const quizValues: QuizValues = {
   1: {
@@ -158,9 +157,8 @@ export const configurations: Config = {
     background: {
       desktop: background_desktop,
       mobile: mobile_desktop,
-      result: background_result,
     },
-    loader: loader2,
+    loader: loader,
     image1: "string",
   },
   notes: [

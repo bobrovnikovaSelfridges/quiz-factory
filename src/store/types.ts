@@ -31,7 +31,7 @@ export type Config = {
   notes: string[];
 
   images: {
-    background: { desktop: string; mobile: string; result: string };
+    background: { desktop: string; mobile: string };
     image1: string;
     loader: string;
   };

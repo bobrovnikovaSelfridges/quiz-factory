@@ -23,10 +23,11 @@
   object-fit: contain;
   height: 15rem;  
 
-  margin-top: -6rem;
+  margin-top: -7rem;
   margin-bottom: -1rem;
 
   z-index: 2;
+  margin-bottom: 1rem;
 
 }
 
