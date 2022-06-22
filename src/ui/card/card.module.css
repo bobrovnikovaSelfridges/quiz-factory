@@ -1,0 +1,79 @@
+@import url("../../store/fonts.css");
+
+.root {
+  margin-bottom: 2.15rem;
+  width: 10em;
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  opacity: .75;
+}
+
+.cardImg {
+  height: 11rem;
+  width: 11rem;
+  object-fit: cover;
+  padding: 0 1rem;
+}
+
+@media (min-width: 780px) {
+  .root {
+    margin-bottom: 1.5rem;
+    width: 11rem;  
+  }
+}
+
+.root:hover {
+  cursor: pointer;
+  opacity: 1 !important;
+}
+
+.title {
+  font-weight: 800;
+}
+
+.textInCard {
+  padding: 0 1rem 1rem;
+  margin-top: -1.5rem;
+}
+ 
+.cardDescription {
+  margin-top: 0.15rem;
+  font-size: 80%;
+  opacity: 0.9;
+  font-weight: 400;
+}
+
+.productLinks {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.root button.btn {
+  all: unset;
+  font-family: "Quicksand", sans-serif !important;
+
+  color: black;
+  background-color: unset;
+  outline: unset;
+  border: unset;
+  text-align: right;
+  letter-spacing: 0.1rem;
+  font-size: 0.7rem;
+  opacity: 0.75;
+
+  text-underline-offset: 1px;
+  text-decoration: underline;
+  text-decoration-color: rgb(101, 101, 101);
+}
+
+.btn:hover {
+  cursor: pointer;
+  opacity: 0.95;
+  background-color: rgba(255, 255, 255, 0.3);
+}

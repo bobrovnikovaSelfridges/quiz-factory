@@ -1,0 +1,24 @@
+.root {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  background-color: aliceblue;
+  width: 100%;
+}
+ 
+ 
+.question {
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 1rem;
+
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.asterisk {
+  padding-top: 1rem;
+  text-align: center;
+}

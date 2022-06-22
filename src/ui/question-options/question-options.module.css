@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;700&display=swap');
+
+.root {
+  width: 100%;
+  display: flex;
+  padding-top: 1rem;
+  flex-flow: wrap;
+  justify-content: center;
+  gap: 0 1rem;
+}
+
+
+.root button { 
+  text-transform: uppercase;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.root button:visited {
+background-color: red;
+}
+ 
+@media (min-width: 780px) {
+
+   .root button:last-child {
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,6 @@
+.root {
+    z-index: 999;
+    display: flex; 
+    justify-content: flex-end;
+    gap: 0 1rem;
+}

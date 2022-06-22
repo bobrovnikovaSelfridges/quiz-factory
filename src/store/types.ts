@@ -1,95 +1,114 @@
-import { Dispatch, SetStateAction } from "react";
+import { EventAttributes } from "ics";
 
 export type ConfigRaw = any;
-
+export type DataOfItem = {
+  title: string;
+  description: string;
+  img: string;
+  price: string;
+  link: string;
+  id: string;
+  keyWord?: string;
+};
 export type Config = {
-  uiText: any;
+  reminders: EventAttributes;
+  uiText: {
+    titles: {
+      calendarEventFile: string;
+      box: string;
+      result: string;
+      savePdfBtn: string;
+      saveReminderBtn: string;
+      copyLink: string;
+      selection: string;
+    };
+    descriptions: {
+      box: string;
+      result: string;
+    };
+  };
+  tips: Tips;
+  notes: string[];
 
   images: {
-    background: any;
+    background: { desktop: string; mobile: string };
     image1: string;
+    loader: string;
   };
-  quizValues: any;
-
-  initialValues: any;
-  colours: any;
+  quizValues: QuizValues;
+  colours: {
+    tip: string;
+    mainBtn: string;
+    tip1: string;
+    tip2: string;
+  };
 };
 
-// export type CategoriesType = { [key: string]: CardsCategory };
-// export type UiText = {
-//   resultTitle: string;
-//   btnPress: string;
+export type OptionType = {
+  option: string;
+  point: number;
+  keyWords: string[];
+};
 
-//   btnPressed: string;
-//   saveToCalendar: string;
-//   saveYourGuide: string;
-//   toGuide: string;
-//   aboutGuide: string | string[];
-//   yourGuideIsSaved: string;
-//   guideMovingCounter: string;
-//   placesToBePluralized: string[];
-//   emojii: string;
-//   btnText: string;
-//   calendarFileName: string;
-// };
-// export type InitialValues = {
-//   isCardTypePlaces: boolean;
-//   isCardTypeEvents: boolean;
-//   cardBtnColor: string;
-// };
-// export type Subscription = {
-//   token: string;
-//   url: string;
-// };
+export type Tips = Array<Tip>;
 
-// export type CardsCategory = {
-//   description: string;
-//   cards: IRawDataUnit[];
-//   picture: string;
-//   categoryName: string;
-// };
+export type Tip = {
+  text: string;
+  desc: string;
+  keyWords: string[];
+};
 
-// export type CardSelector = (
-//   card: IRawDataUnit,
-//   selectedCards: IRawDataUnit[] | undefined
-//   // setSelectedCards: React.Dispatch<
-//   //   React.SetStateAction<IRawDataUnit[] | undefined>
-//   // >
-// ) => void;
+export type QuizValues = {
+  [key: number]: QuizValueType;
+};
 
-// export type QueryParams = { [paramName: string]: string };
+export type QuizValueType = {
+  img: string;
+  question: string;
+  options: Array<OptionType>;
+};
+export type Params = {
+  isEndOfQuiz: boolean;
+  isMobile: boolean;
+  showSelection: boolean;
+};
+export type QuizContextType = {
+  params: Params;
 
-// export type ICampaigns = Array<{ type: string }>;
+  configurations: Config;
+  states: StatesContextType;
+  dataset: { [key: string]: DataOfItem[] };
+};
 
-// export type IRawDataUnit = {
-//   title: string;
-//   description: string;
-//   img: string;
-//   price: string;
-//   link: string;
-//   id: string;
-// };
+export type StatesContextType = {
+  url: {
+    values: string[] | undefined;
+    onChange: React.Dispatch<React.SetStateAction<Array<string> | undefined>>;
+  };
+  currentCardsSelection: {
+    values: { [key: string]: DataOfItem };
+    onChange: React.Dispatch<
+      React.SetStateAction<{ [key: string]: DataOfItem }>
+    >;
+  };
 
-// export type IRawDataset = {
-//   white: IRawDataUnit[];
-//   pink: IRawDataUnit[];
-//   red: IRawDataUnit[];
-//   blue: IRawDataUnit[];
-//   green: IRawDataUnit[];
-// };
+  usersSelectedCards: {
+    values: { [id: string]: DataOfItem };
+    onChange: React.Dispatch<
+      React.SetStateAction<{ [id: string]: DataOfItem }>
+    >;
+  };
+  selectedOptions: {
+    values: { [page: string]: OptionType };
+    onChange: React.Dispatch<
+      React.SetStateAction<{ [page: string]: OptionType }>
+    >;
+  };
+  pageNumber: {
+    value: number;
+    onChange: React.Dispatch<React.SetStateAction<number>>;
+  };
+};
 
-// export type ICategoriesData = { [key: string]: IRawDataUnit[] | undefined };
-
-// export type CardsProps = {
-//   idx?: number;
-//   setVisibility?: React.Dispatch<React.SetStateAction<boolean>>;
-//   setIntersectionObserver?: (
-//     container: HTMLDivElement,
-//     setVisibility: Dispatch<SetStateAction<boolean>>,
-//     selectedCards: IRawDataUnit[] | undefined
-//   ) => void;
-//   isSelected: boolean;
-//   selectedCards: IRawDataUnit[] | undefined;
-//   cardData: IRawDataUnit;
-//   selectCard: CardSelector;
-// };
+export type QuizInitialValuesType = { [questionId: string]: OptionType };
+export type QueryParams = { [paramName: string]: string };

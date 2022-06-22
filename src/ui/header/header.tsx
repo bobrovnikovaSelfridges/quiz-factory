@@ -1,6 +1,6 @@
 import React from "react";
 import { Description } from "../description/description";
-import "./header.css";
+import s from "./header.module.css";
 
 type Props = {
   isMobile: boolean;
@@ -13,7 +13,7 @@ export const Header = (props: Props) => {
     description.substring(0, description.length / 3) + "...";
 
   return (
-    <div className="headerRoot">
+    <div className={s.headerRoot}>
       <img
         src={
           "https://images.unsplash.com/photo-1513884923967-4b182ef167ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
@@ -22,7 +22,7 @@ export const Header = (props: Props) => {
       <h1>Selfridges Christmas Market</h1>
       <Description
         description={props.isMobile ? shortenDecription : description}
-        classname={"description"}
+        classname={s.description}
       />
     </div>
   );

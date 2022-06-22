@@ -3,24 +3,20 @@
 .root {
   box-sizing: border-box;
   position: relative;
-  font-family: 'Oswald';
     
-  width: 100vw;
-  /* left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-   */
+  width: 100vw; 
   padding: unset;
   font-size: unset;
   height: 100%;
   color: #212121;
-  color:rgb(249, 239, 226);
+
+  display: flex;
+  justify-content: center;
 
 }
 
 .root * {
-  font-family: 'Oswald';
+  color: #212121;
 }
 
 html {
@@ -36,14 +32,17 @@ html {
   position: absolute;
   left: 0;
   top: 0;
-  min-height: 90vh;
+  height: 98vh;
   object-fit: cover;
   width: 100%;
+  z-index: -1;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 780px) {
   .img  {
-    max-height: 95vh;
+    /* height: 98vh; */
+    height: 100%;
+
   }
 }
   

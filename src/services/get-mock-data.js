@@ -7,6 +7,13 @@ const fs = require("fs");
 const StealthPlugin = require("puppeteer-extra-plugin-stealth");
 
 puppeteer.use(StealthPlugin());
+// const puppeteer = require("puppeteer-extra");
+// const fs = require("fs");
+// const StealthPlugin = require("puppeteer-extra-plugin-stealth");
+// const stealth = StealthPlugin();
+// // Remove this specific stealth plugin from the default set
+// stealth.enabledEvasions.delete("user-agent-override");
+// puppeteer.use(stealth);
 
 async function startBrowser() {
   let browser;
@@ -14,10 +21,10 @@ async function startBrowser() {
     console.log("Opening the browser......");
     browser = await puppeteer.launch({
       headless: false,
-      slowMo: 500,
+      // slowMo: 500,
       // @TODO: better do this in specific places rather than on every action
-      defaultViewport: null,
-      ignoreHTTPSErrors: true,
+      // defaultViewport: null,
+      // ignoreHTTPSErrors: true,
       args: ["--no-sandbox", "--disable-setuid-sandbox"],
     });
   } catch (err) {
@@ -26,50 +33,38 @@ async function startBrowser() {
   return browser;
 }
 
-const randomiserGifts = [
-  "CHOCOLATEs",
-  "watches",
-  "set",
-  "luxury",
-  "box",
-  "kit",
-];
-
-const pallette = ["white", "red", "blue", "green", "pink"];
-
 const mocks = {};
 async function main() {
   let browser = await startBrowser();
-  console.log("startBrowser done");
+  console.log("startBrowser ✅");
 
   if (browser) {
     let page = await browser.newPage();
-    const searchWords = pallette;
+
     const imgSelector = ".c-prod-card__images > img";
     const btnShowMore = '[data-js-action="plpListingShowCta"]';
-    for (const searchWord of searchWords) {
+    for (const searchWord of keyWords) {
       await page.goto(
-        `https://www.selfridges.com/GB/en/cat/?freeText=${searchWord}&srch=Y&pn=3`
+        `https://www.selfridges.com/GB/en/cat/?freeText=${searchWord}`
       );
 
-      console.log(`Navigating to ${searchWord} url`);
+      console.log(`Navigate to ${searchWord} url ✅`);
       await page.waitForSelector("[data-js-plp-scroll]");
       await page.waitForSelector(imgSelector);
 
-      await page.$eval(btnShowMore, (el) => el.click());
-      await page.waitForSelector(btnShowMore);
-      await page.$eval(btnShowMore, (el) => el.click());
-      await page.waitForSelector(btnShowMore);
-      await page.$eval(btnShowMore, (el) => el.click());
-      await page.waitForSelector(btnShowMore);
-
-      console.log(`ask ${searchWord} search to show more`);
+      if ((await page.$(btnShowMore)) !== null) {
+        await page.waitForSelector(btnShowMore);
+        await page.$eval(btnShowMore, (el) => el.click());
+        console.log("check the more btn ✅");
+        if ((await page.$(btnShowMore)) !== null) {
+          await page.waitForSelector(btnShowMore);
+          await page.$eval(btnShowMore, (el) => el.click());
+        }
+      }
 
       let urls = await page.$$eval(
         "[data-js-plp-scroll]",
         (links, searchWord) => {
-          const imgSelector = ".c-prod-card__images > img";
-
           // Extract the links from the data
           const resultsOfScrape = [];
           links.forEach((el, id) => {
@@ -88,10 +83,15 @@ async function main() {
             const description = descriptionElement
               ? descriptionElement.innerText
               : "";
-            const img = el.querySelector(imgSelector).src;
 
-            const imgV2 = "https:" + el.querySelector(imgSelector).dataset.src;
-
+            const img1El = el.querySelector(
+              ".c-prod-card.--plp .c-prod-card__images-image"
+            );
+            const img1 = img1El.dataset.src || img1El.src;
+            const img2EL = el.querySelector(
+              ".c-prod-card.--plp .c-prod-card__images-image"
+            );
+            const img2 = img2EL.dataset.src || img2EL.src;
             const priceElement = el.querySelector(
               ".c-prod-card__cta-box-price"
             );
@@ -99,30 +99,115 @@ async function main() {
             resultsOfScrape.push({
               title,
               description,
-              img: img || imgV2,
+              img: img1 || img2,
+
               link,
               price,
               id: searchWord + "_" + id,
             });
           });
           return resultsOfScrape;
-        },
-        searchWord
+        }
       );
 
       mocks[searchWord] = urls;
     }
   }
-  console.log("final mocks are: ", { mocks });
+  console.log("final mocks ✅: ", { mocks });
 
-  console.log(mocks);
   const json = JSON.stringify(mocks);
-  console.log(json);
-
   fs.writeFile("mocks.json", json, "utf8", (err) => {
     if (err) throw err;
-    console.log("The file has been saved!");
+    console.log("The file has been saved! ✅");
   });
 }
 
 main().catch((e) => console.log("ERROR! " + e)); // need to somehow exit browser here?
+
+const keyWords = [
+  "cozy",
+  "tin",
+  "handmade",
+  "grill",
+  "DR. MARTENS",
+  "pool",
+  "chocolate gift",
+  "fruit",
+
+  // "play centre",
+  // "water slide",
+  // "CHOCOLATE",
+  // "warm",
+  // "soft",
+  // "SELFRIDGES SELECTION",
+  // "the tech bar",
+  // "controller",
+  // "binoculars",
+  // "sustainable",
+  // "ecology",
+  // "planet",
+  // "tin",
+  // "shortbread",
+  // "selection",
+  // "disney",
+  // "handmade",
+  // "potato",
+  // "grill",
+  // "sweets",
+  // "sweatshirt",
+  // "hoodie",
+  // "tea",
+  // "honey",
+  // "marmalade",
+  // "CHOCOLATE BOX",
+  // "watches",
+  // "set",
+  // "luxury",
+  // "box",
+  // "kit",
+  // "rose",
+  // "Game of Thrones",
+  // "ANCIENT",
+
+  // "box",
+  // "pool",
+  // "rome",
+  // "games",
+  // "mindfulness",
+  // "Bio-Synergy",
+  // "BOTTLE OPENER",
+  // "DR. MARTENS",
+  // "black bag",
+  // "earth",
+  // "fruit",
+  // "fresh",
+  // "rainbow",
+  // "beer",
+  // "gentlemen",
+  // "lazy",
+  // "gaming",
+  // "aesthetic",
+  // "design",
+  // "satin",
+  // "apple",
+
+  // "chocolate gift",
+  // "coffee",
+  // "chocolate",
+  // "fragrance",
+  // "funny",
+  // "bundle",
+  // "set",
+  // "cozy",
+];
+
+// const randomiserGifts = [
+//   "CHOCOLATEs",
+//   "watches",
+//   "set",
+//   "luxury",
+//   "box",
+//   "kit",
+// ];
+
+// const pallette = ["white", "red", "blue", "green", "pink"];
