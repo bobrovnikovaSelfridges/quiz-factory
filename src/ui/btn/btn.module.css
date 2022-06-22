@@ -37,11 +37,10 @@ opacity: .7;
   
    .root:disabled:hover {
      opacity: .7;
-    /* background-color:   rgb(191, 162, 181); */
   }
   
   .root.selected {
-    background-color:  #488f57 !important;
+    background-color:  #606060 !important;
    }
   @media (max-width: 700px) {
     .root {

@@ -61,21 +61,19 @@ const renderHeader = (
   const description = configurations.uiText.descriptions.box;
   const shortenDecription =
     description.substring(0, description.length / 3) + "...";
-  if (!params.showSelection) {
-    return (
-      <>
-        <h1>
-          {params.isEndOfQuiz
-            ? configurations.uiText.titles.result
-            : configurations.uiText.titles.box}
-        </h1>
-        {isFirstPage && (
-          <Description
-            description={params.isMobile ? shortenDecription : description}
-            classname={s.description}
-          />
-        )}
-      </>
-    );
-  }
+  return (
+    <>
+      <h1>
+        {params.isEndOfQuiz
+          ? configurations.uiText.titles.result
+          : configurations.uiText.titles.box}
+      </h1>
+      {isFirstPage && (
+        <Description
+          description={params.isMobile ? shortenDecription : description}
+          classname={s.description}
+        />
+      )}
+    </>
+  );
 };
