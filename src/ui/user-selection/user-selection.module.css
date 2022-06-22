@@ -11,7 +11,6 @@
 }
 
 .card { 
-    /* width: min-content; */
     height: 16rem;
 }
 
@@ -22,12 +21,14 @@
 }
 
 .notes {
-    border:unset ;
-    font-style: italic;
-    border-radius: 0;
     width: 100%;
+    max-height: 5rem;
 
+    border: unset;
+    border-top: 1px solid black;
     border-bottom: 1px solid black;
+    font-style: italic;
+    opacity: .8;
 }
 
 .notes::placeholder {

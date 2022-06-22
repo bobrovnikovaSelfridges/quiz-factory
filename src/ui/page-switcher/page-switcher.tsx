@@ -6,14 +6,13 @@ import s from "./page-switcher.module.css";
 export const PageSwitcher = () => {
   const { states } = useContext(QuizContext);
   const isBlocked = false;
-  // !states.currentCardsSelection.values[states.pageNumber.value.toString()];
+  const isFirstPage = states.pageNumber.value === 0;
 
   return (
     <div className={s.root}>
       <Btn
-        disabled={states.pageNumber.value === 0 || isBlocked}
+        disabled={isFirstPage}
         text={"←"}
-        settings={{ width: 50 }}
         onClick={() => {
           switchPage(states.pageNumber, true);
         }}
