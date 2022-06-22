@@ -247,6 +247,7 @@ export const configurations: Config = {
       box: "Let the festive season commence by decking your halls with the yuletide offerings in our Christmas shop.. Expect Christmas décor, advent calendars, ornaments, stocking fillers and more. Don’t forget our luxury Christmas Hampers for gifting!",
     },
     titles: {
+      tip: "see tips",
       calendarEventFile: "my_gifts_reminder",
       copyLink: "Copy link",
       saveReminderBtn: "Set a reminder",
@@ -277,22 +278,22 @@ export const configurations: Config = {
     {
       text: "make them play",
       desc: "Look at our gaming guide!!",
-      keyWords: ["Funny", "game"],
+      ids: ["Funny", "game"],
     },
     {
       text: "Make urself warm",
       desc: "Look at our gaming guide!!",
-      keyWords: ["sweatshirt", "warm"],
+      ids: ["sweatshirt", "warm"],
     },
     {
       text: "selfridges candies guide",
       desc: "This amazing brand has also so manyyy sweets",
-      keyWords: ["chocolate", "bisquits", "truffles"],
+      ids: ["chocolate", "bisquits", "truffles"],
     },
     {
       text: "some tips for you",
       desc: "This amazing brand has sale!",
-      keyWords: ["parfum"],
+      ids: ["parfum"],
     },
   ],
 
@@ -300,7 +301,7 @@ export const configurations: Config = {
 
   colours: {
     tip: "#E694A3",
-    mainBtn: "rgb(255,226,85)",
+    mainBtn: "rgb(191, 162, 181)",
     tip1: "#2E2D2B",
     tip2: "#2E2D2B",
   },

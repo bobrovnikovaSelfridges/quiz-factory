@@ -7354,7 +7354,7 @@ export const mocks: {
       img: "https://images.selfridges.com/is/image/selfridges/R00065844_ALT10?defaultImage=R00065844_M&$PLP_ALL$",
       link: "https://www.selfridges.com/GB/en/cat/whisky-and-bourbon-mortlach-game-of-thrones-15-year-old-single-malt-scotch-whisky-700ml_R00065844/",
       price: "£140.00",
-      id: "Game of Thrones_0",
+      id: "Game_of_Thrones_0",
     },
   ],
   ANCIENT: [

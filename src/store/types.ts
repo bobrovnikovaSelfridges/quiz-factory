@@ -14,6 +14,7 @@ export type Config = {
   reminders: EventAttributes;
   uiText: {
     titles: {
+      tip: string;
       calendarEventFile: string;
       box: string;
       result: string;
@@ -55,7 +56,7 @@ export type Tips = Array<Tip>;
 export type Tip = {
   text: string;
   desc: string;
-  keyWords: string[];
+  ids: string[];
 };
 
 export type QuizValues = {

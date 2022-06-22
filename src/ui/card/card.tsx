@@ -22,7 +22,7 @@ export const Card = (props: Props) => {
   const { states } = useContext(QuizContext);
 
   const cardData = props.dataset[1];
-  const tip = findTip(cardData.id);
+  const tip = findTip(cardData);
   const addToSelection = () => updateUsersSelection(states, props.dataset);
   const removeFromSelection = () =>
     updateUsersSelection(states, props.dataset, true);
@@ -40,7 +40,7 @@ export const Card = (props: Props) => {
       id={props.dataset[0]}
       className={s.root}
     >
-      {tip && <Tip tip={tip} />}
+      {/* {tip && <Tip tip={tip} />} */}
       <ImageBtn
         isSelected={isSelected}
         onChange={isSelected ? removeFromSelection : addToSelection}
@@ -70,10 +70,13 @@ export const Card = (props: Props) => {
   );
 };
 
-const findTip = (id: string) => {
+const findTip = (data: DataOfItem) => {
   return Object.entries(configurations.tips).find(
     (value: [string, TipType]) => {
-      return value[0] === id;
+      const hasInDesc = value[1].ids.find((id: string) =>
+        data.description.includes(id)
+      );
+      return value[1].ids.includes(data.id) || hasInDesc;
     }
   );
 };

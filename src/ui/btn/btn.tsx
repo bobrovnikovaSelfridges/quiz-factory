@@ -1,5 +1,6 @@
 import classNames from "classnames";
 import { Button } from "react-bootstrap";
+import { configurations } from "../../dev/config";
 import s from "./btn.module.css";
 
 type Props = {
@@ -24,7 +25,7 @@ export const Btn = ({
       style={{
         width: `${settings?.width}px`,
         height: `${settings?.height}px`,
-        backgroundColor: settings?.colour,
+        backgroundColor: configurations.colours.mainBtn,
       }}
       className={classNames(s.root, isSelected && s.selected)}
       onClick={onClick}

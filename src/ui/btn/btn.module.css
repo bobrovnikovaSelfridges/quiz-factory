@@ -20,7 +20,6 @@
     margin-bottom: 1rem;
     color: black !important;
     border: unset;
-    background-color:  rgb(255,226,85) !important;
  
     gap: 1rem
   }
@@ -37,7 +36,8 @@ opacity: .7;
    }
   
    .root:disabled:hover {
-    background-color:   rgb(255,226,85);
+     opacity: .7;
+    /* background-color:   rgb(191, 162, 181); */
   }
   
   .root.selected {
