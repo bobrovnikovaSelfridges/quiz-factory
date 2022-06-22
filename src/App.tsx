@@ -4,7 +4,7 @@ import { MOBILE_STARTS } from "./services/constants";
 import { QuizContext } from "./services/quizContext";
 import { QuestionBox } from "./ui/question-box/question-box";
 import { DataOfItem, OptionType, QuizContextType } from "./store/types";
-import { setParamsForUrl } from "./services/set-params-in-curr-location-url";
+// import { setParamsForUrl } from "./services/set-params-in-curr-location-url";
 import "bootstrap/dist/css/bootstrap.min.css";
 import s from "./App.module.css";
 import { getSearchParamsFromQueryString } from "./services/get-search-params-from-query-string";
