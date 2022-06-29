@@ -112,3 +112,24 @@ export type StatesContextType = {
 
 export type QuizInitialValuesType = { [questionId: string]: OptionType };
 export type QueryParams = { [paramName: string]: string };
+
+export type Database = Array<SchemaUnit>;
+
+export type SchemaUnit = {
+  name: string;
+  imageName: string;
+  seoKey: string;
+  brandName: string;
+  previewAttribute: string;
+  productId: number;
+  multiColour: string;
+  productType: string;
+  isPartOfBundle: string;
+  partNumber: string;
+  price: [
+    {
+      lowestPrice: string;
+      currency: string;
+    }
+  ];
+};

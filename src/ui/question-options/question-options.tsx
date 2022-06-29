@@ -48,6 +48,7 @@ const updateOptionsSelection = (
 
 // todo make helpers
 const updateCardsSelection = (
+  //  turn to lambda
   selectedOption: OptionType,
   states: StatesContextType,
   dataset: { [key: string]: DataOfItem[] }

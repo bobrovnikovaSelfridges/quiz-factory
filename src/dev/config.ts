@@ -59,29 +59,45 @@ export const quizValues: QuizValues = {
       },
     ],
   },
-  // 2: {
-  //   img: question_2,
-  //   question: "What is your favorite coffee shop?",
-  //   options: [
-  //     {
-  //       option: "starbucks or costa",
-  //       point: 3,
-  //       keyWords: ["coffee", 'Cafe',"BALENCIAGA", chocolate", "fragrance"],
-  //     },
-  //     {
-  //       option: "small local cafe",
-  //       point: 1,
-  //       keyWords: ["fragrance",'Cafe', "funny",'Blossom', "sweatshirt", "hoodie", 'BEAUTY'],
-  //     },
-  //     {
-  //       option: "No coffee, only cuppa",
-  //       point: 2,
-  //       keyWords: ["tea",   "Classic",
-  // "Classico",
-  // "Classics","jam", "rose", 'COFFEE','Blend','Book' ],
-  //     },
-  //   ],
-  // },
+  2: {
+    img: question_2,
+    question: "What is your favorite coffee shop?",
+    options: [
+      {
+        option: "starbucks or costa",
+        point: 3,
+        keyWords: ["coffee", "Cafe", "BALENCIAGA", "chocolate", "fragrance"],
+      },
+      {
+        option: "small local cafe",
+        point: 1,
+        keyWords: [
+          "fragrance",
+          "Cafe",
+          "funny",
+          "Blossom",
+          "sweatshirt",
+          "hoodie",
+          "BEAUTY",
+        ],
+      },
+      {
+        option: "No coffee, only cuppa",
+        point: 2,
+        keyWords: [
+          "tea",
+          "Classic",
+          "Classico",
+          "Classics",
+          "jam",
+          "rose",
+          "COFFEE",
+          "Blend",
+          "Book",
+        ],
+      },
+    ],
+  },
   // 3: {
   //   img: question_3,
   //   question: "What is one TV series you can watch over and over again?",

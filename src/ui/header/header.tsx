@@ -1,4 +1,3 @@
-import React from "react";
 import { Description } from "../description/description";
 import s from "./header.module.css";
 

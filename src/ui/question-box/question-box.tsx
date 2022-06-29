@@ -3,6 +3,8 @@ import { QuizContext } from "../../services/quizContext";
 import { Config, OptionType, QuizContextType, Params } from "../../store/types";
 import { Description } from "../description/description";
 import { Loader } from "../loader/loader";
+import { Dropdown } from "react-bootstrap";
+
 import { PageSwitcher } from "../page-switcher/page-switcher";
 import { QuizElement } from "../quiz-element/quiz-element";
 import { Recommendations } from "../recommendations/recommendations";
