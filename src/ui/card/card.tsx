@@ -94,7 +94,7 @@ const updateUsersSelection = (
   }
   const newUrl = Object.keys(newValues);
   setParamsForUrl({ gifts: getNewUrl(newUrl) });
-
+  console.log(newValues);
   states.url.onChange(newUrl);
   states.usersSelectedCards.onChange(newValues);
 };

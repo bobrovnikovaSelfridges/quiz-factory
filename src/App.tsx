@@ -26,9 +26,9 @@ const App: React.FunctionComponent = () => {
   const [currentCardsSelection, setCurrentCardsSelection] = React.useState<
     SchemaUnit[]
   >([]);
-  const [usersSelectedCards, setUsersSelectedCards] = React.useState<
-    SchemaUnit[]
-  >([]);
+  const [usersSelectedCards, setUsersSelectedCards] = React.useState<{
+    [key: string]: SchemaUnit;
+  }>({});
 
   React.useEffect(() => {
     const resizeObserver = new ResizeObserver((entries) => {

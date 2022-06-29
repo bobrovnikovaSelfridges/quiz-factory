@@ -99,8 +99,11 @@ export type StatesContextType = {
   };
 
   usersSelectedCards: {
-    values: SchemaUnit[];
-    onChange: React.Dispatch<React.SetStateAction<SchemaUnit[]>>;
+    values: { [key: string]: SchemaUnit };
+
+    onChange: React.Dispatch<
+      React.SetStateAction<{ [key: string]: SchemaUnit }>
+    >;
   };
   selectedOptions: {
     values: { [page: string]: OptionType };

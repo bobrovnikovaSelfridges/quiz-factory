@@ -36,7 +36,7 @@ export const QuizContext = createContext<QuizContextType>({
       onChange: () => {},
     },
     usersSelectedCards: {
-      values: [],
+      values: {},
       onChange: () => {},
     },
   },
