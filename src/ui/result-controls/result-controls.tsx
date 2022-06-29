@@ -18,6 +18,7 @@ export const ResultControls = () => {
       <Btn
         text={configurations.uiText.titles.copyLink}
         onClick={() => {
+          alert("added to your basket");
           navigator.clipboard.writeText(window.location.href);
         }}
       />
