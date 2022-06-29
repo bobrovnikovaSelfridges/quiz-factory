@@ -10,11 +10,13 @@
 }
 
 .card { 
-    height: 16rem;
+    height: 23rem;
 }
 
 .cards {
     display: flex;
+    justify-content: center;
+
     flex-wrap: wrap;
     gap: 1rem;
 }

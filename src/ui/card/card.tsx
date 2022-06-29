@@ -73,13 +73,13 @@ export const Card = (props: Props) => {
   );
 };
 
-const findTip = (id: string) => {
-  return Object.entries(configurations.tips).find(
-    (value: [string, TipType]) => {
-      return value[0] === id;
-    }
-  );
-};
+// const findTip = (id: string) => {
+//   return Object.entries(configurations.tips).find(
+//     (value: [string, TipType]) => {
+//       return value[0] === id;
+//     }
+//   );
+// };
 
 const updateUsersSelection = (
   states: StatesContextType,
