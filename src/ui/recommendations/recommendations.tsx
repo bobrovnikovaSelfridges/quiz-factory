@@ -89,7 +89,6 @@ const getResults = (
     .then((response) => response.json())
     .then((data) => {
       if (data) {
-        console.log({ data });
         setRecomm(data);
       }
     });

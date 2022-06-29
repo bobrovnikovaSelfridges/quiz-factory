@@ -29,42 +29,12 @@ export function checkForDuplicates(categoryData: {
         // no repeating items in category
 
         titles.push(dataUnit.title);
-
-        // const doesFit = checkParamsInTable(allWords, uniqueProducts, keyWord);
-        // const noRepeats= isAllowedToRepeat(currWord, mainWord.toLowerCase()
-        // if (doesFit) {
-        // hashTable.set(keyWord, dataset);
         uniqueProducts[keyWord].concat(dataset);
-        // } else {
-        //   // console.log(keyWord, dataset);
-        // }
       }
     });
   });
   return uniqueProducts;
 }
-
-// function checkParamsInTable(
-//   words: string[],
-//   hashTable: { [key: string]: DataOfItem[] },
-//   mainWord: string
-// ): boolean {
-//   // check if current item from is already in hash table
-//   let currentWordsTable = hashTable;
-//   for (const word of words) {
-//     const currWord = word.toLowerCase();
-//     if (
-//       hashTable.hasOwnProperty(currWord) &&
-//       !isAllowedToRepeat(currWord, mainWord.toLowerCase())
-//     ) {
-//       console.log(hashTable, currWord);
-//       delete currentWordsTable[currWord];
-//       return false;
-//     } else {
-//     }
-//   }
-//   return true;
-// }
 
 const isAllowedToRepeat = (word: string, mainWord: string) =>
   allowedRepeatedWrds.includes(word) || word === mainWord;

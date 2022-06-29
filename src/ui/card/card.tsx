@@ -23,7 +23,6 @@ export const Card = (props: Props) => {
   const { states } = useContext(QuizContext);
 
   const cardData = props.dataset;
-
   const img = `https://images.selfridges.com/is/image/selfridges/${cardData.imageName}`;
   const url = `https://www.selfridges.com/GB/en/cat/${cardData.seoKey}`;
 
@@ -94,7 +93,7 @@ const updateUsersSelection = (
   }
   const newUrl = Object.keys(newValues);
   setParamsForUrl({ gifts: getNewUrl(newUrl) });
-  console.log(newValues);
+
   states.url.onChange(newUrl);
   states.usersSelectedCards.onChange(newValues);
 };

@@ -111,7 +111,6 @@ const App: React.FunctionComponent = () => {
       .then((response) => response.json())
       .then((data) => {
         if (data) {
-          console.log({ data });
           setUsersSelectedCards(data);
         }
       });
@@ -150,20 +149,5 @@ const loadGiftsFromQueryParams = (
     return ids;
   }
 };
-//   if (cardsInUrl) {
-//     const ids = cardsInUrl.split("-");
-//     console.log(ids);
 
-//     const allGifts: SchemaUnit[][] = Object.values(values);
-
-//     // allGifts.forEach((category: SchemaUnit[]) => {
-//     //   // category[1].forEach((element: DataOfItem) => {
-//     //   //   if (ids.includes(element.id)) {
-//     //   //     selection[element.id] = element;
-//     //   //   }
-//     //   // });
-//     // });
-//   }
-//   // onChange(selection);
-// };
 export default App;
