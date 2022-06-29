@@ -34,7 +34,7 @@ export const UserData = (props: Props) => {
           label={`Yes please`}
         />
         {renderField(
-          "Your name",
+          "Enter name",
           "text",
           "Name",
           "name",
@@ -42,7 +42,7 @@ export const UserData = (props: Props) => {
           ""
         )}
         {renderField(
-          "Your surname",
+          "Enter surname",
           "text",
           "Surname",
           "surname",
