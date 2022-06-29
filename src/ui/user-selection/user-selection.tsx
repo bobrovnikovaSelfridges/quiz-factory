@@ -7,6 +7,7 @@ import {
   DataOfItem,
   OptionType,
   QuizContextType,
+  SchemaUnit,
   UserData,
 } from "../../store/types";
 import { Card } from "../card/card";
@@ -22,9 +23,6 @@ export const UserSelection = () => {
     .replace("{NUMBER}", cardsAmount.toString())
     .replace("{GIFT}", cardsAmount > 1 ? "gifts" : "gift");
 
-  const hasSelectedGifts =
-    Object.keys(states.usersSelectedCards.values).length > 0;
-
   useEffect(() => {
     const allKeyWords = Object.entries(states.selectedOptions.values);
 
@@ -38,12 +36,12 @@ export const UserSelection = () => {
     getResults(setRecommendations, words, exclusions, states.userData);
   }, []);
 
-  if (hasSelectedGifts) {
+  if (recommendation.length > 0) {
     return (
       <>
         <div data-of-js-pdf className={s.root}>
           <h1>{title}</h1>
-          <div className={s.cards}>{renderCards(cards)}</div>
+          <div className={s.cards}>{renderCards(recommendation)}</div>
         </div>
         <ResultControls />
       </>
@@ -53,11 +51,11 @@ export const UserSelection = () => {
   }
 };
 
-const renderCards = (cards: { [key: string]: DataOfItem }) => {
-  return Object.entries(cards).map((card: [string, DataOfItem], i: number) => {
+const renderCards = (recommendation: SchemaUnit[]) => {
+  return recommendation.map((card: SchemaUnit, i: number) => {
     return (
       <div className={s.card}>
-        <Card key={card[0] + i} dataset={card} isDisplayed={true}>
+        <Card key={card.productId} dataset={card} isDisplayed={true}>
           <textarea
             placeholder={configurations.notes[i] || "your notes"}
             className={s.notes}

@@ -3,6 +3,7 @@ import { ImageBtn } from "../select-btn/select-btn";
 import {
   DataOfItem,
   StatesContextType,
+  SchemaUnit,
   Tip as TipType,
 } from "../../store/types";
 import { configurations } from "../../dev/config";
@@ -14,21 +15,24 @@ import { setParamsForUrl } from "../../services/set-params-in-curr-location-url"
 
 type Props = {
   isDisplayed: boolean;
-  dataset: [string, DataOfItem];
+  dataset: SchemaUnit;
   children?: React.ReactNode;
 };
 
 export const Card = (props: Props) => {
   const { states } = useContext(QuizContext);
 
-  const cardData = props.dataset[1];
-  const tip = findTip(cardData.id);
+  const cardData = props.dataset;
+
+  const img = `https://images.selfridges.com/is/image/selfridges/${cardData.imageName}`;
+  const url = `https://www.selfridges.com/GB/en/cat/${cardData.seoKey}`;
+
   const addToSelection = () => updateUsersSelection(states, props.dataset);
   const removeFromSelection = () =>
     updateUsersSelection(states, props.dataset, true);
 
   const isSelected = states.usersSelectedCards.values.hasOwnProperty(
-    props.dataset[0]
+    props.dataset.productId
   );
 
   return (
@@ -37,31 +41,30 @@ export const Card = (props: Props) => {
         display: props.isDisplayed ? "inherit" : "none",
         opacity: isSelected ? "1" : " .75",
       }}
-      id={props.dataset[0]}
       className={s.root}
     >
-      {tip && <Tip tip={tip} />}
+      {/* {tip && <Tip tip={tip} />} */}
       <ImageBtn
         isSelected={isSelected}
         onChange={isSelected ? removeFromSelection : addToSelection}
       />
 
       <div className={s.productLinks}>
-        <button className={s.btn} onClick={() => window.open(cardData.link)}>
-          {cardData.price}
+        <button className={s.btn} onClick={() => window.open(url)}>
+          {cardData.price[0].lowestPrice + cardData.price[0].currency}
         </button>
 
-        <button className={s.btn} onClick={() => window.open(cardData.link)}>
+        <button className={s.btn} onClick={() => window.open(url)}>
           {`Shop now`}
         </button>
       </div>
-      <img className={s.cardImg} src={cardData.img} />
+      <img className={s.cardImg} src={img} />
 
       <div className={s.textInCard}>
-        <div className={s.title}> {cardData.title}</div>
+        <div className={s.title}> {cardData.name}</div>
 
         <Description
-          description={cardData.description}
+          description={cardData.brandName}
           classname={s.cardDescription}
         />
       </div>
@@ -80,14 +83,14 @@ const findTip = (id: string) => {
 
 const updateUsersSelection = (
   states: StatesContextType,
-  addedCard: [string, DataOfItem],
+  addedCard: SchemaUnit,
   remove = false
 ): void => {
   const newValues = { ...states.usersSelectedCards.values };
   if (remove) {
-    delete newValues[addedCard[0]];
+    delete newValues[addedCard.productId];
   } else {
-    newValues[addedCard[0]] = addedCard[1];
+    newValues[addedCard.productId] = addedCard;
   }
   const newUrl = Object.keys(newValues);
   setParamsForUrl({ gifts: getNewUrl(newUrl) });

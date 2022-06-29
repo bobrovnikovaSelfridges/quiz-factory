@@ -1,3 +1,4 @@
+
 import { DataOfItem } from "../store/types";
 
 export const mocks: {

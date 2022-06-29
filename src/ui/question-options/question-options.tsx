@@ -1,8 +1,12 @@
 import React, { useContext } from "react";
-import { DataOfItem, OptionType, StatesContextType } from "../../store/types";
+import {
+  DataOfItem,
+  OptionType,
+  SchemaUnit,
+  StatesContextType,
+} from "../../store/types";
 import { Btn } from "../btn/btn";
 import { QuizContext } from "../../services/quizContext";
-
 import s from "./question-options.module.css";
 import { exclusions } from "../../assets/keywords_example";
 
@@ -25,7 +29,7 @@ export const QuestionOptions = (): React.ReactElement => {
             isSelected={isSelected}
             key={option.option}
             onClick={() => {
-              updateCardsSelection(option, states, dataset);
+              // updateCardsSelection(option, states, dataset);
               updateOptionsSelection(option, states);
               states.pageNumber.onChange(states.pageNumber.value + 1);
             }}
@@ -53,7 +57,7 @@ const updateCardsSelection = (
   //  turn to lambda
   selectedOption: OptionType,
   states: StatesContextType,
-  dataset: { [key: string]: DataOfItem[] }
+  dataset: { [key: string]: SchemaUnit[] }
 ): void => {
   const newCards = {
     ...states.currentCardsSelection.values,
@@ -63,14 +67,14 @@ const updateCardsSelection = (
 };
 
 const getCardsFromSelectedOption = (
-  dataset: { [key: string]: DataOfItem[] },
+  dataset: { [key: string]: SchemaUnit[] },
   selectedOption: OptionType
-): { [key: string]: DataOfItem } => {
+): { [key: string]: SchemaUnit } => {
   let keyWordsFromCards: any = [];
-  let newCards: { [key: string]: DataOfItem } = {};
+  let newCards: { [key: string]: SchemaUnit } = {};
   const descriptions: string[] = [];
-  Object.entries(dataset).forEach((dataUnit: [string, DataOfItem[]]) => {
-    dataUnit[1].forEach((cardData: DataOfItem) => {
+  Object.entries(dataset).forEach((dataUnit: [string, SchemaUnit[]]) => {
+    dataUnit[1].forEach((cardData: SchemaUnit) => {
       const keyWordsFromCard = splitKeyWords(cardData);
       keyWordsFromCard.forEach((wordVal: string) => {
         const word = wordVal.trim().toLowerCase();
@@ -107,9 +111,9 @@ const getCardsFromSelectedOption = (
       if (!hasForbiddenWord) {
         for (const keyWord of selectedKeyWords) {
           if (keyWordsFromCard.includes(keyWord.trim())) {
-            if (!descriptions.includes(cardData.description)) {
-              newCards[cardData.id] = cardData;
-              descriptions.push(cardData.description);
+            if (!descriptions.includes(cardData.brandName)) {
+              newCards[cardData.brandName] = cardData;
+              descriptions.push(cardData.brandName);
             }
           }
         }
@@ -120,8 +124,8 @@ const getCardsFromSelectedOption = (
   return newCards;
 };
 
-const splitKeyWords = (cardData: DataOfItem): string[] => {
+const splitKeyWords = (cardData: SchemaUnit): string[] => {
   const allWords =
-    cardData.description + " " + cardData.id + " " + cardData.title;
+    cardData.brandName + " " + cardData.name + " " + cardData.name;
   return allWords.split(" ");
 };

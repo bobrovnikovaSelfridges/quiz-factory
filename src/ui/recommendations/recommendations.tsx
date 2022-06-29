@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { QuizContext } from "../../services/quizContext";
 import s from "./recommendations.module.css";
-import { DataOfItem } from "../../store/types";
+import { SchemaUnit } from "../../store/types";
 import { Card } from "../card/card";
 import { Btn } from "../btn/btn";
 import { getRandomNumber } from "../../helpers/getRandomNumber";
@@ -12,20 +12,21 @@ export const Recommendations = () => {
   const [amountOfShownCards, setAmount] = useState(defaultAmount);
 
   const cards = Object.entries(states.currentCardsSelection.values);
-  const randomData = getRandomCards(cards);
-  const [randomisedCards] = useState(randomData);
+
   return (
     <div className={s.root}>
       <div className={s.cards}>
-        {randomisedCards.map((dataset: [string, DataOfItem], idx: number) => {
-          return (
-            <Card
-              isDisplayed={amountOfShownCards > idx}
-              key={dataset[0]}
-              dataset={dataset}
-            />
-          );
-        })}
+        {states.currentCardsSelection.values.map(
+          (dataset: SchemaUnit, idx: number) => {
+            return (
+              <Card
+                isDisplayed={amountOfShownCards > idx}
+                key={dataset.productId}
+                dataset={dataset}
+              />
+            );
+          }
+        )}
       </div>
       <div className={s.btnWrap}>
         <Btn
@@ -43,9 +44,9 @@ export const Recommendations = () => {
 };
 
 const getRandomCards = (
-  cardsData: [string, DataOfItem][]
-): [string, DataOfItem][] => {
-  const cards: [string, DataOfItem][] = [];
+  cardsData: [string, SchemaUnit][]
+): [string, SchemaUnit][] => {
+  const cards: [string, SchemaUnit][] = [];
   const usedNumbers: number[] = [];
 
   while (usedNumbers.length !== cardsData.length) {

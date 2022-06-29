@@ -59,7 +59,6 @@ export const QuestionBox = (props: Props) => {
         img={configurations.images.loader}
         isVisible={params.isEndOfQuiz}
       />
-      {showResults && <Recommendations />}
       {(params.showSelection || showResults) && <UserSelection />}
 
       {isInitialPage && (

@@ -28,7 +28,7 @@ export const QuizContext = createContext<QuizContextType>({
       onChange: () => {},
     },
     currentCardsSelection: {
-      values: {},
+      values: [],
       onChange: () => {},
     },
     pageNumber: {
@@ -36,7 +36,7 @@ export const QuizContext = createContext<QuizContextType>({
       onChange: () => {},
     },
     usersSelectedCards: {
-      values: {},
+      values: [],
       onChange: () => {},
     },
   },

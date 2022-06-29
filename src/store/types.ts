@@ -94,17 +94,13 @@ export type StatesContextType = {
     onChange: React.Dispatch<React.SetStateAction<Array<string> | undefined>>;
   };
   currentCardsSelection: {
-    values: { [key: string]: DataOfItem };
-    onChange: React.Dispatch<
-      React.SetStateAction<{ [key: string]: DataOfItem }>
-    >;
+    values: SchemaUnit[];
+    onChange: React.Dispatch<React.SetStateAction<SchemaUnit[]>>;
   };
 
   usersSelectedCards: {
-    values: { [id: string]: DataOfItem };
-    onChange: React.Dispatch<
-      React.SetStateAction<{ [id: string]: DataOfItem }>
-    >;
+    values: SchemaUnit[];
+    onChange: React.Dispatch<React.SetStateAction<SchemaUnit[]>>;
   };
   selectedOptions: {
     values: { [page: string]: OptionType };
