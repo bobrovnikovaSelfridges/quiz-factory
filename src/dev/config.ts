@@ -652,7 +652,7 @@ export const configurations: Config = {
       saveReminderBtn: "Set a reminder",
       selection: "save your personal top {NUMBER} of Mothers Day {GIFT}",
       savePdfBtn: "Download",
-      result: "Genereting your personal gift selection...",
+      result: "Generating your personal gift selection...",
       box: "Create you hamper for someone special",
     },
   },
