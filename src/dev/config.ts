@@ -643,7 +643,7 @@ export const configurations: Config = {
     descriptions: {
       header: "lets celebrate mothers day",
       result: "",
-      box: "Let the festive season commence by decking your halls with the yuletide offerings in our Mothers Day shop.. Expect Mothers Day décor, advent calendars, ornaments, stocking fillers and more. Don’t forget our luxury Mothers Day Hampers for gifting!",
+      box: "Let our expert artificial intelligence hosted on the blockchain network to choose your Mother's day gift",
     },
     titles: {
       holidayName: "Mothers day",

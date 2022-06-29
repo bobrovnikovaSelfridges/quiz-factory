@@ -1,5 +1,5 @@
 import { configurations } from "../../dev/config";
-import { Form } from "react-bootstrap";
+import { Form, FormCheck } from "react-bootstrap";
 import { Description } from "../description/description";
 import s from "./user-data.module.css";
 import { ChangeEvent, Dispatch, SetStateAction } from "react";
@@ -27,7 +27,12 @@ export const UserData = (props: Props) => {
           props.fields.setEmail,
           "We will never share your email with anyone else."
         )}
-
+        Can we send you more offers?
+        <Form.Check
+          type={"checkbox"}
+          id={`default-checkbox`}
+          label={`Yes please`}
+        />
         {renderField(
           "Your name",
           "text",
@@ -42,7 +47,7 @@ export const UserData = (props: Props) => {
           "Surname",
           "surname",
           props.fields.setSurname,
-          "We will never share your email with anyone else."
+          ""
         )}
       </Form>
     </div>
