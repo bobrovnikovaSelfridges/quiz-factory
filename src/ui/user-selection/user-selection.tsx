@@ -17,26 +17,29 @@ import s from "./user-selection.module.css";
 export const UserSelection = () => {
   const { states } = useContext<QuizContextType>(QuizContext);
   const [recommendation, setRecommendations] = useState<Database>([]);
-  const cards = states.usersSelectedCards.values;
   const cardsAmount = Object.keys(states.usersSelectedCards.values).length;
   const title = configurations.uiText.titles.selection
     .replace("{NUMBER}", cardsAmount.toString())
     .replace("{GIFT}", cardsAmount > 1 ? "gifts" : "gift");
+  const allKeyWords = Object.entries(states.selectedOptions.values);
+
+  let words: string[] = [];
+  allKeyWords.forEach((value: [string, OptionType]) =>
+    value[1].keyWords.forEach((word: string) => {
+      words.push(word);
+    })
+  );
 
   useEffect(() => {
     const allKeyWords = Object.entries(states.selectedOptions.values);
-
-    const words: string[] = [];
     allKeyWords.forEach((value: [string, OptionType]) =>
       value[1].keyWords.forEach((word: string) => {
         words.push(word);
       })
     );
-
     getResults(setRecommendations, words, exclusions, states.userData);
   }, []);
-
-  if (recommendation.length > 0) {
+  if (recommendation.length > 0 && words.length > 0) {
     return (
       <>
         <div data-of-js-pdf className={s.root}>

@@ -43,21 +43,21 @@ export const Recommendations = () => {
   );
 };
 
-const getRandomCards = (
-  cardsData: [string, SchemaUnit][]
-): [string, SchemaUnit][] => {
-  const cards: [string, SchemaUnit][] = [];
-  const usedNumbers: number[] = [];
+// const getRandomCards = (
+//   cardsData: [string, SchemaUnit][]
+// ): [string, SchemaUnit][] => {
+//   const cards: [string, SchemaUnit][] = [];
+//   const usedNumbers: number[] = [];
 
-  while (usedNumbers.length !== cardsData.length) {
-    const randomID = getRandomNumber(cardsData.length);
+//   while (usedNumbers.length !== cardsData.length) {
+//     const randomID = getRandomNumber(cardsData.length);
 
-    if (!usedNumbers.includes(randomID)) {
-      const randomCard = cardsData[randomID];
-      usedNumbers.push(randomID);
-      cards.push(randomCard);
-    }
-  }
+//     if (!usedNumbers.includes(randomID)) {
+//       const randomCard = cardsData[randomID];
+//       usedNumbers.push(randomID);
+//       cards.push(randomCard);
+//     }
+//   }
 
-  return cards;
-};
+//   return cards;
+// };

@@ -59,16 +59,9 @@ export const QuestionBox = (props: Props) => {
         img={configurations.images.loader}
         isVisible={params.isEndOfQuiz}
       />
-      {(params.showSelection || showResults) && <UserSelection />}
 
-      {isInitialPage && (
-        <Btn
-          text={"start"}
-          onClick={() =>
-            states.pageNumber.onChange(states.pageNumber.value + 1)
-          }
-        />
-      )}
+      {showResults && <Recommendations />}
+      {(params.showSelection || showResults) && <UserSelection />}
     </div>
   );
 };
