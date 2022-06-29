@@ -116,8 +116,9 @@ const App: React.FunctionComponent = () => {
         }
       });
   }, []);
+
   React.useEffect(() => {
-    // setShownSelection(Boolean(urlParams && urlParams.length > 0));
+    setShownSelection(Boolean(urlParams && urlParams.length > 0));
   }, [urlParams, contextData.states.usersSelectedCards.values]);
 
   return (

@@ -37,14 +37,16 @@ export const QuestionBox = (props: Props) => {
       }, 2000);
     }
   }, [params.isEndOfQuiz]);
-
+  console.log(params.showSelection);
   return (
     <div className={s.root}>
-      {isInitialPage && <UserData fields={props.fields} />}
+      {isInitialPage && !params.showSelection && (
+        <UserData fields={props.fields} />
+      )}
       {/* {showImage && <img className={s.img} src={currentQuestion.img} />} */}
       {renderHeader(configurations, params, isFirstPage)}
 
-      {!params.isEndOfQuiz && (
+      {!params.isEndOfQuiz && !params.showSelection && (
         <>
           <QuizElement
             key={currentQuestion.question}
