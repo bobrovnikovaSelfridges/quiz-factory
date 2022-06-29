@@ -10,6 +10,7 @@ export const QuestionOptions = (): React.ReactElement => {
   const { states, configurations, dataset } = useContext(QuizContext);
   const options =
     configurations.quizValues[states.pageNumber.value + 1].options;
+
   return (
     <div className={s.root}>
       {options.map((option: OptionType) => {
@@ -26,6 +27,7 @@ export const QuestionOptions = (): React.ReactElement => {
             onClick={() => {
               updateCardsSelection(option, states, dataset);
               updateOptionsSelection(option, states);
+              states.pageNumber.onChange(states.pageNumber.value + 1);
             }}
             text={option.option}
           />

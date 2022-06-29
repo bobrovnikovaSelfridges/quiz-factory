@@ -14,7 +14,6 @@ export const Recommendations = () => {
   const cards = Object.entries(states.currentCardsSelection.values);
   const randomData = getRandomCards(cards);
   const [randomisedCards] = useState(randomData);
-
   return (
     <div className={s.root}>
       <div className={s.cards}>

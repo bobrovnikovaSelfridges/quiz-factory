@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;700&display=swap');
 
-.headerRoot {
-  margin-bottom: -100px;
-  height: 60vh;
+.root {
   width: 100%;
   color: rgb(18, 18, 18);
 
@@ -11,20 +9,9 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-}
+} 
 
-.headerRoot img {
-  object-fit: cover;
-  width: 50%;
-  height: 50vh;
-
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: -1;
-}
-
-.headerRoot .description {
+.root .description {
   font-family: 'Quicksand', sans-serif !important;
   font-size: .9rem;
   line-height: 1rem;
@@ -34,7 +21,7 @@
   text-overflow: ellipsiss;
 }
 
-.headerRoot h1 {
+.root h1 {
   padding: 1rem;
   width: 85%;
   background-color:   rgb(255,228,77);
@@ -60,13 +47,12 @@
     width: 40%;
   }
 
-  .headerRoot img {
-    width: 60%;
+  .headerRoot {
     height: 60vh;
 
   }
-  .headerRoot {
-    height: 70vh;
+}
 
-  }
+.container {
+  background-color: rgb(199, 199, 199, .6);
 }

@@ -14,6 +14,7 @@ export type Config = {
   reminders: EventAttributes;
   uiText: {
     titles: {
+      holidayName: string;
       calendarEventFile: string;
       box: string;
       result: string;
@@ -23,6 +24,7 @@ export type Config = {
       selection: string;
     };
     descriptions: {
+      header: string;
       box: string;
       result: string;
     };
@@ -80,7 +82,13 @@ export type QuizContextType = {
   dataset: { [key: string]: DataOfItem[] };
 };
 
+export type UserData = {
+  name: string;
+  surname: string;
+  email: string;
+};
 export type StatesContextType = {
+  userData: UserData;
   url: {
     values: string[] | undefined;
     onChange: React.Dispatch<React.SetStateAction<Array<string> | undefined>>;

@@ -7,7 +7,7 @@ import {
   DataOfItem,
   OptionType,
   QuizContextType,
-  QuizValueType,
+  UserData,
 } from "../../store/types";
 import { Card } from "../card/card";
 import { ResultControls } from "../result-controls/result-controls";
@@ -29,16 +29,13 @@ export const UserSelection = () => {
     const allKeyWords = Object.entries(states.selectedOptions.values);
 
     const words: string[] = [];
-    // console.log(
-    allKeyWords.forEach(
-      (value: [string, OptionType]) =>
-        value[1].keyWords.forEach((word: string) => {
-          words.push(word);
-        })
-      // )
+    allKeyWords.forEach((value: [string, OptionType]) =>
+      value[1].keyWords.forEach((word: string) => {
+        words.push(word);
+      })
     );
 
-    getResults(setRecommendations, words, exclusions);
+    getResults(setRecommendations, words, exclusions, states.userData);
   }, []);
 
   if (hasSelectedGifts) {
@@ -71,23 +68,25 @@ const renderCards = (cards: { [key: string]: DataOfItem }) => {
   });
 };
 
-const endPoint = "";
+const endPoint = "https://6e49q1rapl.execute-api.eu-west-1.amazonaws.com/prod/";
 
 const getResults = (
   setRecomm: React.Dispatch<React.SetStateAction<Database>>,
   keywords: string[],
-  exclusions: string[]
-) =>
+  exclusions: string[],
+  userData: UserData
+) => {
+  const body = JSON.stringify({ keywords, exclusions, userData });
+
   fetch(endPoint, {
-    headers: {
-      Accept: "application/json",
-      "Content-Type": "application/json",
-    },
     method: "POST",
-    body: JSON.stringify({ keywords, exclusions }),
+    body,
   })
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
-      setRecomm(data);
+      if (data) {
+        console.log({ data });
+        setRecomm(data);
+      }
     });
+};

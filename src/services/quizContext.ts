@@ -14,6 +14,11 @@ export const QuizContext = createContext<QuizContextType>({
   configurations, // static
 
   states: {
+    userData: {
+      name: "",
+      surname: "",
+      email: "",
+    },
     url: {
       values: [""],
       onChange: () => {},
@@ -27,7 +32,7 @@ export const QuizContext = createContext<QuizContextType>({
       onChange: () => {},
     },
     pageNumber: {
-      value: 0,
+      value: -1,
       onChange: () => {},
     },
     usersSelectedCards: {

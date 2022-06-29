@@ -3,22 +3,31 @@ import { QuizContext } from "../../services/quizContext";
 import { Config, OptionType, QuizContextType, Params } from "../../store/types";
 import { Description } from "../description/description";
 import { Loader } from "../loader/loader";
-import { Dropdown } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 
 import { PageSwitcher } from "../page-switcher/page-switcher";
 import { QuizElement } from "../quiz-element/quiz-element";
 import { Recommendations } from "../recommendations/recommendations";
 import { UserSelection } from "../user-selection/user-selection";
 import s from "./question-box.module.css";
+import { UserData } from "../header/user-data";
+import { Btn } from "../btn/btn";
 
-export const QuestionBox = () => {
+type Props = {
+  fields: {
+    setName: React.Dispatch<React.SetStateAction<string>>;
+    setEmail: React.Dispatch<React.SetStateAction<string>>;
+    setSurname: React.Dispatch<React.SetStateAction<string>>;
+  };
+};
+
+export const QuestionBox = (props: Props) => {
   const { params, states, configurations } =
     useContext<QuizContextType>(QuizContext);
-
   const currentQuestion =
     configurations.quizValues[states.pageNumber.value + 1];
   const isFirstPage = 1 === states.pageNumber.value + 1;
-
+  const isInitialPage = 0 === states.pageNumber.value;
   const [showResults, setShownResults] = React.useState(false);
 
   React.useEffect(() => {
@@ -28,13 +37,14 @@ export const QuestionBox = () => {
       }, 2000);
     }
   }, [params.isEndOfQuiz]);
-  const showImage = !params.isEndOfQuiz && !params.showSelection;
+
   return (
     <div className={s.root}>
-      {showImage && <img className={s.img} src={currentQuestion.img} />}
+      {isInitialPage && <UserData fields={props.fields} />}
+      {/* {showImage && <img className={s.img} src={currentQuestion.img} />} */}
       {renderHeader(configurations, params, isFirstPage)}
 
-      {!params.isEndOfQuiz && !params.showSelection && (
+      {!params.isEndOfQuiz && (
         <>
           <QuizElement
             key={currentQuestion.question}
@@ -51,6 +61,15 @@ export const QuestionBox = () => {
       />
       {showResults && <Recommendations />}
       {(params.showSelection || showResults) && <UserSelection />}
+
+      {isInitialPage && (
+        <Btn
+          text={"start"}
+          onClick={() =>
+            states.pageNumber.onChange(states.pageNumber.value + 1)
+          }
+        />
+      )}
     </div>
   );
 };

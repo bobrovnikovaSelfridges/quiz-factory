@@ -4,7 +4,7 @@ import { MOBILE_STARTS } from "./services/constants";
 import { QuizContext } from "./services/quizContext";
 import { QuestionBox } from "./ui/question-box/question-box";
 import { DataOfItem, OptionType, QuizContextType } from "./store/types";
-import { setParamsForUrl } from "./services/set-params-in-curr-location-url";
+// import { setParamsForUrl } from "./services/set-params-in-curr-location-url";
 import "bootstrap/dist/css/bootstrap.min.css";
 import s from "./App.module.css";
 import { getSearchParamsFromQueryString } from "./services/get-search-params-from-query-string";
@@ -39,8 +39,8 @@ const App: React.FunctionComponent = () => {
   const amountOfQuestions = Object.keys(configurations.quizValues).length;
 
   const { dataset } = useContext<QuizContextType>(QuizContext);
-  const isEndOfQuiz = pageNumber + 1 > amountOfQuestions;
-
+  const isEndOfQuiz = pageNumber === amountOfQuestions;
+  console.log({ pageNumber, amountOfQuestions });
   const searchParams = getSearchParamsFromQueryString();
   const selectedGifstByUser = searchParams.get("gifts");
   const selectionIds = selectedGifstByUser?.split("&");
@@ -54,6 +54,9 @@ const App: React.FunctionComponent = () => {
   const [urlParams, setUrlParams] = React.useState<Array<string> | undefined>(
     selectionIds
   );
+  const [name, setName] = React.useState<string>("");
+  const [email, setEmail] = React.useState<string>("");
+  const [surname, setSurname] = React.useState<string>("");
 
   const contextData: QuizContextType = {
     dataset,
@@ -64,6 +67,11 @@ const App: React.FunctionComponent = () => {
     },
     configurations,
     states: {
+      userData: {
+        name,
+        surname,
+        email,
+      },
       url: {
         values: urlParams,
         onChange: setUrlParams,
@@ -99,7 +107,7 @@ const App: React.FunctionComponent = () => {
   return (
     <QuizContext.Provider value={contextData}>
       <div className={s.root}>
-        <QuestionBox />
+        <QuestionBox fields={{ setName, setEmail, setSurname }} />
 
         <img
           className={s.img}
