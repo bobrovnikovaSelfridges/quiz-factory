@@ -96,7 +96,7 @@ const App: React.FunctionComponent = () => {
       pageNumber: { value: pageNumber, onChange: setPageNumber },
     },
   };
-  const [alreadySelected, setThem] = React.useState<string>("");
+  // const [alreadySelected, setThem] = React.useState<string>("");
   React.useEffect(() => {
     const ids = loadGiftsFromQueryParams(
       contextData.states.usersSelectedCards.onChange
@@ -112,7 +112,7 @@ const App: React.FunctionComponent = () => {
       .then((data) => {
         if (data) {
           console.log({ data });
-          setThem(data);
+          setUsersSelectedCards(data);
         }
       });
   }, []);

@@ -21,9 +21,9 @@ export const UserSelection = () => {
   const title = configurations.uiText.titles.selection
     .replace("{NUMBER}", cardsAmount.toString())
     .replace("{GIFT}", cardsAmount > 1 ? "gifts" : "gift");
-  // const allKeyWords = Object.entries(states.selectedOptions.values);
 
   if (Object.keys(states.usersSelectedCards.values).length > 0) {
+    console.log(";loads");
     return (
       <>
         <div data-of-js-pdf className={s.root}>
