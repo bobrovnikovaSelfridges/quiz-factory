@@ -44,11 +44,11 @@ export const UserSelection = () => {
   if (hasSelectedGifts) {
     return (
       <>
-        {/* <div data-of-js-pdf className={s.root}>
+        <div data-of-js-pdf className={s.root}>
           <h1>{title}</h1>
           <div className={s.cards}>{renderCards(cards)}</div>
         </div>
-        <ResultControls /> */}
+        <ResultControls />
       </>
     );
   } else {
@@ -56,20 +56,20 @@ export const UserSelection = () => {
   }
 };
 
-// const renderCards = (cards: { [key: string]: DataOfItem }) => {
-//   return Object.entries(cards).map((card: [string, DataOfItem], i: number) => {
-//     return (
-//       <div className={s.card}>
-//         <Card key={card[0] + i} dataset={card} isDisplayed={true}>
-//           <textarea
-//             placeholder={configurations.notes[i] || "your notes"}
-//             className={s.notes}
-//           />
-//         </Card>
-//       </div>
-//     );
-//   });
-// };
+const renderCards = (cards: { [key: string]: DataOfItem }) => {
+  return Object.entries(cards).map((card: [string, DataOfItem], i: number) => {
+    return (
+      <div className={s.card}>
+        <Card key={card[0] + i} dataset={card} isDisplayed={true}>
+          <textarea
+            placeholder={configurations.notes[i] || "your notes"}
+            className={s.notes}
+          />
+        </Card>
+      </div>
+    );
+  });
+};
 
 const endPoint = "";
 
@@ -84,7 +84,7 @@ const getResults = (
       "Content-Type": "application/json",
     },
     method: "POST",
-    body: JSON.stringify({ a: 1, b: 2 }),
+    body: JSON.stringify({ keywords, exclusions }),
   })
     .then((response) => response.json())
     .then((data) => {
