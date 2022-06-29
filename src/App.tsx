@@ -96,12 +96,25 @@ const App: React.FunctionComponent = () => {
       pageNumber: { value: pageNumber, onChange: setPageNumber },
     },
   };
-
+  const [alreadySelected, setThem] = React.useState<string>("");
   React.useEffect(() => {
-    // loadGiftsFromQueryParams(
-    //   mocks,
-    //   contextData.states.usersSelectedCards.onChange
-    // );
+    const ids = loadGiftsFromQueryParams(
+      contextData.states.usersSelectedCards.onChange
+    );
+    const endPoint =
+      "https://6e49q1rapl.execute-api.eu-west-1.amazonaws.com/prod/";
+
+    fetch(endPoint, {
+      method: "POST",
+      body: JSON.stringify({ productIds: ids }),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        if (data) {
+          console.log({ data });
+          setThem(data);
+        }
+      });
   }, []);
   React.useEffect(() => {
     // setShownSelection(Boolean(urlParams && urlParams.length > 0));
@@ -126,25 +139,30 @@ const App: React.FunctionComponent = () => {
 };
 
 const loadGiftsFromQueryParams = (
-  values: { [key: string]: SchemaUnit[] },
   onChange: React.Dispatch<React.SetStateAction<{ [id: string]: SchemaUnit }>>
-) => {
+): string[] | undefined => {
   const searchParams = getSearchParamsFromQueryString();
   const cardsInUrl = searchParams.get("gifts");
-  let selection: { [id: string]: DataOfItem } = {};
   if (cardsInUrl) {
     const ids = cardsInUrl.split("-");
-
-    const allGifts: SchemaUnit[][] = Object.values(values);
-
-    allGifts.forEach((category: SchemaUnit[]) => {
-      // category[1].forEach((element: DataOfItem) => {
-      //   if (ids.includes(element.id)) {
-      //     selection[element.id] = element;
-      //   }
-      // });
-    });
+    // let selection: { [id: string]: DataOfItem } = {};
+    return ids;
   }
-  // onChange(selection);
 };
+//   if (cardsInUrl) {
+//     const ids = cardsInUrl.split("-");
+//     console.log(ids);
+
+//     const allGifts: SchemaUnit[][] = Object.values(values);
+
+//     // allGifts.forEach((category: SchemaUnit[]) => {
+//     //   // category[1].forEach((element: DataOfItem) => {
+//     //   //   if (ids.includes(element.id)) {
+//     //   //     selection[element.id] = element;
+//     //   //   }
+//     //   // });
+//     // });
+//   }
+//   // onChange(selection);
+// };
 export default App;
